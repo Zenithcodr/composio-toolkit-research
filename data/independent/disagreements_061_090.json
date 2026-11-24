@@ -1,0 +1,89 @@
+[
+  {
+    "id": 61,
+    "field": "api_type",
+    "first_pass": "REST; MCP",
+    "independent": [
+      "REST",
+      "GraphQL",
+      "MCP"
+    ],
+    "reason": "The first pass omits GitHub's separately documented GraphQL API. This is an API-surface completeness correction; the REST and official MCP findings agree.",
+    "evidence_urls": [
+      "https://docs.github.com/en/graphql/guides/forming-calls-with-graphql"
+    ]
+  },
+  {
+    "id": 62,
+    "field": "blockers",
+    "first_pass": [
+      "Official MCP accepts Vercel-approved AI clients; direct REST remains a documented integration route.",
+      "Hobby and paid plans have different usage and product entitlements."
+    ],
+    "independent": [
+      "Vercel MCP supports clients that use a Client ID Metadata Document (CIMD), or clients reviewed and approved by Vercel; CIMD clients can connect without review.",
+      "Hobby and paid plans retain different usage and product entitlements."
+    ],
+    "reason": "The opened current vendor guide explicitly adds a no-review CIMD client path. The first-pass blocker states the older approved-client-only restriction and should be qualified; plan differences remain valid.",
+    "evidence_urls": [
+      "https://vercel.com/docs/agent-resources/vercel-mcp"
+    ]
+  },
+  {
+    "id": 62,
+    "field": "verdict",
+    "first_pass": "build_with_constraints",
+    "independent": "build_now",
+    "reason": "The independent classification treats free-account bearer REST development and the current CIMD-capable MCP path as sufficient to start without outreach. This is a classification judgement under fresh access evidence, not a finding that every Vercel feature/usage tier is free; keeping build_with_constraints solely for ordinary plan limits is also a defensible policy choice.",
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api",
+      "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "https://vercel.com/pricing"
+    ]
+  },
+  {
+    "id": 78,
+    "field": "auth_methods",
+    "first_pass": [
+      "OAuth 2.0 (MCP)",
+      "personal access token (MCP)"
+    ],
+    "independent": [
+      "REST bearer API token",
+      "Official MCP OAuth 2 for supported clients",
+      "Official MCP personal access token with MCP restriction and read/write scope"
+    ],
+    "reason": "The independent pass establishes the REST bearer-token route using the official indexed API reference and vendor Postman API introduction. The original MCP OAuth/PAT findings remain supported.",
+    "evidence_urls": [
+      "https://coda.io/developers/apis/v1",
+      "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api"
+    ]
+  },
+  {
+    "id": 78,
+    "field": "api_type",
+    "first_pass": "MCP; public API reference retrieval unresolved",
+    "independent": [
+      "REST",
+      "MCP"
+    ],
+    "reason": "The direct reference still redirects to an inaccessible Superhuman URL, but the official indexed reference plus opened vendor Postman introduction independently document a REST API. Retrieval failure need not leave the API type unresolved.",
+    "evidence_urls": [
+      "https://coda.io/developers/apis/v1",
+      "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api"
+    ]
+  },
+  {
+    "id": 78,
+    "field": "api_breadth",
+    "first_pass": "Verified MCP reads and writes Coda docs; complete REST endpoint coverage unresolved in this review.",
+    "independent": "REST supports documents, pages, tables, rows, formulas/controls and sharing. Official MCP can read and write Coda docs, with role- and plan-dependent access; it is operational rather than documentation-only.",
+    "reason": "Fresh official evidence establishes document/page/table/row and related REST families. This resolves the identified breadth gap without asserting exhaustive UI parity or broadening ordinary-document access to the separate Admin API.",
+    "evidence_urls": [
+      "https://coda.io/developers/apis/v1",
+      "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+      "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+    ]
+  }
+]
+

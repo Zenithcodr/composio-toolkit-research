@@ -1,0 +1,454 @@
+[
+  {
+    "id": 2,
+    "name": "HubSpot",
+    "findings": {
+      "auth_methods": [
+        "OAuth 2.0 for app integrations",
+        "Scoped Service Keys (public beta) for system-to-system access",
+        "Legacy private-app access tokens remain available",
+        "OAuth 2.1 with PKCE for the remote CRM MCP connector"
+      ],
+      "access": [
+        "self_serve_free",
+        "paid_plan",
+        "admin_approval"
+      ],
+      "api_type": "REST APIs, webhooks and official remote MCP",
+      "api_breadth": "Broad CRM objects, associations, activities, marketing/content, files, automation and account APIs. Remote MCP supports selected CRM/activity/content/marketing reads and writes, with object, subscription, beta and permission restrictions.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.hubspot.com/developer-platform-basics",
+        "title": "Developer Platform Basics & Onboarding",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_type",
+          "verdict"
+        ],
+        "excerpt": "Developers can start with a free HubSpot account; platform building blocks include REST APIs, OAuth, webhooks and MCP.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.hubspot.com/changelog/service-keys",
+        "title": "Service Keys enter public beta",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "Service Keys are scoped account-level credentials for internal system integrations, require Developer Tools permissions and do not support webhooks; legacy private apps remain available.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "title": "2026-09 API reference",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "api_type"
+        ],
+        "excerpt": "Current reference covers CRM, content, conversations, automation, files, events, marketing, revenue and account resources.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+        "title": "Integrate AI tools with the HubSpot MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "CRM MCP uses a connector and OAuth with PKCE; current tools include selected CRM, activity, content, campaign and social writes, with subscription/beta and user-permission gates.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Independent findings were frozen before reading first_pass.json. Verdict covers a reusable integration: a free scoped prototype is feasible, while premium resources and some MCP operations have additional gates. The remote CRM MCP is distinct from the developer MCP. Current guide says Sensitive Data blocks conversation data; an older April announcement described a broader Activity block, so do not treat that announcement as the complete current scope.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 10,
+    "name": "DealCloud",
+    "findings": {
+      "auth_methods": [
+        "REST: OAuth 2 client credentials using client ID and API key, exchanged for a short-lived Bearer token",
+        "MCP: per-user OAuth sign-in"
+      ],
+      "access": [
+        "paid_plan",
+        "admin_approval"
+      ],
+      "api_type": "REST APIs with OpenAPI/Swagger; official DealCloud MCP",
+      "api_breadth": "REST includes schema, data read/create/update/upsert/delete, user management, backups, publications/events and relationship-intelligence imports. MCP can explore schema, query/read data and optionally create/update records, with write tools enabled separately.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://api.docs.dealcloud.com/docs",
+        "title": "DealCloud API Docs",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth"
+        ],
+        "excerpt": "Documents REST functional areas for schema, data, users, backups, events/publications and relationship intelligence, with a site-specific Swagger/OpenAPI specification.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/docs/apikeys",
+        "title": "Obtaining an API Key",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "An admin enables API capability on the user's group; permitted users then enable/copy their API key in Profile. Admin or CSM help is needed when permission is absent.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/docs/token",
+        "title": "Requesting an OAuth2 Bearer Token",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "REST uses client credentials with client ID/API key and required scopes; Bearer tokens expire after 15 minutes and are reissued by repeating the flow.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+        "title": "Getting Started with DealCloud MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "MCP requires a DealCloud with Celeste license, admin Manage MCP Servers capability, and Celeste Member plus MCP Access for end users.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/mcp/authentication",
+        "title": "DealCloud MCP Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "MCP uses OAuth on behalf of the signed-in user and inherits that user's object, field and record permissions.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://api.docs.dealcloud.com/mcp/tools",
+        "title": "MCP Tools",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "mcp_status"
+        ],
+        "excerpt": "MCP offers schema discovery, lookups/search/query and record create/update; an administrator must switch on Enable Write Tools.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "REST feasibility is conditional on an existing licensed site and group/API permissions. No universal free sandbox or trial was established. MCP has a specific Celeste license and separate enablement gate; an API key alone does not establish MCP access. Independent findings frozen before comparison.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "findings": {
+      "auth_methods": [
+        "OAuth 2 authorization code, with PKCE for public clients",
+        "OAuth 2 client credentials for server integrations",
+        "Legacy email/token Basic authentication (deprecated; OAuth migration required)"
+      ],
+      "access": [
+        "self_serve_trial",
+        "paid_plan",
+        "admin_approval"
+      ],
+      "api_type": "HTTPS REST APIs and official MCP via Zendesk Bridge EAP",
+      "api_breadth": "Support account operations include tickets, users/organizations and help-center resources; the MCP EAP exposes assigned tools such as ticket create/update, user lookup, help-center search and macros, with governed connection permissions.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "title": "Security and authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type"
+        ],
+        "excerpt": "Current guide recommends OAuth, labels API tokens deprecated, requires verified users, and requires global OAuth for multi-customer distribution rather than collecting customer credentials.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+        "title": "Using OAuth to authenticate API requests",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "Documents authorization-code and client-credentials flows, inherited user permissions, refresh behavior and administrator setup of OAuth clients.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+        "title": "Connecting external AI agents to Zendesk MCP or Zendesk AI agents (EAP)",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_breadth",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Vendor MCP/Bridge is an EAP requiring participation; admins assign tools to a connection, and documented actions include tickets, users, organizations, help-center search and macros.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.zendesk.com/pricing/",
+        "title": "Zendesk Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Provides a trial route and paid support plans; enterprise entitlements and sandbox availability vary by plan.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "API tokens remain described as a deprecated legacy route, so new integration design should use OAuth. Internal and distributed multi-customer integrations have different OAuth requirements. MCP EAP availability must not be generalized to every account. Independent findings frozen before comparison; no login/API calls.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "findings": {
+      "auth_methods": [
+        "REST HTTP Basic: agent email as username and API token as password",
+        "Gladly MCP for Claude: each person's Gladly sign-in, without shared API tokens"
+      ],
+      "access": [
+        "paid_plan",
+        "admin_approval"
+      ],
+      "api_type": "HTTPS REST/JSON API, Lookup API and webhooks; official inbound MCP for Gladly AI",
+      "api_breadth": "REST covers customer profiles, customer timelines/conversations, agents and webhooks, while the Lookup API is called by Gladly against the customer's service. Inbound MCP focuses on AI session analysis, Guides/Workflows/Actions/Knowledge and Simulator testing rather than an asserted mirror of the complete REST API.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://developer.gladly.com/rest/",
+        "title": "Gladly API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Organization REST API exchanges JSON over HTTPS with agent-email/API-token Basic auth; admins assign API User permission. Also documents Lookup services, sandbox enablement and event webhooks.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+        "title": "Get Your API tokens",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "Users with API User role create credentials in the Gladly UI under App Developer Tools.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.gladly.com/product-docs/docs/what-is-the-gladly-mcp-for-claude",
+        "title": "What is the Gladly MCP for Claude?",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "access",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Inbound MCP for Claude works on AI sessions and AI configuration/testing, and requires closed-beta organization enablement, an eligible role and paid Claude access. It is separate from Gladly calling external MCP servers.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.gladly.com/product-docs/docs/review-security-and-data-for-the-gladly-mcp-for-claude",
+        "title": "Review security and data for Gladly MCP",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "Each person connects with Gladly sign-in; MCP follows role permissions and has no shared API keys.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.gladly.com/implementation/docs/invoice-and-billing-overview",
+        "title": "Invoice and Billing Overview",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Gladly subscriptions and licenses are billed under agreed order-form/contract terms; this is not evidence of a self-serve free API account.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Product naming changed: former Hero platform is Gladly Team, while Sidekick is Gladly AI. REST and inbound MCP target related but different surfaces. Closed-beta MCP requires vendor enablement; an existing tenant can still implement the documented REST route once an admin grants API User. No general free developer account was established. Independent findings frozen before comparison.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "findings": {
+      "auth_methods": [
+        "App ID/App Secret to obtain app/tenant access tokens",
+        "OAuth 2.0 user access tokens for user-context APIs and local MCP"
+      ],
+      "access": [
+        "self_serve_trial",
+        "admin_approval"
+      ],
+      "api_type": "HTTPS Open APIs and events; official locally run OpenAPI MCP",
+      "api_breadth": "Broad app capabilities around messages/chats, documents, calendars, Base and contacts, limited by the chosen tool preset, scopes, resource permissions and identity. The official MCP README explicitly excludes file upload/download and direct cloud-document editing in that implementation.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://github.com/larksuite/lark-openapi-mcp",
+        "title": "Official Lark OpenAPI MCP repository",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Official beta MCP runs with app credentials and optional OAuth user sign-in. It supports selected API tools/presets, requires the international domain for Lark, and lists file-transfer/document-edit limitations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+        "title": "General parameters",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type"
+        ],
+        "excerpt": "Official indexed terminology distinguishes app_access_token, tenant_access_token and user_access_token for app, organization and user authority.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://open.larksuite.com/document/home/introduction-to-custom-app-development/self-built-application-development-process",
+        "title": "Custom app development process",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Official indexed guide allows organization creation through a Free Trial route; custom apps need tenant-admin approval for production, with test companies/users supporting development before release.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://open.larksuite.com/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN",
+        "title": "Apply for API permissions",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_breadth"
+        ],
+        "excerpt": "Custom scopes may be auto-approved or require tenant review; store apps require platform-launch and tenant-installation review. Development exceptions do not imply production approval.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Direct Lark doc opens rendered shells; cited indexed official text and the readable vendor-owned repository were independently reviewed. Remote-MCP setup documentation is marked Deprecated and described internal testing, so it is not used to promise generally available hosted access. Local official MCP exists; vendor_official does not imply every hosted variant is current. Feishu China and international Lark domains/app identities are distinct. Independent findings frozen before comparison.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "findings": {
+      "auth_methods": [
+        "Generated API key for the API addon",
+        "MCP: user or bot token plus app key in token and x-app-token headers"
+      ],
+      "access": [
+        "self_serve_free",
+        "paid_plan",
+        "admin_approval"
+      ],
+      "api_type": "HTTPS API addon and official remote HTTP MCP",
+      "api_breadth": "API addon handles messages/replies/deletion/reactions/channel creation and selected channel/message listings. MCP dynamically exposes scope-approved tools including message search/read/send/edit, scheduling, channel/user/workspace information and file fetching.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_now"
+    },
+    "evidence": [
+      {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "title": "Pumble API Overview",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "API addon is available to Owner/Admin/Member on all plans; install it, allow permissions and generate an API key. Documented actions include messaging, reactions, channels and selected listings.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+        "title": "How to use the Pumble MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "access"
+        ],
+        "excerpt": "Vendor HTTP MCP at mcp.pumble.com/mcp uses a created/installed app's user/bot token plus app key; tools are dynamically limited to selected user/bot scopes.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://pumble.com/pricing",
+        "title": "Pumble Plans & Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Free workspace plan is available with a finite number of app/integration slots; paid plans raise integration limits.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "API addon and custom-app MCP credentials are distinct. Build-now refers to a scoped own-workspace API prototype after installation/permission grant. Private-channel message listing needs the addon bot in that channel. Exact current custom-app entitlement should be checked against workspace settings; no credentials or API calls were used. Independent findings frozen before comparison.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  }
+]

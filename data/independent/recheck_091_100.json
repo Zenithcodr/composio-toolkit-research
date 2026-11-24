@@ -1,0 +1,138 @@
+[
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "findings": {
+      "auth_methods": [
+        "OAuth (MCP)",
+        "Bearer API key (Enterprise Public API)"
+      ],
+      "access": [
+        "self_serve_free",
+        "paid_plan",
+        "partner_sales"
+      ],
+      "api_type": "REST retrieval API; MCP",
+      "api_breadth": "Official MCP supports meeting/transcript search, fetch and user information with user-authorized access. A separate Enterprise Public API retrieves channels, conversations, transcripts/audio, action items, insights, outlines and workspace details; documented webhooks support export integrations.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+        "title": "Otter MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "mcp_status",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Otter hosts an OAuth MCP for authorized meeting data; ChatGPT tools are search, fetch and get-user-info. Its MCP FAQ does not offer a generic public MCP API key.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "title": "Otter.ai Public API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "The separate Public API is available to Enterprise workspaces, uses bearer API keys, and retrieves meeting/workspace data with rate limits and webhooks.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://otter.ai/pricing",
+        "title": "Otter Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Basic Free includes Otter MCP; API and Webhooks are listed under custom-priced Enterprise.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The MCP FAQ's lack of a public MCP key does not mean Otter lacks a REST API. Free MCP availability is explicitly priced, while direct Public API entitlement is Enterprise. No free personal bearer API was inferred or executed; no account was created.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "findings": {
+      "auth_methods": [
+        "personal bearer access token (REST and MCP)",
+        "workspace bearer access token (REST only)",
+        "OAuth 2.0 authorization code with PKCE"
+      ],
+      "access": [
+        "self_serve_free",
+        "paid_plan",
+        "admin_approval"
+      ],
+      "api_type": "HTTP/REST public API v2; MCP",
+      "api_breadth": "Public API reads/manages meeting recordings, transcripts/notes, uploads, metadata/sharing and webhooks. MCP is personal-scope meeting/search/reporting and contact/company data; Deals and coaching tools require Business/Enterprise, and workspace-scope tokens are not accepted by MCP.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.grain.com/authentication.html",
+        "title": "Grain Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "Grain documents personal, workspace and OAuth bearer tokens; workspace tokens require admins/eligible plans, and only personal-scope tokens authenticate MCP.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://support.grain.com/en/articles/15507288-grain-api",
+        "title": "Grain API",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "The dedicated API help page explicitly permits Personal API on every plan including Free; Workspace API requires Business/Enterprise and admin access. It describes recording read/write and webhooks.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.grain.com/mcp/faq.html",
+        "title": "Grain MCP FAQ",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_breadth",
+          "access"
+        ],
+        "excerpt": "Grain officially supports MCP on Free/Starter for most meeting tools; Deals and coaching are restricted to Business/Enterprise.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.grain.com/mcp/tools-and-usage.html",
+        "title": "Grain MCP Tools",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "access"
+        ],
+        "excerpt": "The MCP inventory identifies Free/Starter meeting search, transcript/notes fetching and participant/company lookup; premium reporting tools are separate.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Free personal REST access is independently supported by a dedicated API article, not inferred from MCP documentation. Older generic Plans documentation/search snippets said Free excluded API access; the newer specific API help and current auth distinctions are more precise. No live credential issuance was tested. API docs use a newer version header than older help examples, so implement against the current developer version reference.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  }
+]

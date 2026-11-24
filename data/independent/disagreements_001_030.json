@@ -1,0 +1,57 @@
+[
+  {
+    "id": 10,
+    "field": "access",
+    "first_pass": [
+      "admin_approval",
+      "unresolved"
+    ],
+    "independent": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "reason": "Newly located first-party DealCloud MCP onboarding resolves a previously unknown specific entitlement: DealCloud with Celeste is required, plus Manage MCP Servers for admins and Celeste Member/MCP Access for end users. This adds a confirmed paid-license gate; it does not establish a free/new tenant or public partner enrollment.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/mcp/getting-started"
+    ]
+  },
+  {
+    "id": 10,
+    "field": "auth_methods",
+    "first_pass": [
+      "API key for an API-enabled user",
+      "OAuth2 client-credentials bearer token using client ID/secret"
+    ],
+    "independent": [
+      "REST: OAuth 2 client credentials using client ID and API key, exchanged for a short-lived Bearer token",
+      "MCP: per-user OAuth sign-in"
+    ],
+    "reason": "The first-pass array documents the REST credential flow but omits the separate per-user OAuth sign-in used by the official DealCloud MCP. REST API-key exchange and MCP user authorization are different routes.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/docs/token",
+      "https://api.docs.dealcloud.com/mcp/authentication"
+    ]
+  },
+  {
+    "id": 10,
+    "field": "api_breadth",
+    "first_pass": "Broad tenant schema/data/user-management APIs, backups, events, and a vendor MCP query connector.",
+    "independent": "REST includes schema, data read/create/update/upsert/delete, user management, backups, publications/events and relationship-intelligence imports. MCP can explore schema, query/read data and optionally create/update records, with write tools enabled separately.",
+    "reason": "The official MCP tool documentation explicitly supports creating/updating records after an admin enables write tools; describing the MCP only as a query connector understates its verified capability.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/mcp/tools",
+      "https://api.docs.dealcloud.com/mcp/getting-started"
+    ]
+  },
+  {
+    "id": 25,
+    "field": "verdict",
+    "first_pass": "build_with_constraints",
+    "independent": "build_now",
+    "reason": "Scope-dependent judgment difference, not a factual first-pass error: the independent verdict targets a focused own-workspace API prototype, for which official docs say the addon is available on all plans. The first-pass installation, permissions, private-channel and MCP-credential constraints remain valid. Do not score this as proof of improved factual accuracy.",
+    "evidence_urls": [
+      "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/"
+    ]
+  }
+]

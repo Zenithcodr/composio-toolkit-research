@@ -1,0 +1,4011 @@
+{
+  "status": "executed",
+  "scope": "Read-only SDK catalogue metadata; no connected-app or wallet tool calls",
+  "sdk_package": "composio",
+  "checked_at": "2026-11-24T01:48:41+00:00",
+  "returned_toolkits": 1000,
+  "catalogue_partial": true,
+  "catalogue": [
+    {
+      "slug": "gmail",
+      "name": "Gmail"
+    },
+    {
+      "slug": "composio",
+      "name": "Composio"
+    },
+    {
+      "slug": "github",
+      "name": "GitHub"
+    },
+    {
+      "slug": "googlecalendar",
+      "name": "Google Calendar"
+    },
+    {
+      "slug": "notion",
+      "name": "Notion"
+    },
+    {
+      "slug": "googlesheets",
+      "name": "Google Sheets"
+    },
+    {
+      "slug": "slack",
+      "name": "Slack"
+    },
+    {
+      "slug": "supabase",
+      "name": "Supabase"
+    },
+    {
+      "slug": "outlook",
+      "name": "Outlook"
+    },
+    {
+      "slug": "perplexityai",
+      "name": "Perplexity AI"
+    },
+    {
+      "slug": "twitter",
+      "name": "Twitter"
+    },
+    {
+      "slug": "googledrive",
+      "name": "Google Drive"
+    },
+    {
+      "slug": "googledocs",
+      "name": "Google Docs"
+    },
+    {
+      "slug": "hubspot",
+      "name": "HubSpot"
+    },
+    {
+      "slug": "linear",
+      "name": "Linear"
+    },
+    {
+      "slug": "airtable",
+      "name": "Airtable"
+    },
+    {
+      "slug": "serpapi",
+      "name": "SerpApi"
+    },
+    {
+      "slug": "jira",
+      "name": "Jira"
+    },
+    {
+      "slug": "firecrawl",
+      "name": "Firecrawl"
+    },
+    {
+      "slug": "tavily",
+      "name": "Tavily"
+    },
+    {
+      "slug": "youtube",
+      "name": "YouTube"
+    },
+    {
+      "slug": "slackbot",
+      "name": "Slackbot"
+    },
+    {
+      "slug": "canvas",
+      "name": "Canvas"
+    },
+    {
+      "slug": "bitbucket",
+      "name": "Bitbucket"
+    },
+    {
+      "slug": "googletasks",
+      "name": "Google Tasks"
+    },
+    {
+      "slug": "discord",
+      "name": "Discord"
+    },
+    {
+      "slug": "figma",
+      "name": "Figma"
+    },
+    {
+      "slug": "reddit",
+      "name": "Reddit"
+    },
+    {
+      "slug": "cal",
+      "name": "Cal"
+    },
+    {
+      "slug": "wrike",
+      "name": "Wrike"
+    },
+    {
+      "slug": "exa",
+      "name": "Exa"
+    },
+    {
+      "slug": "sentry",
+      "name": "Sentry"
+    },
+    {
+      "slug": "snowflake",
+      "name": "Snowflake"
+    },
+    {
+      "slug": "hackernews",
+      "name": "Hacker News"
+    },
+    {
+      "slug": "elevenlabs",
+      "name": "ElevenLabs"
+    },
+    {
+      "slug": "microsoft_teams",
+      "name": "Microsoft Teams"
+    },
+    {
+      "slug": "asana",
+      "name": "Asana"
+    },
+    {
+      "slug": "peopledatalabs",
+      "name": "People Data Labs"
+    },
+    {
+      "slug": "shopify",
+      "name": "Shopify"
+    },
+    {
+      "slug": "linkedin",
+      "name": "LinkedIn"
+    },
+    {
+      "slug": "google_maps",
+      "name": "Google Maps"
+    },
+    {
+      "slug": "one_drive",
+      "name": "OneDrive"
+    },
+    {
+      "slug": "docusign",
+      "name": "DocuSign"
+    },
+    {
+      "slug": "discordbot",
+      "name": "Discord Bot"
+    },
+    {
+      "slug": "salesforce",
+      "name": "Salesforce"
+    },
+    {
+      "slug": "calendly",
+      "name": "Calendly"
+    },
+    {
+      "slug": "trello",
+      "name": "Trello"
+    },
+    {
+      "slug": "apollo",
+      "name": "Apollo"
+    },
+    {
+      "slug": "semrush",
+      "name": "Semrush"
+    },
+    {
+      "slug": "mem0",
+      "name": "Mem0"
+    },
+    {
+      "slug": "neon",
+      "name": "Neon"
+    },
+    {
+      "slug": "posthog",
+      "name": "PostHog"
+    },
+    {
+      "slug": "clickup",
+      "name": "ClickUp"
+    },
+    {
+      "slug": "brevo",
+      "name": "Brevo"
+    },
+    {
+      "slug": "stripe",
+      "name": "Stripe"
+    },
+    {
+      "slug": "klaviyo",
+      "name": "Klaviyo"
+    },
+    {
+      "slug": "browserbase_tool",
+      "name": "Browserbase"
+    },
+    {
+      "slug": "mailchimp",
+      "name": "Mailchimp"
+    },
+    {
+      "slug": "attio",
+      "name": "Attio"
+    },
+    {
+      "slug": "googlemeet",
+      "name": "Google Meet"
+    },
+    {
+      "slug": "zoho",
+      "name": "Zoho"
+    },
+    {
+      "slug": "fireflies",
+      "name": "Fireflies"
+    },
+    {
+      "slug": "dropbox",
+      "name": "Dropbox"
+    },
+    {
+      "slug": "shortcut",
+      "name": "Shortcut"
+    },
+    {
+      "slug": "confluence",
+      "name": "Confluence"
+    },
+    {
+      "slug": "freshdesk",
+      "name": "Freshdesk"
+    },
+    {
+      "slug": "borneo",
+      "name": "Borneo"
+    },
+    {
+      "slug": "mixpanel",
+      "name": "Mixpanel"
+    },
+    {
+      "slug": "coda",
+      "name": "Coda"
+    },
+    {
+      "slug": "acculynx",
+      "name": "Acculynx"
+    },
+    {
+      "slug": "ahrefs",
+      "name": "Ahrefs"
+    },
+    {
+      "slug": "affinity",
+      "name": "Affinity"
+    },
+    {
+      "slug": "amplitude",
+      "name": "Amplitude"
+    },
+    {
+      "slug": "heygen",
+      "name": "HeyGen"
+    },
+    {
+      "slug": "agencyzoom",
+      "name": "AgencyZoom"
+    },
+    {
+      "slug": "googlebigquery",
+      "name": "Google BigQuery"
+    },
+    {
+      "slug": "microsoft_clarity",
+      "name": "Microsoft Clarity"
+    },
+    {
+      "slug": "coinbase",
+      "name": "Coinbase"
+    },
+    {
+      "slug": "monday",
+      "name": "Monday"
+    },
+    {
+      "slug": "semanticscholar",
+      "name": "Semantic Scholar"
+    },
+    {
+      "slug": "sendgrid",
+      "name": "SendGrid"
+    },
+    {
+      "slug": "junglescout",
+      "name": "Jungle Scout"
+    },
+    {
+      "slug": "pipedrive",
+      "name": "Pipedrive"
+    },
+    {
+      "slug": "bamboohr",
+      "name": "BambooHR"
+    },
+    {
+      "slug": "whatsapp",
+      "name": "WhatsApp"
+    },
+    {
+      "slug": "dynamics365",
+      "name": "Dynamics 365"
+    },
+    {
+      "slug": "zendesk",
+      "name": "Zendesk"
+    },
+    {
+      "slug": "googlephotos",
+      "name": "Google Photos"
+    },
+    {
+      "slug": "lmnt",
+      "name": "LMNT"
+    },
+    {
+      "slug": "metaads",
+      "name": "Meta Ads"
+    },
+    {
+      "slug": "zenrows",
+      "name": "ZenRows"
+    },
+    {
+      "slug": "googlesuper",
+      "name": "Google Super"
+    },
+    {
+      "slug": "yousearch",
+      "name": "You.com"
+    },
+    {
+      "slug": "linkup",
+      "name": "Linkup"
+    },
+    {
+      "slug": "listennotes",
+      "name": "Listen Notes"
+    },
+    {
+      "slug": "typefully",
+      "name": "Typefully"
+    },
+    {
+      "slug": "bolna",
+      "name": "Bolna"
+    },
+    {
+      "slug": "rocketlane",
+      "name": "Rocketlane"
+    },
+    {
+      "slug": "zoom",
+      "name": "Zoom"
+    },
+    {
+      "slug": "onepage",
+      "name": "Onepage"
+    },
+    {
+      "slug": "entelligence",
+      "name": "Entelligence"
+    },
+    {
+      "slug": "retellai",
+      "name": "Retell AI"
+    },
+    {
+      "slug": "servicenow",
+      "name": "ServiceNow"
+    },
+    {
+      "slug": "googleads",
+      "name": "Google Ads"
+    },
+    {
+      "slug": "pagerduty",
+      "name": "PagerDuty"
+    },
+    {
+      "slug": "toneden",
+      "name": "Toneden"
+    },
+    {
+      "slug": "rafflys",
+      "name": "Rafflys"
+    },
+    {
+      "slug": "finage",
+      "name": "Finage"
+    },
+    {
+      "slug": "fomo",
+      "name": "Fomo"
+    },
+    {
+      "slug": "bannerbear",
+      "name": "Bannerbear"
+    },
+    {
+      "slug": "miro",
+      "name": "Miro"
+    },
+    {
+      "slug": "share_point",
+      "name": "SharePoint"
+    },
+    {
+      "slug": "mocean",
+      "name": "Mocean"
+    },
+    {
+      "slug": "formcarry",
+      "name": "Formcarry"
+    },
+    {
+      "slug": "appdrag",
+      "name": "AppDrag"
+    },
+    {
+      "slug": "metatextai",
+      "name": "Metatextai"
+    },
+    {
+      "slug": "breezy_hr",
+      "name": "Breezy Hr"
+    },
+    {
+      "slug": "launch_darkly",
+      "name": "LaunchDarkly"
+    },
+    {
+      "slug": "mailerlite",
+      "name": "MailerLite"
+    },
+    {
+      "slug": "contentful",
+      "name": "Contentful"
+    },
+    {
+      "slug": "close",
+      "name": "Close"
+    },
+    {
+      "slug": "docmosis",
+      "name": "Docmosis"
+    },
+    {
+      "slug": "ably",
+      "name": "Ably"
+    },
+    {
+      "slug": "more_trees",
+      "name": "More Trees"
+    },
+    {
+      "slug": "netsuite",
+      "name": "Netsuite"
+    },
+    {
+      "slug": "moz",
+      "name": "Moz"
+    },
+    {
+      "slug": "recallai",
+      "name": "Recall.ai"
+    },
+    {
+      "slug": "apaleo",
+      "name": "Apaleo"
+    },
+    {
+      "slug": "survey_monkey",
+      "name": "SurveyMonkey"
+    },
+    {
+      "slug": "zoho_books",
+      "name": "Zoho Books"
+    },
+    {
+      "slug": "zoho_inventory",
+      "name": "Zoho Inventory"
+    },
+    {
+      "slug": "facebook",
+      "name": "Facebook"
+    },
+    {
+      "slug": "tinypng",
+      "name": "TinyPNG"
+    },
+    {
+      "slug": "mopinion",
+      "name": "Mopinion"
+    },
+    {
+      "slug": "crustdata",
+      "name": "Crustdata"
+    },
+    {
+      "slug": "front",
+      "name": "Front"
+    },
+    {
+      "slug": "webex",
+      "name": "Webex"
+    },
+    {
+      "slug": "brandfetch",
+      "name": "Brandfetch"
+    },
+    {
+      "slug": "canva",
+      "name": "Canva"
+    },
+    {
+      "slug": "digicert",
+      "name": "Digicert"
+    },
+    {
+      "slug": "amazon",
+      "name": "Amazon"
+    },
+    {
+      "slug": "dailybot",
+      "name": "Dailybot"
+    },
+    {
+      "slug": "linkhut",
+      "name": "Linkhut"
+    },
+    {
+      "slug": "dropbox_sign",
+      "name": "Dropbox Sign"
+    },
+    {
+      "slug": "timely",
+      "name": "Timely"
+    },
+    {
+      "slug": "box",
+      "name": "Box"
+    },
+    {
+      "slug": "smugmug",
+      "name": "SmugMug"
+    },
+    {
+      "slug": "productboard",
+      "name": "Productboard"
+    },
+    {
+      "slug": "blackbaud",
+      "name": "Blackbaud"
+    },
+    {
+      "slug": "webflow",
+      "name": "Webflow"
+    },
+    {
+      "slug": "amcards",
+      "name": "Amcards"
+    },
+    {
+      "slug": "simplesat",
+      "name": "Simplesat"
+    },
+    {
+      "slug": "flutterwave",
+      "name": "Flutterwave"
+    },
+    {
+      "slug": "hackerrank_work",
+      "name": "HackerRank Work"
+    },
+    {
+      "slug": "freshbooks",
+      "name": "FreshBooks"
+    },
+    {
+      "slug": "process_street",
+      "name": "Process Street"
+    },
+    {
+      "slug": "screenshotone",
+      "name": "ScreenshotOne"
+    },
+    {
+      "slug": "chatwork",
+      "name": "Chatwork"
+    },
+    {
+      "slug": "klipfolio",
+      "name": "Klipfolio"
+    },
+    {
+      "slug": "demio",
+      "name": "Demio"
+    },
+    {
+      "slug": "altoviz",
+      "name": "Altoviz"
+    },
+    {
+      "slug": "d2lbrightspace",
+      "name": "D2L Brightspace"
+    },
+    {
+      "slug": "blackboard",
+      "name": "Blackboard"
+    },
+    {
+      "slug": "lever",
+      "name": "Lever"
+    },
+    {
+      "slug": "zoho_bigin",
+      "name": "Zoho Bigin"
+    },
+    {
+      "slug": "pandadoc",
+      "name": "PandaDoc"
+    },
+    {
+      "slug": "workiom",
+      "name": "Workiom"
+    },
+    {
+      "slug": "lexoffice",
+      "name": "Lexoffice"
+    },
+    {
+      "slug": "gorgias",
+      "name": "Gorgias"
+    },
+    {
+      "slug": "google_analytics",
+      "name": "Google Analytics"
+    },
+    {
+      "slug": "todoist",
+      "name": "Todoist"
+    },
+    {
+      "slug": "zoho_desk",
+      "name": "Zoho Desk"
+    },
+    {
+      "slug": "ashby",
+      "name": "Ashby"
+    },
+    {
+      "slug": "datarobot",
+      "name": "DataRobot"
+    },
+    {
+      "slug": "ngrok",
+      "name": "Ngrok"
+    },
+    {
+      "slug": "square",
+      "name": "Square"
+    },
+    {
+      "slug": "yandex",
+      "name": "Yandex"
+    },
+    {
+      "slug": "baserow",
+      "name": "Baserow"
+    },
+    {
+      "slug": "dialpad",
+      "name": "Dialpad"
+    },
+    {
+      "slug": "formsite",
+      "name": "Formsite"
+    },
+    {
+      "slug": "ynab",
+      "name": "YNAB"
+    },
+    {
+      "slug": "kommo",
+      "name": "Kommo"
+    },
+    {
+      "slug": "deel",
+      "name": "Deel"
+    },
+    {
+      "slug": "tisane",
+      "name": "Tisane Labs"
+    },
+    {
+      "slug": "coinmarketcal",
+      "name": "CoinMarketCal"
+    },
+    {
+      "slug": "browseai",
+      "name": "Browseai"
+    },
+    {
+      "slug": "maintainx",
+      "name": "Maintainx"
+    },
+    {
+      "slug": "tinyurl",
+      "name": "Tinyurl"
+    },
+    {
+      "slug": "bitwarden",
+      "name": "Bitwarden"
+    },
+    {
+      "slug": "epic_games",
+      "name": "Epic Games"
+    },
+    {
+      "slug": "timecamp",
+      "name": "TimeCamp"
+    },
+    {
+      "slug": "piggy",
+      "name": "Piggy"
+    },
+    {
+      "slug": "alchemy",
+      "name": "Alchemy"
+    },
+    {
+      "slug": "gumroad",
+      "name": "Gumroad"
+    },
+    {
+      "slug": "foursquare",
+      "name": "Foursquare"
+    },
+    {
+      "slug": "open_sea",
+      "name": "OpenSea"
+    },
+    {
+      "slug": "humanloop",
+      "name": "Humanloop"
+    },
+    {
+      "slug": "zoominfo",
+      "name": "Zoominfo"
+    },
+    {
+      "slug": "gong",
+      "name": "Gong"
+    },
+    {
+      "slug": "placekey",
+      "name": "Placekey"
+    },
+    {
+      "slug": "datagma",
+      "name": "Datagma"
+    },
+    {
+      "slug": "servicem8",
+      "name": "Servicem8"
+    },
+    {
+      "slug": "textrazor",
+      "name": "TextRazor"
+    },
+    {
+      "slug": "bubble",
+      "name": "Bubble"
+    },
+    {
+      "slug": "chmeetings",
+      "name": "Chmeetings"
+    },
+    {
+      "slug": "cloudflare",
+      "name": "Cloudflare"
+    },
+    {
+      "slug": "harvest",
+      "name": "Harvest"
+    },
+    {
+      "slug": "wakatime",
+      "name": "WakaTime"
+    },
+    {
+      "slug": "xero",
+      "name": "Xero"
+    },
+    {
+      "slug": "boldsign",
+      "name": "Boldsign"
+    },
+    {
+      "slug": "rippling",
+      "name": "Rippling"
+    },
+    {
+      "slug": "active_campaign",
+      "name": "ActiveCampaign"
+    },
+    {
+      "slug": "zoho_mail",
+      "name": "Zoho Mail"
+    },
+    {
+      "slug": "mural",
+      "name": "Mural"
+    },
+    {
+      "slug": "brex",
+      "name": "Brex"
+    },
+    {
+      "slug": "intercom",
+      "name": "Intercom"
+    },
+    {
+      "slug": "eventbrite",
+      "name": "Eventbrite"
+    },
+    {
+      "slug": "beeminder",
+      "name": "Beeminder"
+    },
+    {
+      "slug": "rocket_reach",
+      "name": "RocketReach"
+    },
+    {
+      "slug": "interzoid",
+      "name": "Interzoid"
+    },
+    {
+      "slug": "exist",
+      "name": "Exist"
+    },
+    {
+      "slug": "zenserp",
+      "name": "Zenserp"
+    },
+    {
+      "slug": "zoho_invoice",
+      "name": "Zoho Invoice"
+    },
+    {
+      "slug": "stack_exchange",
+      "name": "Stack Exchange"
+    },
+    {
+      "slug": "botbaba",
+      "name": "Botbaba"
+    },
+    {
+      "slug": "twitch",
+      "name": "Twitch"
+    },
+    {
+      "slug": "datadog",
+      "name": "Datadog"
+    },
+    {
+      "slug": "waboxapp",
+      "name": "Waboxapp"
+    },
+    {
+      "slug": "echtpost",
+      "name": "Echtpost"
+    },
+    {
+      "slug": "0codekit",
+      "name": "0CodeKit"
+    },
+    {
+      "slug": "0xarchive",
+      "name": "0xArchive"
+    },
+    {
+      "slug": "_1password",
+      "name": "1password"
+    },
+    {
+      "slug": "_21risk",
+      "name": "21risk"
+    },
+    {
+      "slug": "_2chat",
+      "name": "2chat"
+    },
+    {
+      "slug": "44api",
+      "name": "44API"
+    },
+    {
+      "slug": "7shifts",
+      "name": "7shifts"
+    },
+    {
+      "slug": "abstract",
+      "name": "Abstract"
+    },
+    {
+      "slug": "abuselpdb",
+      "name": "AbuseIPDB"
+    },
+    {
+      "slug": "abyssale",
+      "name": "Abyssale"
+    },
+    {
+      "slug": "accredible_certificates",
+      "name": "Accredible certificates"
+    },
+    {
+      "slug": "accu_weather",
+      "name": "AccuWeather"
+    },
+    {
+      "slug": "active_merge",
+      "name": "ActiveMerge"
+    },
+    {
+      "slug": "active_trail",
+      "name": "ActiveTrail"
+    },
+    {
+      "slug": "adafruit_io",
+      "name": "Adafruit IO"
+    },
+    {
+      "slug": "addressfinder",
+      "name": "Addressfinder"
+    },
+    {
+      "slug": "addresszen",
+      "name": "Addresszen"
+    },
+    {
+      "slug": "admakeai",
+      "name": "AdMakeAI"
+    },
+    {
+      "slug": "adobe_marketing_agent_mcp",
+      "name": "Adobe Marketing Agent MCP"
+    },
+    {
+      "slug": "adrapid",
+      "name": "Adrapid"
+    },
+    {
+      "slug": "adroll",
+      "name": "AdRoll"
+    },
+    {
+      "slug": "adtraction",
+      "name": "Adtraction"
+    },
+    {
+      "slug": "adyntel",
+      "name": "Adyntel"
+    },
+    {
+      "slug": "aeroleads",
+      "name": "Aeroleads"
+    },
+    {
+      "slug": "affinda",
+      "name": "Affinda"
+    },
+    {
+      "slug": "aftership",
+      "name": "AfterShip"
+    },
+    {
+      "slug": "agent_mail",
+      "name": "Agent Mail"
+    },
+    {
+      "slug": "agent37",
+      "name": "Agent37"
+    },
+    {
+      "slug": "agentphone",
+      "name": "AgentPhone"
+    },
+    {
+      "slug": "agentql",
+      "name": "Agentql"
+    },
+    {
+      "slug": "agenty",
+      "name": "Agenty"
+    },
+    {
+      "slug": "agile_crm",
+      "name": "Agile CRM"
+    },
+    {
+      "slug": "agiled",
+      "name": "Agiled"
+    },
+    {
+      "slug": "agility_cms",
+      "name": "Agility CMS"
+    },
+    {
+      "slug": "aha",
+      "name": "Aha!"
+    },
+    {
+      "slug": "ahrefs_mcp",
+      "name": "Ahrefs MCP"
+    },
+    {
+      "slug": "ai_ark",
+      "name": "AI Ark"
+    },
+    {
+      "slug": "ai_ml_api",
+      "name": "AI/ML API"
+    },
+    {
+      "slug": "aimtell",
+      "name": "AimTell"
+    },
+    {
+      "slug": "aircall",
+      "name": "Aircall"
+    },
+    {
+      "slug": "airops_mcp",
+      "name": "AirOps MCP"
+    },
+    {
+      "slug": "airparser",
+      "name": "Airparser"
+    },
+    {
+      "slug": "airtop",
+      "name": "Airtop"
+    },
+    {
+      "slug": "airwallex",
+      "name": "Airwallex"
+    },
+    {
+      "slug": "aivoov",
+      "name": "Aivoov"
+    },
+    {
+      "slug": "aiwyn_tax_mcp",
+      "name": "Aiwyn Tax MCP"
+    },
+    {
+      "slug": "akta",
+      "name": "Akta"
+    },
+    {
+      "slug": "algodocs",
+      "name": "Algodocs"
+    },
+    {
+      "slug": "algolia",
+      "name": "Algolia"
+    },
+    {
+      "slug": "alion",
+      "name": "Alion"
+    },
+    {
+      "slug": "all_images_ai",
+      "name": "All Images AI"
+    },
+    {
+      "slug": "allmodels",
+      "name": "AllModels"
+    },
+    {
+      "slug": "alltrails_mcp",
+      "name": "AllTrails MCP"
+    },
+    {
+      "slug": "alpaca",
+      "name": "Alpaca"
+    },
+    {
+      "slug": "alpha_vantage",
+      "name": "Alpha Vantage"
+    },
+    {
+      "slug": "alttext_ai",
+      "name": "AltText.ai"
+    },
+    {
+      "slug": "alt_text_lab",
+      "name": "AltTextLab"
+    },
+    {
+      "slug": "amara",
+      "name": "Amara"
+    },
+    {
+      "slug": "amazing_marvin",
+      "name": "Amazing Marvin"
+    },
+    {
+      "slug": "ambee",
+      "name": "Ambee"
+    },
+    {
+      "slug": "ambient_weather",
+      "name": "Ambient Weather"
+    },
+    {
+      "slug": "ambiguous_mcp",
+      "name": "Ambiguous MCP"
+    },
+    {
+      "slug": "amplitude_mcp",
+      "name": "Amplitude MCP"
+    },
+    {
+      "slug": "anakin_io",
+      "name": "Anakin"
+    },
+    {
+      "slug": "anaplan",
+      "name": "Anaplan"
+    },
+    {
+      "slug": "anchor_browser",
+      "name": "Anchor Browser"
+    },
+    {
+      "slug": "android_texter",
+      "name": "Android Texter"
+    },
+    {
+      "slug": "anonyflow",
+      "name": "Anonyflow"
+    },
+    {
+      "slug": "anrok",
+      "name": "Anrok"
+    },
+    {
+      "slug": "anthropic_administrator",
+      "name": "Anthropic Administrator"
+    },
+    {
+      "slug": "anyapi",
+      "name": "AnyAPI"
+    },
+    {
+      "slug": "any_db",
+      "name": "AnyDB"
+    },
+    {
+      "slug": "apexverify",
+      "name": "ApexVerify"
+    },
+    {
+      "slug": "api_labz",
+      "name": "API Labz"
+    },
+    {
+      "slug": "api_ninjas",
+      "name": "API Ninjas"
+    },
+    {
+      "slug": "api_sports",
+      "name": "API-Sports"
+    },
+    {
+      "slug": "api_bible",
+      "name": "API.Bible"
+    },
+    {
+      "slug": "api2pdf",
+      "name": "API2PDF"
+    },
+    {
+      "slug": "apiflash",
+      "name": "Apiflash"
+    },
+    {
+      "slug": "apiframe",
+      "name": "Apiframe"
+    },
+    {
+      "slug": "apify",
+      "name": "Apify"
+    },
+    {
+      "slug": "apify_mcp",
+      "name": "Apify MCP"
+    },
+    {
+      "slug": "apilio",
+      "name": "Apilio"
+    },
+    {
+      "slug": "apipie_ai",
+      "name": "APIpie AI"
+    },
+    {
+      "slug": "apitemplate_io",
+      "name": "Apitemplate"
+    },
+    {
+      "slug": "apiverve",
+      "name": "Apiverve"
+    },
+    {
+      "slug": "appcircle",
+      "name": "Appcircle"
+    },
+    {
+      "slug": "appfollow",
+      "name": "AppFollow"
+    },
+    {
+      "slug": "appointo",
+      "name": "Appointo"
+    },
+    {
+      "slug": "apptivegrid",
+      "name": "ApptiveGrid"
+    },
+    {
+      "slug": "appveyor",
+      "name": "Appveyor"
+    },
+    {
+      "slug": "archive_org",
+      "name": "Archive.org"
+    },
+    {
+      "slug": "arena",
+      "name": "Are.na"
+    },
+    {
+      "slug": "arize_ax",
+      "name": "Arize AX"
+    },
+    {
+      "slug": "artificial_analysis",
+      "name": "Artificial Analysis"
+    },
+    {
+      "slug": "aryn",
+      "name": "Aryn"
+    },
+    {
+      "slug": "ascora",
+      "name": "Ascora"
+    },
+    {
+      "slug": "asin_data_api",
+      "name": "ASIN Data API"
+    },
+    {
+      "slug": "assemblyai",
+      "name": "AssemblyAI"
+    },
+    {
+      "slug": "astica_ai",
+      "name": "Astica AI"
+    },
+    {
+      "slug": "async_interview",
+      "name": "Async Interview"
+    },
+    {
+      "slug": "atlassian_mcp",
+      "name": "Atlassian MCP"
+    },
+    {
+      "slug": "audd",
+      "name": "AudD"
+    },
+    {
+      "slug": "audioscrape_mcp",
+      "name": "Audioscrape MCP"
+    },
+    {
+      "slug": "authyo",
+      "name": "Authyo"
+    },
+    {
+      "slug": "autobound",
+      "name": "Autobound"
+    },
+    {
+      "slug": "autom",
+      "name": "Autom"
+    },
+    {
+      "slug": "aviationstack",
+      "name": "AviationStack"
+    },
+    {
+      "slug": "aviato",
+      "name": "Aviato"
+    },
+    {
+      "slug": "avoma",
+      "name": "Avoma"
+    },
+    {
+      "slug": "aweber",
+      "name": "AWeber"
+    },
+    {
+      "slug": "aws_marketplace_mcp",
+      "name": "AWS Marketplace MCP"
+    },
+    {
+      "slug": "ayrshare",
+      "name": "Ayrshare"
+    },
+    {
+      "slug": "azure_blob_storage",
+      "name": "Azure Blob Storage"
+    },
+    {
+      "slug": "azure_devops",
+      "name": "Azure DevOps"
+    },
+    {
+      "slug": "azure_monitor_activity_log",
+      "name": "Azure Monitor Activity Log"
+    },
+    {
+      "slug": "backendless",
+      "name": "Backendless"
+    },
+    {
+      "slug": "bannerbite",
+      "name": "Bannerbite"
+    },
+    {
+      "slug": "baremetrics",
+      "name": "Baremetrics"
+    },
+    {
+      "slug": "bart",
+      "name": "Bart"
+    },
+    {
+      "slug": "basecamp",
+      "name": "Basecamp"
+    },
+    {
+      "slug": "baselinker",
+      "name": "Baselinker"
+    },
+    {
+      "slug": "basin",
+      "name": "Basin"
+    },
+    {
+      "slug": "beach_day_api",
+      "name": "Beach Day API"
+    },
+    {
+      "slug": "beaconchain",
+      "name": "beaconcha.in"
+    },
+    {
+      "slug": "beaconstac",
+      "name": "Beaconstac"
+    },
+    {
+      "slug": "beamer",
+      "name": "Beamer"
+    },
+    {
+      "slug": "beatapi",
+      "name": "BeatAPI"
+    },
+    {
+      "slug": "beehiiv",
+      "name": "Beehiiv"
+    },
+    {
+      "slug": "bench",
+      "name": "Bench"
+    },
+    {
+      "slug": "benchmark_email",
+      "name": "Benchmark Email"
+    },
+    {
+      "slug": "benzinga",
+      "name": "Benzinga"
+    },
+    {
+      "slug": "bestbuy",
+      "name": "Bestbuy"
+    },
+    {
+      "slug": "better_proposals",
+      "name": "Better Proposals"
+    },
+    {
+      "slug": "better_stack",
+      "name": "Better Stack"
+    },
+    {
+      "slug": "better_stack_mcp",
+      "name": "Better Stack MCP"
+    },
+    {
+      "slug": "bettercontact",
+      "name": "Bettercontact"
+    },
+    {
+      "slug": "bexio",
+      "name": "bexio"
+    },
+    {
+      "slug": "bidsketch",
+      "name": "Bidsketch"
+    },
+    {
+      "slug": "bigcommerce",
+      "name": "BigCommerce"
+    },
+    {
+      "slug": "bigdata_com_mcp",
+      "name": "Bigdata.com MCP"
+    },
+    {
+      "slug": "big_data_cloud",
+      "name": "BigDataCloud"
+    },
+    {
+      "slug": "bigmailer",
+      "name": "Bigmailer"
+    },
+    {
+      "slug": "bigml",
+      "name": "Bigml"
+    },
+    {
+      "slug": "bigpicture_io",
+      "name": "BigPicture.io"
+    },
+    {
+      "slug": "bika",
+      "name": "Bika.ai"
+    },
+    {
+      "slug": "billsby",
+      "name": "Billsby"
+    },
+    {
+      "slug": "bing_webmaster_tools",
+      "name": "Bing Webmaster Tools"
+    },
+    {
+      "slug": "bitly",
+      "name": "Bitly"
+    },
+    {
+      "slug": "bitquery",
+      "name": "Bitquery"
+    },
+    {
+      "slug": "bfl",
+      "name": "Black Forest Labs"
+    },
+    {
+      "slug": "bland_ai",
+      "name": "Bland AI"
+    },
+    {
+      "slug": "blazemeter",
+      "name": "Blazemeter"
+    },
+    {
+      "slug": "blitz_api",
+      "name": "Blitz API"
+    },
+    {
+      "slug": "blocknative",
+      "name": "Blocknative"
+    },
+    {
+      "slug": "blooio",
+      "name": "Blooio"
+    },
+    {
+      "slug": "bluepillow",
+      "name": "Blue Pillow Hotels & Stays"
+    },
+    {
+      "slug": "bluebarry",
+      "name": "Bluebarry"
+    },
+    {
+      "slug": "bluefox_email",
+      "name": "BlueFox Email"
+    },
+    {
+      "slug": "boloforms",
+      "name": "Boloforms"
+    },
+    {
+      "slug": "bolt_iot",
+      "name": "Bolt Iot"
+    },
+    {
+      "slug": "bonsai",
+      "name": "Bonsai"
+    },
+    {
+      "slug": "bookingmood",
+      "name": "Bookingmood"
+    },
+    {
+      "slug": "booqable",
+      "name": "Booqable"
+    },
+    {
+      "slug": "botdog",
+      "name": "Botdog"
+    },
+    {
+      "slug": "botmape",
+      "name": "BotMape"
+    },
+    {
+      "slug": "botpenguin",
+      "name": "BotPenguin"
+    },
+    {
+      "slug": "botpress",
+      "name": "Botpress"
+    },
+    {
+      "slug": "botsonic",
+      "name": "Botsonic"
+    },
+    {
+      "slug": "botstar",
+      "name": "Botstar"
+    },
+    {
+      "slug": "botster",
+      "name": "Botster"
+    },
+    {
+      "slug": "bouncer",
+      "name": "Bouncer"
+    },
+    {
+      "slug": "bouncify",
+      "name": "Bouncify"
+    },
+    {
+      "slug": "box_mcp",
+      "name": "Box MCP"
+    },
+    {
+      "slug": "boxhero",
+      "name": "Boxhero"
+    },
+    {
+      "slug": "brain_graph",
+      "name": "BrainGraph"
+    },
+    {
+      "slug": "braintrust",
+      "name": "Braintrust"
+    },
+    {
+      "slug": "brave_search",
+      "name": "Brave Search"
+    },
+    {
+      "slug": "braze",
+      "name": "Braze"
+    },
+    {
+      "slug": "bread_butter",
+      "name": "Bread & Butter"
+    },
+    {
+      "slug": "breathehr",
+      "name": "Breathe HR"
+    },
+    {
+      "slug": "breeze",
+      "name": "Breeze"
+    },
+    {
+      "slug": "brightdata",
+      "name": "Bright Data"
+    },
+    {
+      "slug": "brilliant_directories",
+      "name": "Brilliant Directories"
+    },
+    {
+      "slug": "browser_use",
+      "name": "Browser Use"
+    },
+    {
+      "slug": "browseract",
+      "name": "BrowserAct"
+    },
+    {
+      "slug": "browserbase_mcp",
+      "name": "Browserbase MCP"
+    },
+    {
+      "slug": "browserless",
+      "name": "Browserless"
+    },
+    {
+      "slug": "bsc_designer",
+      "name": "BSC Designer"
+    },
+    {
+      "slug": "btcpay_server",
+      "name": "BTCPay Server"
+    },
+    {
+      "slug": "buffer",
+      "name": "Buffer"
+    },
+    {
+      "slug": "bug_recorder",
+      "name": "Bug Recorder"
+    },
+    {
+      "slug": "bugbug",
+      "name": "Bugbug"
+    },
+    {
+      "slug": "bugherd",
+      "name": "Bugherd"
+    },
+    {
+      "slug": "bugsnag",
+      "name": "Bugsnag"
+    },
+    {
+      "slug": "builder_io",
+      "name": "Builder.io"
+    },
+    {
+      "slug": "buildkite",
+      "name": "Buildkite"
+    },
+    {
+      "slug": "builtwith",
+      "name": "BuiltWith"
+    },
+    {
+      "slug": "bulk_email_checker",
+      "name": "Bulk Email Checker"
+    },
+    {
+      "slug": "bulkpublish",
+      "name": "BulkPublish"
+    },
+    {
+      "slug": "bunnycdn",
+      "name": "BunnyCDN"
+    },
+    {
+      "slug": "byteforms",
+      "name": "Byteforms"
+    },
+    {
+      "slug": "byte_plus_ark",
+      "name": "BytePlus Ark"
+    },
+    {
+      "slug": "cabinpanda",
+      "name": "Cabinpanda"
+    },
+    {
+      "slug": "calendarhero",
+      "name": "CalendarHero"
+    },
+    {
+      "slug": "calendly_mcp",
+      "name": "Calendly MCP"
+    },
+    {
+      "slug": "callback24",
+      "name": "Callback24"
+    },
+    {
+      "slug": "callerapi",
+      "name": "Callerapi"
+    },
+    {
+      "slug": "callingly",
+      "name": "Callingly"
+    },
+    {
+      "slug": "callonthego",
+      "name": "CallOnTheGo"
+    },
+    {
+      "slug": "callpage",
+      "name": "Callpage"
+    },
+    {
+      "slug": "camb_ai",
+      "name": "CAMB.AI"
+    },
+    {
+      "slug": "campaign_cleaner",
+      "name": "Campaign Cleaner"
+    },
+    {
+      "slug": "campayn",
+      "name": "Campayn"
+    },
+    {
+      "slug": "candid_mcp",
+      "name": "Candid MCP"
+    },
+    {
+      "slug": "canny",
+      "name": "Canny"
+    },
+    {
+      "slug": "canva_mcp",
+      "name": "Canva MCP"
+    },
+    {
+      "slug": "capsolver",
+      "name": "CapSolver"
+    },
+    {
+      "slug": "capsule_crm",
+      "name": "Capsule CRM"
+    },
+    {
+      "slug": "captions",
+      "name": "Captions"
+    },
+    {
+      "slug": "capturekit",
+      "name": "CaptureKit"
+    },
+    {
+      "slug": "carbon_voice_mcp",
+      "name": "Carbon Voice MCP"
+    },
+    {
+      "slug": "carbone",
+      "name": "Carbone"
+    },
+    {
+      "slug": "cardboard_mcp",
+      "name": "Cardboard MCP"
+    },
+    {
+      "slug": "cardclan",
+      "name": "CardClan"
+    },
+    {
+      "slug": "cardly",
+      "name": "Cardly"
+    },
+    {
+      "slug": "carsxe",
+      "name": "CarsXE"
+    },
+    {
+      "slug": "carta",
+      "name": "Carta"
+    },
+    {
+      "slug": "cartesia",
+      "name": "Cartesia"
+    },
+    {
+      "slug": "cashfree_payments_mcp",
+      "name": "Cashfree MCP"
+    },
+    {
+      "slug": "castingwords",
+      "name": "Castingwords"
+    },
+    {
+      "slug": "cats",
+      "name": "Cats"
+    },
+    {
+      "slug": "cb_insights",
+      "name": "CB Insights"
+    },
+    {
+      "slug": "cdr_platform",
+      "name": "Cdr Platform"
+    },
+    {
+      "slug": "celigo",
+      "name": "Celigo"
+    },
+    {
+      "slug": "census_bureau",
+      "name": "Census Bureau"
+    },
+    {
+      "slug": "centralstationcrm",
+      "name": "CentralStationCRM"
+    },
+    {
+      "slug": "ceramic",
+      "name": "Ceramic"
+    },
+    {
+      "slug": "certifier",
+      "name": "Certifier"
+    },
+    {
+      "slug": "cert_seal",
+      "name": "CertSeal"
+    },
+    {
+      "slug": "chameleon",
+      "name": "Chameleon"
+    },
+    {
+      "slug": "channel3",
+      "name": "Channel3"
+    },
+    {
+      "slug": "charla",
+      "name": "Charla"
+    },
+    {
+      "slug": "chartly",
+      "name": "Chartly"
+    },
+    {
+      "slug": "chartmogul",
+      "name": "ChartMogul"
+    },
+    {
+      "slug": "chaser",
+      "name": "Chaser"
+    },
+    {
+      "slug": "chatbotkit",
+      "name": "Chatbotkit"
+    },
+    {
+      "slug": "chatfai",
+      "name": "Chatfai"
+    },
+    {
+      "slug": "chatforma",
+      "name": "Chatforma"
+    },
+    {
+      "slug": "check_cherry",
+      "name": "Check Cherry"
+    },
+    {
+      "slug": "checkflow",
+      "name": "CheckFlow"
+    },
+    {
+      "slug": "checkvist",
+      "name": "Checkvist"
+    },
+    {
+      "slug": "cincopa",
+      "name": "Cincopa"
+    },
+    {
+      "slug": "circleback_mcp",
+      "name": "Circleback MCP"
+    },
+    {
+      "slug": "circleci",
+      "name": "CircleCI"
+    },
+    {
+      "slug": "claid_ai",
+      "name": "Claid.ai"
+    },
+    {
+      "slug": "clarify_mcp",
+      "name": "Clarify MCP"
+    },
+    {
+      "slug": "clarity_ai_mcp",
+      "name": "Clarity AI MCP"
+    },
+    {
+      "slug": "classmarker",
+      "name": "Classmarker"
+    },
+    {
+      "slug": "clay",
+      "name": "Clay"
+    },
+    {
+      "slug": "clay_mcp",
+      "name": "Clay MCP"
+    },
+    {
+      "slug": "clearout",
+      "name": "Clearout"
+    },
+    {
+      "slug": "clerkfield",
+      "name": "Clerkfield"
+    },
+    {
+      "slug": "cleverreach",
+      "name": "CleverReach"
+    },
+    {
+      "slug": "clickfunnels",
+      "name": "ClickFunnels 2.0"
+    },
+    {
+      "slug": "clickhouse",
+      "name": "ClickHouse"
+    },
+    {
+      "slug": "clickhouse_mcp",
+      "name": "ClickHouse MCP"
+    },
+    {
+      "slug": "clickmeeting",
+      "name": "Clickmeeting"
+    },
+    {
+      "slug": "clicksend",
+      "name": "ClickSend"
+    },
+    {
+      "slug": "clickup_mcp",
+      "name": "ClickUp MCP"
+    },
+    {
+      "slug": "clientary",
+      "name": "Clientary"
+    },
+    {
+      "slug": "clio_manage",
+      "name": "Clio Manage"
+    },
+    {
+      "slug": "clockify",
+      "name": "Clockify"
+    },
+    {
+      "slug": "cloro",
+      "name": "Cloro"
+    },
+    {
+      "slug": "close_mcp",
+      "name": "Close MCP"
+    },
+    {
+      "slug": "cloud_66",
+      "name": "Cloud 66"
+    },
+    {
+      "slug": "cloudcart",
+      "name": "Cloudcart"
+    },
+    {
+      "slug": "cloudconvert",
+      "name": "CloudConvert"
+    },
+    {
+      "slug": "cloudflare_api_key",
+      "name": "Cloudflare Api Key"
+    },
+    {
+      "slug": "cloudflare_browser_rendering",
+      "name": "Cloudflare Browser Rendering"
+    },
+    {
+      "slug": "cloudflare_mcp",
+      "name": "Cloudflare MCP"
+    },
+    {
+      "slug": "cloudinary",
+      "name": "Cloudinary"
+    },
+    {
+      "slug": "cloudlayer",
+      "name": "Cloudlayer"
+    },
+    {
+      "slug": "cloud_pdf",
+      "name": "CloudPDF"
+    },
+    {
+      "slug": "cloudpress",
+      "name": "Cloudpress"
+    },
+    {
+      "slug": "cloudsmith",
+      "name": "Cloudsmith"
+    },
+    {
+      "slug": "clover",
+      "name": "Clover"
+    },
+    {
+      "slug": "clueso_mcp",
+      "name": "Clueso MCP"
+    },
+    {
+      "slug": "coassemble",
+      "name": "Coassemble"
+    },
+    {
+      "slug": "codacy",
+      "name": "Codacy"
+    },
+    {
+      "slug": "codemagic",
+      "name": "Codemagic"
+    },
+    {
+      "slug": "codereadr",
+      "name": "Codereadr"
+    },
+    {
+      "slug": "cody",
+      "name": "Cody"
+    },
+    {
+      "slug": "cohere",
+      "name": "Cohere"
+    },
+    {
+      "slug": "coinbase_agents_mcp",
+      "name": "Coinbase Agents MCP"
+    },
+    {
+      "slug": "coinbase_wallet_mcp",
+      "name": "Coinbase Wallet MCP"
+    },
+    {
+      "slug": "coingecko",
+      "name": "CoinGecko"
+    },
+    {
+      "slug": "coinmarketcap",
+      "name": "CoinMarketCap"
+    },
+    {
+      "slug": "coinranking",
+      "name": "Coinranking"
+    },
+    {
+      "slug": "college_football_data",
+      "name": "College Football Data"
+    },
+    {
+      "slug": "cometapi",
+      "name": "CometAPI"
+    },
+    {
+      "slug": "commcare",
+      "name": "CommCare"
+    },
+    {
+      "slug": "commerce_layer",
+      "name": "Commerce Layer"
+    },
+    {
+      "slug": "common_room_mcp",
+      "name": "Common Room MCP"
+    },
+    {
+      "slug": "company_url_finder",
+      "name": "Company URL Finder"
+    },
+    {
+      "slug": "companycam",
+      "name": "CompanyCam"
+    },
+    {
+      "slug": "companyenrich",
+      "name": "CompanyEnrich"
+    },
+    {
+      "slug": "compdf",
+      "name": "ComPDF"
+    },
+    {
+      "slug": "conductor",
+      "name": "Conductor"
+    },
+    {
+      "slug": "configcat",
+      "name": "ConfigCat"
+    },
+    {
+      "slug": "connecteam",
+      "name": "Connecteam"
+    },
+    {
+      "slug": "consensus",
+      "name": "Consensus"
+    },
+    {
+      "slug": "consensus_mcp",
+      "name": "Consensus MCP"
+    },
+    {
+      "slug": "constant_contact",
+      "name": "Constant Contact"
+    },
+    {
+      "slug": "contactout",
+      "name": "ContactOut"
+    },
+    {
+      "slug": "contacts_plus",
+      "name": "Contacts+"
+    },
+    {
+      "slug": "contentdrips",
+      "name": "Contentdrips"
+    },
+    {
+      "slug": "contentful_graphql",
+      "name": "Contentful Graphql"
+    },
+    {
+      "slug": "contentsquare_mcp",
+      "name": "Contentsquare MCP"
+    },
+    {
+      "slug": "content_studio",
+      "name": "ContentStudio"
+    },
+    {
+      "slug": "context_dev",
+      "name": "Context.dev"
+    },
+    {
+      "slug": "context7_mcp",
+      "name": "Context7 MCP"
+    },
+    {
+      "slug": "contractbook",
+      "name": "Contractbook"
+    },
+    {
+      "slug": "control_d",
+      "name": "Control D"
+    },
+    {
+      "slug": "conversion_tools",
+      "name": "Conversion Tools"
+    },
+    {
+      "slug": "convertapi",
+      "name": "Convertapi"
+    },
+    {
+      "slug": "convex",
+      "name": "Convex"
+    },
+    {
+      "slug": "conveyor",
+      "name": "Conveyor"
+    },
+    {
+      "slug": "convolo_ai",
+      "name": "Convolo AI"
+    },
+    {
+      "slug": "copper",
+      "name": "Copper"
+    },
+    {
+      "slug": "copyleaks",
+      "name": "Copyleaks"
+    },
+    {
+      "slug": "coresignal",
+      "name": "Coresignal"
+    },
+    {
+      "slug": "corrently",
+      "name": "Corrently"
+    },
+    {
+      "slug": "countdown_api",
+      "name": "Countdown API"
+    },
+    {
+      "slug": "coupa",
+      "name": "Coupa"
+    },
+    {
+      "slug": "cradl_ai",
+      "name": "Cradl AI"
+    },
+    {
+      "slug": "craft_mcp",
+      "name": "Craft MCP"
+    },
+    {
+      "slug": "craftmypdf",
+      "name": "Craftmypdf"
+    },
+    {
+      "slug": "crawl4ai",
+      "name": "Crawl4AI"
+    },
+    {
+      "slug": "crawlbase",
+      "name": "Crawlbase"
+    },
+    {
+      "slug": "creatomate",
+      "name": "Creatomate"
+    },
+    {
+      "slug": "creem",
+      "name": "Creem"
+    },
+    {
+      "slug": "crew_ai",
+      "name": "CrewAI"
+    },
+    {
+      "slug": "crisp",
+      "name": "Crisp"
+    },
+    {
+      "slug": "cronfree_time_scheduler",
+      "name": "Cronfree Time Scheduler"
+    },
+    {
+      "slug": "cronly",
+      "name": "Cronly"
+    },
+    {
+      "slug": "crowdin",
+      "name": "Crowdin"
+    },
+    {
+      "slug": "crowterminal",
+      "name": "CrowTerminal"
+    },
+    {
+      "slug": "crunchbase",
+      "name": "Crunchbase"
+    },
+    {
+      "slug": "csvbox",
+      "name": "CSVBox"
+    },
+    {
+      "slug": "cults",
+      "name": "Cults"
+    },
+    {
+      "slug": "curated",
+      "name": "Curated"
+    },
+    {
+      "slug": "currencyapi",
+      "name": "Currencyapi"
+    },
+    {
+      "slug": "currencyscoop",
+      "name": "CurrencyScoop"
+    },
+    {
+      "slug": "currents_api",
+      "name": "Currents API"
+    },
+    {
+      "slug": "cursor",
+      "name": "Cursor"
+    },
+    {
+      "slug": "customerio",
+      "name": "Customer.io"
+    },
+    {
+      "slug": "customerio_mcp",
+      "name": "Customer.io MCP"
+    },
+    {
+      "slug": "customgpt",
+      "name": "Customgpt"
+    },
+    {
+      "slug": "customjs",
+      "name": "Customjs"
+    },
+    {
+      "slug": "cutt_ly",
+      "name": "Cutt.ly"
+    },
+    {
+      "slug": "cve_now_mcp",
+      "name": "cve.now MCP"
+    },
+    {
+      "slug": "dadata_ru",
+      "name": "DaData.ru"
+    },
+    {
+      "slug": "daffy",
+      "name": "Daffy"
+    },
+    {
+      "slug": "daily",
+      "name": "Daily"
+    },
+    {
+      "slug": "dart",
+      "name": "Dart"
+    },
+    {
+      "slug": "data247",
+      "name": "Data247"
+    },
+    {
+      "slug": "databox",
+      "name": "Databox"
+    },
+    {
+      "slug": "databricks",
+      "name": "Databricks"
+    },
+    {
+      "slug": "datadog_mcp",
+      "name": "Datadog MCP"
+    },
+    {
+      "slug": "dataforb2b",
+      "name": "DataForB2B"
+    },
+    {
+      "slug": "dataforseo",
+      "name": "DataForSEO"
+    },
+    {
+      "slug": "datascope",
+      "name": "Datascope"
+    },
+    {
+      "slug": "daytona",
+      "name": "Daytona"
+    },
+    {
+      "slug": "dbt_cloud",
+      "name": "dbt Cloud"
+    },
+    {
+      "slug": "deadline_funnel",
+      "name": "Deadline Funnel"
+    },
+    {
+      "slug": "debitura",
+      "name": "Debitura"
+    },
+    {
+      "slug": "debounce",
+      "name": "DeBounce"
+    },
+    {
+      "slug": "deepgram",
+      "name": "Deepgram"
+    },
+    {
+      "slug": "deepimage",
+      "name": "DeepImage"
+    },
+    {
+      "slug": "deepl_mcp",
+      "name": "DeepL MCP"
+    },
+    {
+      "slug": "deepseek",
+      "name": "DeepSeek"
+    },
+    {
+      "slug": "deepwiki_mcp",
+      "name": "DeepWiki MCP"
+    },
+    {
+      "slug": "delighted",
+      "name": "Delighted"
+    },
+    {
+      "slug": "deployhq",
+      "name": "DeployHQ"
+    },
+    {
+      "slug": "deputy",
+      "name": "Deputy"
+    },
+    {
+      "slug": "descope",
+      "name": "Descope"
+    },
+    {
+      "slug": "descript_mcp",
+      "name": "Descript MCP"
+    },
+    {
+      "slug": "desktime",
+      "name": "DeskTime"
+    },
+    {
+      "slug": "details_mcp",
+      "name": "Details MCP"
+    },
+    {
+      "slug": "detrack",
+      "name": "Detrack"
+    },
+    {
+      "slug": "devto",
+      "name": "DEV Community"
+    },
+    {
+      "slug": "dev_cycle",
+      "name": "DevCycle"
+    },
+    {
+      "slug": "devin_mcp",
+      "name": "Devin MCP"
+    },
+    {
+      "slug": "devolens",
+      "name": "Devolens / Cryptolens"
+    },
+    {
+      "slug": "dialmycalls",
+      "name": "Dialmycalls"
+    },
+    {
+      "slug": "dice_mcp",
+      "name": "Dice MCP"
+    },
+    {
+      "slug": "dictionary_api",
+      "name": "Dictionary Api"
+    },
+    {
+      "slug": "didit",
+      "name": "Didit"
+    },
+    {
+      "slug": "diffbot",
+      "name": "Diffbot"
+    },
+    {
+      "slug": "dify",
+      "name": "Dify"
+    },
+    {
+      "slug": "digital_humani",
+      "name": "Digital Humani"
+    },
+    {
+      "slug": "digital_ocean",
+      "name": "DigitalOcean"
+    },
+    {
+      "slug": "directiq",
+      "name": "DirectIQ"
+    },
+    {
+      "slug": "disqus",
+      "name": "Disqus"
+    },
+    {
+      "slug": "dnsfilter",
+      "name": "Dnsfilter"
+    },
+    {
+      "slug": "dock_certs",
+      "name": "Dock Certs"
+    },
+    {
+      "slug": "docker_hub",
+      "name": "Docker Hub"
+    },
+    {
+      "slug": "docnify",
+      "name": "Docnify"
+    },
+    {
+      "slug": "docparser",
+      "name": "Docparser"
+    },
+    {
+      "slug": "docraptor",
+      "name": "DocRaptor"
+    },
+    {
+      "slug": "docsautomator",
+      "name": "Docsautomator"
+    },
+    {
+      "slug": "docsbot_ai",
+      "name": "DocsBot AI"
+    },
+    {
+      "slug": "docsumo",
+      "name": "Docsumo"
+    },
+    {
+      "slug": "docugenerate",
+      "name": "DocuGenerate"
+    },
+    {
+      "slug": "documenso",
+      "name": "Documenso"
+    },
+    {
+      "slug": "documentero",
+      "name": "Documentero"
+    },
+    {
+      "slug": "documint",
+      "name": "Documint"
+    },
+    {
+      "slug": "docupilot",
+      "name": "Docupilot"
+    },
+    {
+      "slug": "docupipe",
+      "name": "DocuPipe"
+    },
+    {
+      "slug": "docupost",
+      "name": "DocuPost"
+    },
+    {
+      "slug": "docupotion",
+      "name": "DocuPotion"
+    },
+    {
+      "slug": "docuseal",
+      "name": "DocuSeal"
+    },
+    {
+      "slug": "domotz_mcp",
+      "name": "Domotz MCP"
+    },
+    {
+      "slug": "donately",
+      "name": "Donately"
+    },
+    {
+      "slug": "doppler",
+      "name": "Doppler"
+    },
+    {
+      "slug": "doppler_marketing_automation",
+      "name": "Doppler Marketing Automation"
+    },
+    {
+      "slug": "doppler_secretops",
+      "name": "Doppler SecretOps"
+    },
+    {
+      "slug": "dotsimple",
+      "name": "Dotsimple"
+    },
+    {
+      "slug": "dovetail",
+      "name": "Dovetail"
+    },
+    {
+      "slug": "dpd2",
+      "name": "Dpd2"
+    },
+    {
+      "slug": "draftable",
+      "name": "Draftable"
+    },
+    {
+      "slug": "dreamstudio",
+      "name": "Dreamstudio"
+    },
+    {
+      "slug": "dribbble",
+      "name": "Dribbble"
+    },
+    {
+      "slug": "dripcel",
+      "name": "Dripcel"
+    },
+    {
+      "slug": "dromo",
+      "name": "Dromo"
+    },
+    {
+      "slug": "drop_to_cdn",
+      "name": "Drop to CDN"
+    },
+    {
+      "slug": "dropcontact",
+      "name": "Dropcontact"
+    },
+    {
+      "slug": "dropleads",
+      "name": "Dropleads"
+    },
+    {
+      "slug": "dub",
+      "name": "Dub"
+    },
+    {
+      "slug": "dungeon_fighter_online",
+      "name": "Dungeon Fighter Online"
+    },
+    {
+      "slug": "dynamic_mockups",
+      "name": "Dynamic Mockups"
+    },
+    {
+      "slug": "dynapictures",
+      "name": "Dynapictures"
+    },
+    {
+      "slug": "dynatrace",
+      "name": "Dynatrace"
+    },
+    {
+      "slug": "dynosend",
+      "name": "Dynosend"
+    },
+    {
+      "slug": "e2b",
+      "name": "E2B"
+    },
+    {
+      "slug": "eagle_doc",
+      "name": "Eagle doc"
+    },
+    {
+      "slug": "easy_email_verification",
+      "name": "Easy Email Verification"
+    },
+    {
+      "slug": "ebay",
+      "name": "eBay"
+    },
+    {
+      "slug": "ecologi",
+      "name": "Ecologi"
+    },
+    {
+      "slug": "eden_ai",
+      "name": "Eden AI"
+    },
+    {
+      "slug": "edworking",
+      "name": "Edworking"
+    },
+    {
+      "slug": "egnyte",
+      "name": "Egnyte"
+    },
+    {
+      "slug": "elai",
+      "name": "Elai"
+    },
+    {
+      "slug": "elastic_email",
+      "name": "Elastic Email"
+    },
+    {
+      "slug": "elasticsearch",
+      "name": "Elasticsearch"
+    },
+    {
+      "slug": "electricity_maps",
+      "name": "Electricity Maps"
+    },
+    {
+      "slug": "eledo",
+      "name": "Eledo PDF"
+    },
+    {
+      "slug": "elevenreader",
+      "name": "Elevenreader"
+    },
+    {
+      "slug": "elorus",
+      "name": "Elorus"
+    },
+    {
+      "slug": "emailable",
+      "name": "Emailable"
+    },
+    {
+      "slug": "emaillistverify",
+      "name": "Emaillistverify"
+    },
+    {
+      "slug": "emailoctopus",
+      "name": "EmailOctopus"
+    },
+    {
+      "slug": "emailvalidation",
+      "name": "Emailvalidation"
+    },
+    {
+      "slug": "emelia",
+      "name": "Emelia"
+    },
+    {
+      "slug": "encodian",
+      "name": "Encodian"
+    },
+    {
+      "slug": "endorsal",
+      "name": "Endorsal"
+    },
+    {
+      "slug": "enforcedflow",
+      "name": "EnforcedFlow"
+    },
+    {
+      "slug": "engage",
+      "name": "Engage"
+    },
+    {
+      "slug": "engage_platform",
+      "name": "Engage Platform"
+    },
+    {
+      "slug": "enginemailer",
+      "name": "Enginemailer"
+    },
+    {
+      "slug": "enigma",
+      "name": "Enigma"
+    },
+    {
+      "slug": "enrich",
+      "name": "Enrich"
+    },
+    {
+      "slug": "enrich_layer",
+      "name": "Enrich Layer"
+    },
+    {
+      "slug": "eodhd_apis",
+      "name": "EODHD APIs"
+    },
+    {
+      "slug": "era_context_mcp",
+      "name": "Era Context MCP"
+    },
+    {
+      "slug": "eranol",
+      "name": "Eranol"
+    },
+    {
+      "slug": "eraser_mcp",
+      "name": "Eraser MCP"
+    },
+    {
+      "slug": "erpnext",
+      "name": "Erpnext"
+    },
+    {
+      "slug": "esignatures",
+      "name": "eSignatures"
+    },
+    {
+      "slug": "esignatures_io",
+      "name": "eSignatures.io"
+    },
+    {
+      "slug": "espocrm",
+      "name": "Espocrm"
+    },
+    {
+      "slug": "esputnik",
+      "name": "Esputnik"
+    },
+    {
+      "slug": "etermin",
+      "name": "Etermin"
+    },
+    {
+      "slug": "etherscan",
+      "name": "Etherscan"
+    },
+    {
+      "slug": "eulerpool",
+      "name": "Eulerpool"
+    },
+    {
+      "slug": "evenium",
+      "name": "Evenium"
+    },
+    {
+      "slug": "eventee",
+      "name": "Eventee"
+    },
+    {
+      "slug": "eventzilla",
+      "name": "Eventzilla"
+    },
+    {
+      "slug": "everhour",
+      "name": "Everhour"
+    },
+    {
+      "slug": "eversign",
+      "name": "Eversign"
+    },
+    {
+      "slug": "excalidraw_mcp",
+      "name": "Excalidraw MCP"
+    },
+    {
+      "slug": "excel",
+      "name": "Excel"
+    },
+    {
+      "slug": "exceptionless",
+      "name": "Exceptionless"
+    },
+    {
+      "slug": "explorium",
+      "name": "Explorium"
+    },
+    {
+      "slug": "explorium_mcp",
+      "name": "Explorium MCP"
+    },
+    {
+      "slug": "expofp",
+      "name": "Expofp"
+    },
+    {
+      "slug": "extracta_ai",
+      "name": "Extracta.ai"
+    },
+    {
+      "slug": "extrovert",
+      "name": "Extrovert"
+    },
+    {
+      "slug": "faceup",
+      "name": "Faceup"
+    },
+    {
+      "slug": "fairing",
+      "name": "Fairing"
+    },
+    {
+      "slug": "fairvalid",
+      "name": "FairValid"
+    },
+    {
+      "slug": "fal_ai",
+      "name": "Fal.ai"
+    },
+    {
+      "slug": "faraday",
+      "name": "Faraday"
+    },
+    {
+      "slug": "fathom",
+      "name": "Fathom"
+    },
+    {
+      "slug": "feathery",
+      "name": "Feathery"
+    },
+    {
+      "slug": "feedbear",
+      "name": "FeedBear"
+    },
+    {
+      "slug": "fellow_ai_mcp",
+      "name": "Fellow.ai MCP"
+    },
+    {
+      "slug": "felt",
+      "name": "Felt"
+    },
+    {
+      "slug": "fiber",
+      "name": "Fiber"
+    },
+    {
+      "slug": "fibery",
+      "name": "Fibery"
+    },
+    {
+      "slug": "fidel_api",
+      "name": "Fidel API"
+    },
+    {
+      "slug": "files_com",
+      "name": "Files.com"
+    },
+    {
+      "slug": "filetopdf",
+      "name": "FileToPDF.dev"
+    },
+    {
+      "slug": "fillout_forms",
+      "name": "Fillout Forms"
+    },
+    {
+      "slug": "financial_datasets_ai",
+      "name": "Financial Datasets"
+    },
+    {
+      "slug": "financial_datasets_ai_mcp",
+      "name": "Financial Datasets AI MCP"
+    },
+    {
+      "slug": "findymail",
+      "name": "Findymail"
+    },
+    {
+      "slug": "finerworks",
+      "name": "Finerworks"
+    },
+    {
+      "slug": "fingertip",
+      "name": "Fingertip"
+    },
+    {
+      "slug": "finlight",
+      "name": "Finlight"
+    },
+    {
+      "slug": "finmei",
+      "name": "Finmei"
+    },
+    {
+      "slug": "finmo",
+      "name": "Finmo"
+    },
+    {
+      "slug": "finnhub",
+      "name": "Finnhub"
+    },
+    {
+      "slug": "finviz",
+      "name": "Finviz"
+    },
+    {
+      "slug": "firebase",
+      "name": "Firebase"
+    },
+    {
+      "slug": "fireberry",
+      "name": "Fireberry"
+    },
+    {
+      "slug": "fireworks_ai",
+      "name": "Fireworks AI"
+    },
+    {
+      "slug": "firmable",
+      "name": "Firmable"
+    },
+    {
+      "slug": "firmao",
+      "name": "Firmao"
+    },
+    {
+      "slug": "fish_audio",
+      "name": "Fish Audio"
+    },
+    {
+      "slug": "fixer",
+      "name": "Fixer"
+    },
+    {
+      "slug": "fixer_io",
+      "name": "Fixer.io"
+    },
+    {
+      "slug": "flatfile",
+      "name": "Flatfile"
+    },
+    {
+      "slug": "fleetio",
+      "name": "Fleetio"
+    },
+    {
+      "slug": "flexisign",
+      "name": "Flexisign"
+    },
+    {
+      "slug": "float",
+      "name": "Float"
+    },
+    {
+      "slug": "flotiq",
+      "name": "Flotiq"
+    },
+    {
+      "slug": "flowiseai",
+      "name": "Flowiseai"
+    },
+    {
+      "slug": "fluxguard",
+      "name": "Fluxguard"
+    },
+    {
+      "slug": "fly",
+      "name": "Fly"
+    },
+    {
+      "slug": "folk",
+      "name": "Folk"
+    },
+    {
+      "slug": "follow_up_boss",
+      "name": "Follow Up Boss"
+    },
+    {
+      "slug": "forcemanager",
+      "name": "Forcemanager"
+    },
+    {
+      "slug": "formbricks",
+      "name": "Formbricks"
+    },
+    {
+      "slug": "formcrafts",
+      "name": "Formcrafts"
+    },
+    {
+      "slug": "formdesk",
+      "name": "Formdesk"
+    },
+    {
+      "slug": "formilla",
+      "name": "Formilla"
+    },
+    {
+      "slug": "frame_io_v4",
+      "name": "Frame.io V4"
+    },
+    {
+      "slug": "framer",
+      "name": "Framer"
+    },
+    {
+      "slug": "fraudlabs_pro",
+      "name": "FraudLabs Pro"
+    },
+    {
+      "slug": "freeagent",
+      "name": "Freeagent"
+    },
+    {
+      "slug": "freee",
+      "name": "freee"
+    },
+    {
+      "slug": "freshsales",
+      "name": "Freshsales"
+    },
+    {
+      "slug": "freshservice",
+      "name": "Freshservice"
+    },
+    {
+      "slug": "frigade",
+      "name": "Frigade"
+    },
+    {
+      "slug": "fullenrich",
+      "name": "FullEnrich"
+    },
+    {
+      "slug": "fullstory",
+      "name": "FullStory"
+    },
+    {
+      "slug": "fuseai",
+      "name": "FuseAI"
+    },
+    {
+      "slug": "fuseai_mcp",
+      "name": "FuseAI MCP"
+    },
+    {
+      "slug": "fusedesk",
+      "name": "FuseDesk"
+    },
+    {
+      "slug": "futureagi",
+      "name": "FutureAGI"
+    },
+    {
+      "slug": "fynk",
+      "name": "fynk"
+    },
+    {
+      "slug": "gagelist",
+      "name": "Gagelist"
+    },
+    {
+      "slug": "gamma",
+      "name": "Gamma"
+    },
+    {
+      "slug": "gan_ai",
+      "name": "Gan.AI"
+    },
+    {
+      "slug": "gatherup",
+      "name": "Gatherup"
+    },
+    {
+      "slug": "geekflare",
+      "name": "Geekflare"
+    },
+    {
+      "slug": "gelato",
+      "name": "Gelato"
+    },
+    {
+      "slug": "gemini",
+      "name": "Gemini"
+    },
+    {
+      "slug": "gender_api",
+      "name": "Gender API"
+    },
+    {
+      "slug": "genderapi_io",
+      "name": "GenderAPI.io"
+    },
+    {
+      "slug": "genderize",
+      "name": "Genderize"
+    },
+    {
+      "slug": "genter",
+      "name": "Genter"
+    },
+    {
+      "slug": "geoapify",
+      "name": "Geoapify"
+    },
+    {
+      "slug": "geocodio",
+      "name": "Geocodio"
+    },
+    {
+      "slug": "geokeo",
+      "name": "Geokeo"
+    },
+    {
+      "slug": "getanyapi",
+      "name": "GetAnyAPI"
+    },
+    {
+      "slug": "getdot",
+      "name": "GetDot"
+    },
+    {
+      "slug": "getform",
+      "name": "Getform"
+    },
+    {
+      "slug": "getprospect",
+      "name": "Getprospect"
+    },
+    {
+      "slug": "getresponse",
+      "name": "GetResponse"
+    },
+    {
+      "slug": "get_transcribe",
+      "name": "GetTranscribe"
+    },
+    {
+      "slug": "gift_up",
+      "name": "Gift Up!"
+    },
+    {
+      "slug": "gigasheet",
+      "name": "Gigasheet"
+    },
+    {
+      "slug": "giphy",
+      "name": "Giphy"
+    },
+    {
+      "slug": "gist",
+      "name": "Gist"
+    },
+    {
+      "slug": "gitea",
+      "name": "Gitea"
+    },
+    {
+      "slug": "github_mcp",
+      "name": "GitHub MCP"
+    },
+    {
+      "slug": "gitlab",
+      "name": "GitLab"
+    },
+    {
+      "slug": "givebutter",
+      "name": "Givebutter"
+    },
+    {
+      "slug": "gladia",
+      "name": "Gladia"
+    },
+    {
+      "slug": "glasp",
+      "name": "Glasp"
+    },
+    {
+      "slug": "gleap",
+      "name": "Gleap"
+    },
+    {
+      "slug": "gleif",
+      "name": "GLEIF API"
+    },
+    {
+      "slug": "glen_mcp",
+      "name": "Glen MCP"
+    },
+    {
+      "slug": "glide_mcp",
+      "name": "Glide MCP"
+    },
+    {
+      "slug": "globalping",
+      "name": "Globalping"
+    },
+    {
+      "slug": "gocardless_mcp",
+      "name": "GoCardless MCP"
+    },
+    {
+      "slug": "godaddy_mcp",
+      "name": "GoDaddy MCP"
+    },
+    {
+      "slug": "godial",
+      "name": "Godial"
+    },
+    {
+      "slug": "gofile",
+      "name": "GoFile"
+    },
+    {
+      "slug": "goodapi_plant_trees",
+      "name": "GoodAPI: Plant Trees"
+    },
+    {
+      "slug": "goodbits",
+      "name": "Goodbits"
+    },
+    {
+      "slug": "goody",
+      "name": "Goody"
+    },
+    {
+      "slug": "google_address_validation",
+      "name": "Google Address Validation"
+    },
+    {
+      "slug": "google_admin",
+      "name": "Google Admin"
+    },
+    {
+      "slug": "google_adsense",
+      "name": "Google AdSense"
+    },
+    {
+      "slug": "google_business_profile",
+      "name": "Google Business Profile"
+    },
+    {
+      "slug": "google_chat",
+      "name": "Google Chat"
+    },
+    {
+      "slug": "google_classroom",
+      "name": "Google Classroom"
+    },
+    {
+      "slug": "google_cloud_vision",
+      "name": "Google Cloud Vision"
+    },
+    {
+      "slug": "google_data_studio",
+      "name": "Google Data Studio"
+    },
+    {
+      "slug": "google_merchant",
+      "name": "Google Merchant Center"
+    },
+    {
+      "slug": "google_search_console",
+      "name": "Google Search Console"
+    },
+    {
+      "slug": "googleslides",
+      "name": "Google Slides"
+    },
+    {
+      "slug": "google_stitch",
+      "name": "Google Stitch"
+    },
+    {
+      "slug": "googlecontacts",
+      "name": "Googlecontacts"
+    },
+    {
+      "slug": "googleforms",
+      "name": "Googleforms"
+    },
+    {
+      "slug": "gorilladesk",
+      "name": "GorillaDesk"
+    },
+    {
+      "slug": "gosquared",
+      "name": "Gosquared"
+    },
+    {
+      "slug": "go_table",
+      "name": "GoTable"
+    },
+    {
+      "slug": "go_to_training",
+      "name": "GoTo Training"
+    },
+    {
+      "slug": "gptbots",
+      "name": "GPTBots"
+    },
+    {
+      "slug": "gradium",
+      "name": "Gradium"
+    },
+    {
+      "slug": "grafana",
+      "name": "Grafana"
+    },
+    {
+      "slug": "grafana_cloud_mcp",
+      "name": "Grafana Cloud MCP"
+    },
+    {
+      "slug": "grafbase",
+      "name": "Grafbase"
+    },
+    {
+      "slug": "grain",
+      "name": "Grain"
+    },
+    {
+      "slug": "granola_mcp",
+      "name": "Granola MCP"
+    },
+    {
+      "slug": "granted_mcp",
+      "name": "Granted MCP"
+    },
+    {
+      "slug": "graphhopper",
+      "name": "GraphHopper"
+    },
+    {
+      "slug": "greenhouse",
+      "name": "Greenhouse"
+    },
+    {
+      "slug": "greptile_mcp",
+      "name": "Greptile MCP"
+    },
+    {
+      "slug": "greynoise",
+      "name": "GreyNoise"
+    },
+    {
+      "slug": "griptape",
+      "name": "Griptape"
+    },
+    {
+      "slug": "grist",
+      "name": "Grist"
+    },
+    {
+      "slug": "grok",
+      "name": "Grok"
+    },
+    {
+      "slug": "groqcloud",
+      "name": "GroqCloud"
+    },
+    {
+      "slug": "gtmetrix",
+      "name": "GTmetrix"
+    },
+    {
+      "slug": "gusto",
+      "name": "Gusto"
+    },
+    {
+      "slug": "habitica",
+      "name": "Habitica"
+    },
+    {
+      "slug": "hackmd",
+      "name": "HackMD"
+    },
+    {
+      "slug": "halopsa",
+      "name": "HaloPSA"
+    },
+    {
+      "slug": "handwrite",
+      "name": "Handwrite.io"
+    },
+    {
+      "slug": "handwrytten",
+      "name": "Handwrytten"
+    },
+    {
+      "slug": "happy_scribe",
+      "name": "Happy Scribe"
+    },
+    {
+      "slug": "harmonic",
+      "name": "Harmonic"
+    },
+    {
+      "slug": "harness",
+      "name": "Harness"
+    },
+    {
+      "slug": "harvestapi",
+      "name": "HarvestAPI"
+    },
+    {
+      "slug": "harvey",
+      "name": "Harvey"
+    },
+    {
+      "slug": "hashnode",
+      "name": "Hashnode"
+    },
+    {
+      "slug": "headout",
+      "name": "Headout"
+    },
+    {
+      "slug": "heartbeat",
+      "name": "Heartbeat"
+    },
+    {
+      "slug": "heights_platform",
+      "name": "Heights Platform"
+    },
+    {
+      "slug": "helixdb",
+      "name": "HelixDB"
+    },
+    {
+      "slug": "helloleads",
+      "name": "Helloleads"
+    },
+    {
+      "slug": "hello_tracks",
+      "name": "HelloTracks"
+    },
+    {
+      "slug": "help_scout",
+      "name": "Help Scout"
+    },
+    {
+      "slug": "helpdesk",
+      "name": "Helpdesk"
+    },
+    {
+      "slug": "help_spot",
+      "name": "HelpSpot"
+    },
+    {
+      "slug": "helpwise",
+      "name": "Helpwise"
+    },
+    {
+      "slug": "here",
+      "name": "HERE"
+    },
+    {
+      "slug": "hex",
+      "name": "Hex"
+    },
+    {
+      "slug": "heyreach",
+      "name": "Heyreach"
+    },
+    {
+      "slug": "heyy",
+      "name": "Heyy"
+    },
+    {
+      "slug": "heyzine",
+      "name": "Heyzine"
+    },
+    {
+      "slug": "hibob",
+      "name": "HiBob"
+    },
+    {
+      "slug": "higgsfield",
+      "name": "Higgsfield"
+    },
+    {
+      "slug": "higgsfield_mcp",
+      "name": "Higgsfield MCP"
+    },
+    {
+      "slug": "highergov",
+      "name": "Highergov"
+    },
+    {
+      "slug": "highlevel_agency",
+      "name": "HighLevel Agency"
+    },
+    {
+      "slug": "highlevel_location",
+      "name": "HighLevel Location"
+    },
+    {
+      "slug": "highlevel_mcp",
+      "name": "HighLevel MCP"
+    },
+    {
+      "slug": "hireflix",
+      "name": "Hireflix"
+    },
+    {
+      "slug": "hitpay",
+      "name": "HitPay"
+    },
+    {
+      "slug": "hive",
+      "name": "Hive"
+    },
+    {
+      "slug": "hjarni",
+      "name": "Hjarni"
+    },
+    {
+      "slug": "hlr_lookup",
+      "name": "HLR Lookup"
+    },
+    {
+      "slug": "holded",
+      "name": "Holded"
+    },
+    {
+      "slug": "honcho",
+      "name": "Honcho"
+    },
+    {
+      "slug": "honeybadger",
+      "name": "Honeybadger"
+    },
+    {
+      "slug": "honeycomb_mcp",
+      "name": "Honeycomb MCP"
+    },
+    {
+      "slug": "honeyhive",
+      "name": "Honeyhive"
+    },
+    {
+      "slug": "hookdeck",
+      "name": "Hookdeck"
+    },
+    {
+      "slug": "hostinger",
+      "name": "Hostinger"
+    },
+    {
+      "slug": "hotspotsystem",
+      "name": "Hotspotsystem"
+    },
+    {
+      "slug": "housecall_pro",
+      "name": "Housecall Pro"
+    },
+    {
+      "slug": "hr_partner",
+      "name": "HR Partner"
+    },
+    {
+      "slug": "html_to_image",
+      "name": "HTML to Image"
+    },
+    {
+      "slug": "htmlcss_to_image",
+      "name": "HTML/CSS to Image"
+    },
+    {
+      "slug": "hub_planner",
+      "name": "Hub Planner"
+    },
+    {
+      "slug": "hugging_face",
+      "name": "Hugging Face"
+    },
+    {
+      "slug": "hitl",
+      "name": "Human Approval - HITL Platform"
+    },
+    {
+      "slug": "humanitix",
+      "name": "Humanitix"
+    },
+    {
+      "slug": "hunter",
+      "name": "Hunter"
+    },
+    {
+      "slug": "hydradb",
+      "name": "HydraDB"
+    },
+    {
+      "slug": "hypeauditor",
+      "name": "Hypeauditor"
+    },
+    {
+      "slug": "hyperbrowser",
+      "name": "Hyperbrowser"
+    },
+    {
+      "slug": "hyperise",
+      "name": "Hyperise"
+    },
+    {
+      "slug": "hypotize",
+      "name": "Hypotize"
+    },
+    {
+      "slug": "hystruct",
+      "name": "Hystruct"
+    },
+    {
+      "slug": "ibm_x_force_exchange",
+      "name": "IBM X-Force Exchange"
+    },
+    {
+      "slug": "icons8",
+      "name": "Icons8"
+    },
+    {
+      "slug": "icypeas",
+      "name": "Icypeas"
+    },
+    {
+      "slug": "idealpostcodes",
+      "name": "Ideal Postcodes"
+    },
+    {
+      "slug": "identitycheck",
+      "name": "Identitycheck"
+    },
+    {
+      "slug": "ignav_flights",
+      "name": "Ignav Flights"
+    },
+    {
+      "slug": "ignav_flights_mcp",
+      "name": "Ignav Flights MCP"
+    },
+    {
+      "slug": "ignisign",
+      "name": "Ignisign"
+    },
+    {
+      "slug": "ilert",
+      "name": "iLert"
+    },
+    {
+      "slug": "i_love_pdf",
+      "name": "iLovePDF"
+    },
+    {
+      "slug": "imagekit_io",
+      "name": "ImageKit"
+    },
+    {
+      "slug": "imagerouter",
+      "name": "ImageRouter"
+    },
+    {
+      "slug": "imagior",
+      "name": "Imagior"
+    },
+    {
+      "slug": "imejis_io",
+      "name": "Imejis.io"
+    },
+    {
+      "slug": "imgbb",
+      "name": "ImgBB"
+    },
+    {
+      "slug": "imgix",
+      "name": "Imgix"
+    },
+    {
+      "slug": "imply_polaris",
+      "name": "Imply Polaris"
+    },
+    {
+      "slug": "inblog",
+      "name": "Inblog"
+    },
+    {
+      "slug": "incident_io",
+      "name": "incident.io"
+    },
+    {
+      "slug": "infisical",
+      "name": "Infisical"
+    },
+    {
+      "slug": "influxdb_cloud",
+      "name": "InfluxDB Cloud"
+    },
+    {
+      "slug": "inistate",
+      "name": "Inistate"
+    },
+    {
+      "slug": "insighto_ai",
+      "name": "Insighto.ai"
+    },
+    {
+      "slug": "inspo_mcp",
+      "name": "Inspo MCP"
+    },
+    {
+      "slug": "instagram",
+      "name": "Instagram"
+    },
+    {
+      "slug": "instantly",
+      "name": "Instantly"
+    },
+    {
+      "slug": "instatus",
+      "name": "Instatus"
+    },
+    {
+      "slug": "intelliprint",
+      "name": "Intelliprint"
+    },
+    {
+      "slug": "intercom_mcp",
+      "name": "Intercom MCP"
+    },
+    {
+      "slug": "interzoid_mcp",
+      "name": "Interzoid MCP"
+    },
+    {
+      "slug": "invalid_bounce",
+      "name": "Invalid Bounce"
+    },
+    {
+      "slug": "invofox",
+      "name": "Invofox"
+    },
+    {
+      "slug": "inworld_ai",
+      "name": "Inworld AI"
+    },
+    {
+      "slug": "ip2location",
+      "name": "Ip2Location"
+    },
+    {
+      "slug": "ip2location_io",
+      "name": "IP2Location.io"
+    },
+    {
+      "slug": "ip2proxy",
+      "name": "Ip2Proxy"
+    },
+    {
+      "slug": "ip2whois",
+      "name": "Ip2Whois"
+    },
+    {
+      "slug": "ipdata_co",
+      "name": "Ipdata.co"
+    },
+    {
+      "slug": "ipgeolocation",
+      "name": "IPGeolocation.io"
+    },
+    {
+      "slug": "ipinfo_io",
+      "name": "IPinfo"
+    },
+    {
+      "slug": "iplocate",
+      "name": "IPLocate"
+    },
+    {
+      "slug": "ip_registry",
+      "name": "IPRegistry"
+    },
+    {
+      "slug": "iqair_airvisual",
+      "name": "IQAir AirVisual"
+    },
+    {
+      "slug": "ironclad",
+      "name": "Ironclad"
+    },
+    {
+      "slug": "iterable",
+      "name": "Iterable"
+    },
+    {
+      "slug": "iterate",
+      "name": "Iterate"
+    },
+    {
+      "slug": "itm_platform",
+      "name": "ITM Platform"
+    },
+    {
+      "slug": "jam",
+      "name": "Jam"
+    },
+    {
+      "slug": "jentic_mcp",
+      "name": "Jentic MCP"
+    },
+    {
+      "slug": "jev",
+      "name": "Jev"
+    },
+    {
+      "slug": "jibble",
+      "name": "Jibble"
+    },
+    {
+      "slug": "jigsawstack",
+      "name": "Jigsawstack"
+    },
+    {
+      "slug": "jinko",
+      "name": "Jinko"
+    },
+    {
+      "slug": "job_search",
+      "name": "Job Search"
+    },
+    {
+      "slug": "jobber",
+      "name": "Jobber"
+    },
+    {
+      "slug": "jobnimbus",
+      "name": "JobNimbus"
+    },
+    {
+      "slug": "jogg_ai",
+      "name": "JoggAI"
+    },
+    {
+      "slug": "jotform",
+      "name": "Jotform"
+    },
+    {
+      "slug": "jotform_sign",
+      "name": "Jotform Sign"
+    },
+    {
+      "slug": "judge_me",
+      "name": "Judge.me"
+    },
+    {
+      "slug": "jumpcloud",
+      "name": "JumpCloud"
+    },
+    {
+      "slug": "just_one_api",
+      "name": "Just One API"
+    },
+    {
+      "slug": "kadoa",
+      "name": "Kadoa"
+    },
+    {
+      "slug": "kaggle",
+      "name": "Kaggle"
+    },
+    {
+      "slug": "kajabi",
+      "name": "Kajabi"
+    },
+    {
+      "slug": "kaleido",
+      "name": "Kaleido"
+    },
+    {
+      "slug": "kanban_tool",
+      "name": "Kanban Tool"
+    },
+    {
+      "slug": "kanbanize",
+      "name": "Kanbanize"
+    },
+    {
+      "slug": "kapso",
+      "name": "Kapso"
+    }
+  ],
+  "reason": "Catalogue lookup does not prove vendor API access or official vendor MCP support."
+}

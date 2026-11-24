@@ -1,0 +1,957 @@
+{
+  "checked_at": "2026-11-24T01:48:41+00:00",
+  "returned_toolkits": 1000,
+  "catalogue_partial": true,
+  "observations": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "salesforce",
+          "name": "Salesforce"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "hubspot",
+          "name": "HubSpot"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 3,
+      "name": "Pipedrive",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "pipedrive",
+          "name": "Pipedrive"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 4,
+      "name": "Attio",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "attio",
+          "name": "Attio"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 5,
+      "name": "Twenty",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 6,
+      "name": "Podio",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 7,
+      "name": "Zoho CRM",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 8,
+      "name": "Close",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "close",
+          "name": "Close"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 9,
+      "name": "Copper",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "copper",
+          "name": "Copper"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "zendesk",
+          "name": "Zendesk"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 12,
+      "name": "Intercom",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "intercom",
+          "name": "Intercom"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 13,
+      "name": "Freshdesk",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "freshdesk",
+          "name": "Freshdesk"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 14,
+      "name": "Front",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "front",
+          "name": "Front"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 15,
+      "name": "Pylon",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 16,
+      "name": "LiveAgent",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 17,
+      "name": "Plain",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 18,
+      "name": "Help Scout",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "help_scout",
+          "name": "Help Scout"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 19,
+      "name": "Gorgias",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "gorgias",
+          "name": "Gorgias"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 20,
+      "name": "Gladly",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "slack",
+          "name": "Slack"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 23,
+      "name": "Zoho Cliq",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 24,
+      "name": "Lark (Larksuite)",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 26,
+      "name": "Discord",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "discord",
+          "name": "Discord"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 27,
+      "name": "Telegram",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 29,
+      "name": "Aircall",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "aircall",
+          "name": "Aircall"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 30,
+      "name": "Vonage",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 31,
+      "name": "Google Ads",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "googleads",
+          "name": "Google Ads"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 32,
+      "name": "Meta Ads",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "metaads",
+          "name": "Meta Ads"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 33,
+      "name": "LinkedIn Ads",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "mailchimp",
+          "name": "Mailchimp"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 36,
+      "name": "Klaviyo",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "klaviyo",
+          "name": "Klaviyo"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 37,
+      "name": "systeme.io",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 38,
+      "name": "Pinterest",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 39,
+      "name": "Threads (Meta)",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 40,
+      "name": "SendGrid",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "sendgrid",
+          "name": "SendGrid"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 41,
+      "name": "Shopify",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "shopify",
+          "name": "Shopify"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 42,
+      "name": "WooCommerce",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 43,
+      "name": "BigCommerce",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "bigcommerce",
+          "name": "BigCommerce"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 45,
+      "name": "Magento (Adobe Commerce)",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 46,
+      "name": "Squarespace",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 47,
+      "name": "Ecwid",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 48,
+      "name": "Gumroad",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "gumroad",
+          "name": "Gumroad"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 49,
+      "name": "Amazon Selling Partner",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 50,
+      "name": "fanbasis",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 51,
+      "name": "DataForSEO",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "dataforseo",
+          "name": "DataForSEO"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 52,
+      "name": "SE Ranking",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "ahrefs",
+          "name": "Ahrefs"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 54,
+      "name": "MrScraper",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 55,
+      "name": "Apify",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "apify",
+          "name": "Apify"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "firecrawl",
+          "name": "Firecrawl"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 57,
+      "name": "Bright Data",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "brightdata",
+          "name": "Bright Data"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 59,
+      "name": "Waterfall.io",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 60,
+      "name": "Clay",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "clay",
+          "name": "Clay"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "github",
+          "name": "GitHub"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 62,
+      "name": "Vercel",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 63,
+      "name": "Netlify",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 64,
+      "name": "Cloudflare",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "cloudflare",
+          "name": "Cloudflare"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 65,
+      "name": "Supabase",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "supabase",
+          "name": "Supabase"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 66,
+      "name": "Neo4j",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 67,
+      "name": "Snowflake",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "snowflake",
+          "name": "Snowflake"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 68,
+      "name": "MongoDB Atlas",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 69,
+      "name": "Datadog",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "datadog",
+          "name": "Datadog"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 70,
+      "name": "Sentry",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "sentry",
+          "name": "Sentry"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 71,
+      "name": "Notion",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "notion",
+          "name": "Notion"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 72,
+      "name": "Airtable",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "airtable",
+          "name": "Airtable"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 73,
+      "name": "Linear",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "linear",
+          "name": "Linear"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 74,
+      "name": "Jira",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "jira",
+          "name": "Jira"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 75,
+      "name": "Asana",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "asana",
+          "name": "Asana"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 76,
+      "name": "Monday.com",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 77,
+      "name": "ClickUp",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "clickup",
+          "name": "ClickUp"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 78,
+      "name": "Coda",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "coda",
+          "name": "Coda"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 79,
+      "name": "Smartsheet",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 80,
+      "name": "Harvest",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "harvest",
+          "name": "Harvest"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 81,
+      "name": "Stripe",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "stripe",
+          "name": "Stripe"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 83,
+      "name": "Binance",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 85,
+      "name": "iPayX",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 86,
+      "name": "QuickBooks",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 87,
+      "name": "Xero",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "xero",
+          "name": "Xero"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 88,
+      "name": "Brex",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "brex",
+          "name": "Brex"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 89,
+      "name": "Ramp",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 91,
+      "name": "NotebookLM",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 93,
+      "name": "Fathom",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "fathom",
+          "name": "Fathom"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 94,
+      "name": "Consensus",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "consensus",
+          "name": "Consensus"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 95,
+      "name": "Reducto",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 96,
+      "name": "Devin",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 97,
+      "name": "higgsfield",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "higgsfield",
+          "name": "Higgsfield"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 98,
+      "name": "Mermaid CLI",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 99,
+      "name": "YouTube Transcript",
+      "status": "not_in_returned_window",
+      "matching_labels": [],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    },
+    {
+      "id": 100,
+      "name": "Grain",
+      "status": "label_match",
+      "matching_labels": [
+        {
+          "slug": "grain",
+          "name": "Grain"
+        }
+      ],
+      "caveat": "Exact normalized display-name observation in a partial 1000-entry catalogue window. Does not establish vendor identity, endpoint coverage, official MCP or absence."
+    }
+  ]
+}

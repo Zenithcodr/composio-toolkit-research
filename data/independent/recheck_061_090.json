@@ -1,0 +1,450 @@
+[
+  {
+    "id": 61,
+    "name": "GitHub",
+    "findings": {
+      "auth_methods": [
+        "Fine-grained/classic personal access token",
+        "GitHub App installation/user token",
+        "OAuth app token",
+        "Workflow GITHUB_TOKEN",
+        "Official MCP: OAuth or PAT"
+      ],
+      "access": [
+        "self_serve_free",
+        "local_open_source",
+        "admin_approval"
+      ],
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "MCP"
+      ],
+      "api_breadth": "Broad repositories, files, issues, pull requests, workflows and permitted security/account operations. The official operational MCP has both remote and local forms; it is not merely documentation search.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_now"
+    },
+    "evidence": [
+      {
+        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "title": "Authenticating to the REST API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "verdict"
+        ],
+        "excerpt": "GitHub documents PATs, GitHub App tokens, OAuth app tokens and workflow GITHUB_TOKEN; endpoint permissions govern access.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.github.com/en/graphql/guides/forming-calls-with-graphql",
+        "title": "Forming calls with GraphQL",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type"
+        ],
+        "excerpt": "GraphQL accepts PATs, GitHub Apps or OAuth apps, with scopes/permissions for requested resources.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://github.com/github/github-mcp-server",
+        "title": "GitHub official MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "api_breadth"
+        ],
+        "excerpt": "The GitHub-owned repository documents a vendor-hosted remote MCP plus a local implementation, OAuth/PAT access, and operational repository, issue, PR and workflow tools.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "title": "Managing your personal access tokens",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Users self-create scoped tokens; organizations may block or require approval for fine-grained tokens, which remain public-read-only pending approval.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://github.com/pricing",
+        "title": "GitHub plans and pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_breadth"
+        ],
+        "excerpt": "A free account includes core repository collaboration and GitHub Apps; premium resources/features have separate entitlements.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Independently researched from seeds without reading first_pass or worker research. Build_now refers to ordinary authorized core API/local-MCP development; organization policy, SSO, endpoint scope and premium features remain conditional. Remote MCP requires a suitable host and policies, and custom OAuth hosts need an app; PAT is also documented. No account or API execution.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "findings": {
+      "auth_methods": [
+        "Bearer Vercel access token",
+        "OAuth/integration code exchange for scoped REST access",
+        "Official remote MCP OAuth"
+      ],
+      "access": [
+        "self_serve_free",
+        "self_serve_trial",
+        "paid_plan"
+      ],
+      "api_type": [
+        "REST",
+        "MCP"
+      ],
+      "api_breadth": "Broad deployment, project, environment-variable, domain/DNS, team, storage, webhook and account APIs. Official MCP searches docs and manages project/deployment/log resources; public tools and authenticated tools are distinct.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_now"
+    },
+    "evidence": [
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "title": "Vercel REST API Reference",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "The REST API accepts bearer access tokens created in account settings and covers deployments, projects, domains, environment settings and many other resources.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+        "title": "Building Integrations with Vercel REST API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "An integration exchanges a short-lived code using client credentials for a scoped API access token; team resources use the installation's team identifier.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "title": "Use Vercel's MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Vercel hosts an OAuth MCP with public and authenticated tools. A custom client may connect without review using a Client ID Metadata Document; approved-client review is another path.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://vercel.com/pricing",
+        "title": "Vercel Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Vercel provides a $0 Hobby plan, paid Pro/Enterprise tiers, and a Pro trial.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Independently recorded before first_pass comparison. The opened current MCP page adds CIMD support, so the older search excerpt saying all clients need vendor review was rejected. I did not label MCP beta because that wording was absent from the current opened page. Team/user permissions and plan/usage limits still apply; a generic build does not require a universal partner or client-review gate. No authenticated execution.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "findings": {
+      "auth_methods": [
+        "REST bearer API token",
+        "Official MCP OAuth 2 for supported clients",
+        "Official MCP personal access token with MCP restriction and read/write scope"
+      ],
+      "access": [
+        "self_serve_free",
+        "paid_plan"
+      ],
+      "api_type": [
+        "REST",
+        "MCP"
+      ],
+      "api_breadth": "REST supports documents, pages, tables, rows, formulas/controls and sharing. Official MCP can read and write Coda docs, with role- and plan-dependent access; it is operational rather than documentation-only.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://coda.io/developers/apis/v1",
+        "title": "Coda/Superhuman Docs API v1 Reference",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth"
+        ],
+        "excerpt": "The official indexed reference documents bearer-authorized page and table/row operations; page creation and some updates require Doc Maker permissions.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+        "title": "Coda API - vendor Postman workspace",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "The vendor workspace describes the REST API for docs, pages, tables and rows and states it is free for users in free and paid workspaces.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+        "title": "Connect to the Coda MCP",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "mcp_status",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Coda documents OAuth or MCP-scoped PAT connections. Paid Doc Makers get the full MCP; free Doc Makers get all tools within 30 weekly/60 monthly requests, while Editors get read tools only.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Independently recorded before comparison. The Coda developer URL redirected to inaccessible docs.superhuman.com, so exact core-API details used official indexed content and the opened vendor Postman introduction, while MCP auth/role/plan rules came from the fully opened Coda help article. Coda MCP is explicitly beta. Free Doc Makers are not restricted to read-only MCP; Editors are. Admin API entitlement was not generalized from the ordinary document API. No credentials created.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "findings": {
+      "auth_methods": [
+        "API access token as Bearer for direct/machine integrations",
+        "OAuth 2.0 for user-authorized applications",
+        "Official MCP uses an API token or supported OAuth client"
+      ],
+      "access": [
+        "paid_plan"
+      ],
+      "api_type": [
+        "REST",
+        "MCP"
+      ],
+      "api_breadth": "Broad sheets/rows, folders, users, reports and other organizational resources through the public API. The vendor MCP performs permitted resource operations through OAuth-scoped tools and is not documentation-only.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/introduction",
+        "title": "Smartsheet API introduction",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "The current introduction requires Business, Enterprise or Advanced Work Management and documents resource schemas and API operations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "title": "Smartsheet API Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods"
+        ],
+        "excerpt": "Direct integrations use bearer access tokens; user-consent integrations can use Smartsheet OAuth2. Regions/Gov have separate tokens.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.smartsheet.com/register",
+        "title": "Developer Tools Registration",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Current developer registration requires an existing licensed Smartsheet user on Business or higher; registration is for user-authorized applications, not required for direct-token use.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+        "title": "Smartsheet free trial FAQ",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "The ordinary Business trial is free, but explicitly cannot generate API access tokens; paid Business/Enterprise is the documented upgrade route.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+        "title": "Smartsheet MCP Server overview",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "access",
+          "api_breadth"
+        ],
+        "excerpt": "External MCP-enabled AI tools require Business, Enterprise or Advanced Work Management; the lower Pro entitlement for in-product Smart Assist is distinct.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+        "title": "Install the Smartsheet MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "mcp_status",
+          "api_type"
+        ],
+        "excerpt": "Smartsheet publishes regional production MCP URLs and accepts a valid API token or supported OAuth client.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Independently recorded before comparison. An older Smartsheet blog mentions a sandbox developer registration route, but its actual current registration link explicitly requires a licensed Business-or-higher user. The ordinary free trial's Business label does not establish self-issuable API credentials. OAuth does not eliminate the documented plan eligibility. No signup or API execution.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "findings": {
+      "auth_methods": [
+        "client_id and environment secret in JSON body or Plaid headers",
+        "Product/Item access tokens where required",
+        "Dashboard MCP OAuth client_credentials token with mcp:dashboard scope"
+      ],
+      "access": [
+        "self_serve_free",
+        "self_serve_trial",
+        "paid_plan",
+        "partner_sales"
+      ],
+      "api_type": [
+        "JSON over HTTPS POST API",
+        "Webhooks",
+        "MCP"
+      ],
+      "api_breadth": "Broad financial-data/product APIs. Local AI-coding/Sandbox MCP provides mock data, sandbox tokens, documentation search and webhook simulation; hosted Dashboard MCP provides production diagnostics/Link/usage analytics, not an unrestricted consumer-financial-data connector.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_with_constraints"
+    },
+    "evidence": [
+      {
+        "url": "https://plaid.com/docs/api/",
+        "title": "Plaid API overview",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Plaid issues client ID/secret through Dashboard signup; most endpoints use these credentials. The API is JSON HTTPS POST; Sandbox and requested Production access are separate.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://plaid.com/docs/sandbox/",
+        "title": "Plaid Sandbox overview",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "mcp_status",
+          "api_breadth"
+        ],
+        "excerpt": "Sandbox supports fake-data development and a local MCP. New teams from April 15, 2026 can use free live-data Trial plans in the US/Canada, with limits and product eligibility.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://plaid.com/docs/resources/mcp/",
+        "title": "Plaid Dashboard MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "api_breadth"
+        ],
+        "excerpt": "Plaid distinguishes its local development MCP from hosted Dashboard diagnostics. Dashboard MCP requires Production approval for at least one product and OAuth client_credentials with mcp:dashboard.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Independently recorded before comparison. partner_sales represents the vendor production-access approval gate, not a claim that all Sandbox development needs outreach. Limited Production is deprecated for new teams in favor of US/Canada Trial plans. Dashboard MCP and sandbox/documentation tooling have different scope and eligibility. Production access and regional/product restrictions remain necessary. No account or live financial API was accessed.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "findings": {
+      "auth_methods": [
+        "unresolved for the assigned NMI-powered identity"
+      ],
+      "access": [
+        "unresolved"
+      ],
+      "api_type": [
+        "unresolved"
+      ],
+      "api_breadth": "Not established for the supplied Paygent Connect/NMI identity. A candidate GoPaygent marketing page mentions Paygent Connect and payment APIs, but a verified technical reference, NMI relationship and credential/onboarding path were not established.",
+      "mcp_status": "not_established",
+      "verdict": "unresolved"
+    },
+    "evidence": [
+      {
+        "url": "https://www.gopaygent.com/",
+        "title": "GoPaygent payment platform - candidate identity",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Indexed vendor marketing mentions a Paygent Connect product and payment APIs; the opened dynamic page had no readable body and did not establish the assigned NMI-powered identity.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.nmi.com/",
+        "title": "NMI Developer Documentation",
+        "source_type": "first_party",
+        "supports": [
+          "verdict"
+        ],
+        "excerpt": "NMI independently publishes developer, sandbox and API references, but this generic NMI documentation does not establish that Paygent Connect exposes the same credentials or product.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.nmi.com/reference/getting-started",
+        "title": "NMI Getting Started with Our APIs",
+        "source_type": "first_party",
+        "supports": [
+          "verdict"
+        ],
+        "excerpt": "The generic NMI API entry point was opened as background only; it does not verify the supplied application's ownership or access model.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Independently recorded before first_pass comparison. Searches also surfaced unrelated Japanese Paygent, crypto-card Paygent at paygent.tech, and invoice/Stripe Paygent products; their APIs/MCP were excluded from this identity. Exact-name/NMI searches did not establish first-party technical proof. Missing evidence is unresolved rather than a factual blocked/no-API verdict. Search-engine snippets from other candidates' audit sites were ignored and those sites were not opened or used as evidence. No merchant onboarding, funding or credential execution.",
+    "method": "independent automated agent re-research",
+    "checked_at": "2026-11-23"
+  }
+]
+

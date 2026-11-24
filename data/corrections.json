@@ -1,0 +1,1166 @@
+[
+  {
+    "id": 10,
+    "kind": "access_entitlement_and_surface_refinement",
+    "field": "access, auth_methods, api_breadth, blockers, notes",
+    "reason": "Specific DealCloud MCP docs resolve Celeste licensing and roles, distinguish REST token exchange from per-user MCP OAuth, and document separately enabled write tools.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/docs",
+      "https://api.docs.dealcloud.com/docs/apikeys",
+      "https://api.docs.dealcloud.com/docs/token",
+      "https://api.docs.dealcloud.com/mcp/getting-started",
+      "https://api.docs.dealcloud.com/mcp/authentication",
+      "https://api.docs.dealcloud.com/mcp/tools"
+    ],
+    "changes": {
+      "access": [
+        "paid_plan",
+        "admin_approval"
+      ],
+      "auth_methods": [
+        "REST: OAuth 2 client credentials using client ID and API key, exchanged for a short-lived Bearer token",
+        "MCP: per-user OAuth sign-in"
+      ],
+      "api_breadth": "REST includes schema, data read/create/update/upsert/delete, user management, backups, publications/events and relationship-intelligence imports. MCP can explore schema, query/read data and optionally create/update records, with write tools enabled separately.",
+      "blockers": [
+        "DealCloud with Celeste license required for vendor MCP.",
+        "Admins configure MCP; users need Celeste Member and MCP Access.",
+        "MCP write tools must be separately enabled."
+      ],
+      "notes": "REST token exchange and MCP per-user OAuth are separate credential routes. The public documentation establishes a licensed tenant integration, not a free developer tenant or public partner enrollment.",
+      "evidence": [
+        {
+          "url": "https://api.docs.dealcloud.com/docs",
+          "title": "DealCloud API Docs",
+          "source_type": "first_party",
+          "supports": [
+            "api_type",
+            "api_breadth"
+          ],
+          "excerpt": "Documents REST functional areas for schema, data, users, backups, events/publications and relationship intelligence, with a site-specific Swagger/OpenAPI specification.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/docs/apikeys",
+          "title": "Obtaining an API Key",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "An admin enables API capability on the user's group; permitted users then enable/copy their API key in Profile. Admin or CSM help is needed when permission is absent.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/docs/token",
+          "title": "Requesting an OAuth2 Bearer Token",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access"
+          ],
+          "excerpt": "REST uses client credentials with client ID/API key and required scopes; Bearer tokens expire after 15 minutes and are reissued by repeating the flow.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://www.intapp.com/mcp-documentation/",
+          "title": "Intapp Celeste Connector Documentation",
+          "source_type": "first_party",
+          "supports": [
+            "mcp_status",
+            "capabilities",
+            "api_breadth"
+          ],
+          "excerpt": "Intapp publishes MCP tools to list objects/fields, find records, look up entries, aggregate, and query DealCloud firm data.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/mcp/getting-started",
+          "title": "Getting Started with DealCloud MCP",
+          "source_type": "first_party",
+          "supports": [
+            "mcp_status",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "MCP requires a DealCloud with Celeste license, admin Manage MCP Servers capability, and Celeste Member plus MCP Access for end users.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/mcp/authentication",
+          "title": "DealCloud MCP Authentication",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access"
+          ],
+          "excerpt": "MCP uses OAuth on behalf of the signed-in user and inherits that user's object, field and record permissions.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://api.docs.dealcloud.com/mcp/tools",
+          "title": "MCP Tools",
+          "source_type": "first_party",
+          "supports": [
+            "api_breadth",
+            "mcp_status"
+          ],
+          "excerpt": "MCP offers schema discovery, lookups/search/query and record create/update; an administrator must switch on Enable Write Tools.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "access": [
+        "admin_approval",
+        "unresolved"
+      ],
+      "auth_methods": [
+        "API key for an API-enabled user",
+        "OAuth2 client-credentials bearer token using client ID/secret"
+      ],
+      "api_breadth": "Broad tenant schema/data/user-management APIs, backups, events, and a vendor MCP query connector.",
+      "blockers": [
+        "An existing DealCloud site and API-enabled user group are required",
+        "Admin or customer success assistance is needed when API capability is unavailable",
+        "Self-service test tenant, commercial entitlement, and Celeste connector onboarding were not resolved"
+      ],
+      "notes": "Documented tenant API access is distinct from public partner enrollment. No partner-program prerequisite was established for a private tenant integration; new tenant acquisition remains unresolved."
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 61,
+    "kind": "surface_completeness",
+    "field": "api_type",
+    "reason": "The first pass omitted the separately documented GitHub GraphQL API; REST and MCP remain supported.",
+    "evidence_urls": [
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "https://docs.github.com/en/graphql/guides/forming-calls-with-graphql",
+      "https://github.com/github/github-mcp-server",
+      "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+      "https://github.com/pricing"
+    ],
+    "changes": {
+      "api_type": [
+        "REST",
+        "GraphQL",
+        "MCP"
+      ],
+      "evidence": [
+        {
+          "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+          "title": "Authenticating to the REST API",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "api_type",
+            "verdict"
+          ],
+          "excerpt": "GitHub documents PATs, GitHub App tokens, OAuth app tokens and workflow GITHUB_TOKEN; endpoint permissions govern access.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://github.com/github/github-mcp-server",
+          "title": "GitHub official MCP Server",
+          "source_type": "first_party",
+          "supports": [
+            "mcp_status",
+            "auth_methods",
+            "access",
+            "api_breadth"
+          ],
+          "excerpt": "The GitHub-owned repository documents a vendor-hosted remote MCP plus a local implementation, OAuth/PAT access, and operational repository, issue, PR and workflow tools.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://github.com/pricing",
+          "title": "GitHub plans and pricing",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "api_breadth"
+          ],
+          "excerpt": "A free account includes core repository collaboration and GitHub Apps; premium resources/features have separate entitlements.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://docs.github.com/en/graphql/guides/forming-calls-with-graphql",
+          "title": "Forming calls with GraphQL",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "api_type"
+          ],
+          "excerpt": "GraphQL accepts PATs, GitHub Apps or OAuth apps, with scopes/permissions for requested resources.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+          "title": "Managing your personal access tokens",
+          "source_type": "first_party",
+          "supports": [
+            "access"
+          ],
+          "excerpt": "Users self-create scoped tokens; organizations may block or require approval for fine-grained tokens, which remain public-read-only pending approval.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "api_type": "REST; MCP"
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 62,
+    "kind": "stale_restriction",
+    "field": "blockers",
+    "reason": "Current Vercel documentation permits CIMD-based MCP clients without a prior vendor review. The older approved-client-only blocker was too restrictive. The verdict remains conservative because product entitlements still vary.",
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api",
+      "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+      "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "https://vercel.com/pricing"
+    ],
+    "changes": {
+      "blockers": [
+        "MCP clients must support CIMD or use a reviewed Vercel client; CIMD clients do not need review.",
+        "Hobby and paid product entitlements and usage limits differ."
+      ],
+      "evidence": [
+        {
+          "url": "https://vercel.com/docs/rest-api",
+          "title": "Vercel REST API Reference",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "api_type",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "The REST API accepts bearer access tokens created in account settings and covers deployments, projects, domains, environment settings and many other resources.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+          "title": "Use Vercel's MCP server",
+          "source_type": "first_party",
+          "supports": [
+            "mcp_status",
+            "auth_methods",
+            "access",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Vercel hosts an OAuth MCP with public and authenticated tools. A custom client may connect without review using a Client ID Metadata Document; approved-client review is another path.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://vercel.com/pricing",
+          "title": "Vercel Pricing",
+          "source_type": "first_party",
+          "supports": [
+            "access"
+          ],
+          "excerpt": "Vercel provides a $0 Hobby plan, paid Pro/Enterprise tiers, and a Pro trial.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+          "title": "Building Integrations with Vercel REST API",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access"
+          ],
+          "excerpt": "An integration exchanges a short-lived code using client credentials for a scoped API access token; team resources use the installation's team identifier.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "blockers": [
+        "Official MCP accepts Vercel-approved AI clients; direct REST remains a documented integration route.",
+        "Hobby and paid plans have different usage and product entitlements."
+      ]
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 78,
+    "kind": "resolved_evidence_gap",
+    "field": "auth_methods, api_type, api_breadth, notes",
+    "reason": "Official Coda API material and the vendor Postman introduction establish REST authentication and resource families despite a failed direct-reference redirect. This resolves an evidence gap rather than proving a live credential.",
+    "evidence_urls": [
+      "https://coda.io/developers/apis/v1",
+      "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+      "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+    ],
+    "changes": {
+      "auth_methods": [
+        "REST bearer API token",
+        "Official MCP OAuth 2 for supported clients",
+        "Official MCP personal access token with MCP restriction and read/write scope"
+      ],
+      "api_type": [
+        "REST",
+        "MCP"
+      ],
+      "api_breadth": "REST supports documents, pages, tables, rows, formulas/controls and sharing. Official MCP can read and write Coda docs, with role- and plan-dependent access; it is operational rather than documentation-only.",
+      "notes": "Independently recorded before comparison. The Coda developer URL redirected to inaccessible docs.superhuman.com, so exact core-API details used official indexed content and the opened vendor Postman introduction, while MCP auth/role/plan rules came from the fully opened Coda help article. Coda MCP is explicitly beta. Free Doc Makers are not restricted to read-only MCP; Editors are. Admin API entitlement was not generalized from the ordinary document API. No credentials created.",
+      "evidence": [
+        {
+          "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+          "title": "Connect to the Coda MCP",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Coda documents OAuth or MCP-scoped PAT connections. Paid Doc Makers get the full MCP; free Doc Makers get all tools within 30 weekly/60 monthly requests, while Editors get read tools only.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://help.coda.io/hc/en-us/articles/44722756780173-Using-the-Coda-MCP",
+          "title": "Using the Coda MCP",
+          "source_type": "first_party",
+          "supports": [
+            "api_breadth",
+            "capabilities"
+          ],
+          "excerpt": "Coda provides official guidance for using its document MCP connection.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://help.coda.io/hc/en-us/articles/39555834006797-Reduce-the-size-of-your-doc",
+          "title": "Reduce the size of your doc",
+          "source_type": "first_party",
+          "supports": [
+            "blockers"
+          ],
+          "excerpt": "Coda explains that docs at or above its API size threshold cannot be accessed through the Coda API.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://coda.io/developers/apis/v1",
+          "title": "Coda/Superhuman Docs API v1 Reference",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "api_type",
+            "api_breadth"
+          ],
+          "excerpt": "The official indexed reference documents bearer-authorized page and table/row operations; page creation and some updates require Doc Maker permissions.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+          "title": "Coda API - vendor Postman workspace",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "api_type",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "The vendor workspace describes the REST API for docs, pages, tables and rows and states it is free for users in free and paid workspaces.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "auth_methods": [
+        "OAuth 2.0 (MCP)",
+        "personal access token (MCP)"
+      ],
+      "api_type": "MCP; public API reference retrieval unresolved",
+      "api_breadth": "Verified MCP reads and writes Coda docs; complete REST endpoint coverage unresolved in this review.",
+      "notes": "MCP is established by Coda's own help center. The failed REST reference fetch is a research limitation, not evidence that a REST API is absent."
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 34,
+    "kind": "resolved_access_and_scope_gap",
+    "field": "access, auth_methods, api_type, api_breadth, notes",
+    "reason": "Current HighLevel pricing and technical docs resolve trial/paid subscription context and separate operational MCP sign-in from REST tokens and the Developer MCP.",
+    "evidence_urls": [
+      "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+      "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+      "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+      "https://www.gohighlevel.com/pricing"
+    ],
+    "changes": {
+      "access": [
+        "self_serve_trial",
+        "paid_plan",
+        "admin_approval"
+      ],
+      "auth_methods": [
+        "scoped Private Integration bearer token (REST)",
+        "OAuth 2.0 authorization-code access/refresh tokens (REST)",
+        "interactive HighLevel sign-in and consent (current hosted MCP; no PIT/API key required)"
+      ],
+      "api_type": "REST; vendor-hosted operational MCP; separate Marketplace Developer MCP",
+      "api_breadth": "Broad agency/sub-account CRM and marketing resources. Current operational MCP supports contacts, conversations, calendars, invoices, promotions and workflows across approved sub-accounts; actions depend on permissions and enabled products.",
+      "notes": "Independently read current first-party pages before viewing baseline. REST bearer-token setup must not be carried over to the current v2 operational MCP. Precise API entitlement can depend on plan and account role; no account or tool execution was tested.",
+      "evidence": [
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+          "title": "HighLevel Private Integrations",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "api_type",
+            "api_breadth"
+          ],
+          "excerpt": "PITs are scoped static bearer tokens for API v2, generated by permitted agency admins; obsolete API v1 keys are a different route.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+          "title": "HighLevel OAuth 2.0",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "OAuth apps configure scopes and client credentials; a location/agency admin installs and authorizes the integration.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+          "title": "HighLevel MCP Server",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Current hosted operational MCP uses HighLevel login and consent, needs no API/PIT key, and differs from the app-building Developer MCP.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://www.gohighlevel.com/pricing",
+          "title": "HighLevel Pricing",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "verdict"
+          ],
+          "excerpt": "HighLevel advertises a self-service trial and paid subscriptions; Basic API access is listed under Unlimited.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "access": [
+        "admin_approval",
+        "unresolved"
+      ],
+      "auth_methods": [
+        "Scoped Private Integration bearer token",
+        "OAuth 2.0 authorization code and refresh tokens",
+        "HighLevel sign-in authorization for hosted MCP"
+      ],
+      "api_type": "HTTPS APIs and official remote MCP",
+      "api_breadth": "Broad CRM, calendars, conversations, opportunities, payments, social and workflow operations.",
+      "notes": "Use current HighLevel/LeadConnector API documentation rather than the older Stoplight hint. Access includes unresolved specifically for subscription entitlement, not API existence."
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 37,
+    "kind": "scope_narrowing_and_auth_refinement",
+    "field": "access, auth_methods, api_type, api_breadth, notes",
+    "reason": "Systeme.io developer and help docs disagree about MCP breadth. The final answer keeps their common confirmed subset, records that conflict, and specifies the actual API/MCP headers.",
+    "evidence_urls": [
+      "https://developer.systeme.io/reference/api",
+      "https://developer.systeme.io/docs/mcp-server",
+      "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+      "https://systeme.io/pricing"
+    ],
+    "changes": {
+      "access": [
+        "self_serve_free"
+      ],
+      "auth_methods": [
+        "X-API-Key header (public REST API)",
+        "X-MCP-Key header or mcpKey URL parameter (MCP)"
+      ],
+      "api_type": "REST; MCP",
+      "api_breadth": "REST supports contacts, tags and broader documented marketing/commerce resources. MCP has confirmed common coverage for contacts, tags, contact fields and newsletters; newer help lists additional capabilities while older developer docs explicitly limit scope, so extended MCP coverage remains uncertain.",
+      "notes": "First-party docs disagree about MCP breadth: developer guide updated six months ago says contacts/newsletters only, while help updated November 10 lists campaigns, products, courses and other actions. Keep the common verified subset and validate the current tool catalogue before promising broader MCP coverage. Free product signup is documented; no free-account key issuance was executed.",
+      "evidence": [
+        {
+          "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+          "title": "How to use the systeme.io public API",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "api_type",
+            "api_breadth",
+            "capabilities",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "Account settings generate Public API keys; official help lists contact/tag operations and expanded product, offer and calendar features.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+          "title": "How to use the systeme.io MCP server",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "The newer November 2026 help page lists broader MCP actions, limits keys to 90 days/two keys, and says OAuth is planned rather than supported.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://systeme.io/pricing",
+          "title": "Systeme.io Pricing",
+          "source_type": "first_party",
+          "supports": [
+            "access"
+          ],
+          "excerpt": "A non-expiring free account is offered without a card; API/MCP key guides show account-setting generation without an explicit paid prerequisite.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developer.systeme.io/reference/api",
+          "title": "Systeme.io Public API",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "api_type",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "The public API follows REST conventions, accepts only X-API-Key authentication, and documents shared rate limits and contact/tag operations.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developer.systeme.io/docs/mcp-server",
+          "title": "Systeme.io MCP Server technical guide",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Initial-release MCP uses X-MCP-Key or mcpKey and lists contacts, tags, fields and newsletters as its only supported operations.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "access": [
+        "self_serve_free",
+        "paid_plan"
+      ],
+      "auth_methods": [
+        "Public API key generated in account settings",
+        "Separate MCP key"
+      ],
+      "api_type": "Public API and official MCP; exact REST specification fetch unresolved",
+      "api_breadth": "Contacts, tags, email campaigns, funnels, offers/products, automation and booking operations are documented.",
+      "notes": "Public API key is the vendor's terminology and does not imply that the credential is safe to publish. Developer specification access remained unresolved."
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 44,
+    "kind": "resolved_mcp_gap",
+    "field": "auth_methods, api_type, api_breadth, mcp_status, notes",
+    "reason": "Salesforce publishes a B2C-specific MCP with operational SCAPI Admin tooling. General CRM MCP evidence was not substituted; tenant credentials and admin entitlements remain required.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html"
+    ],
+    "changes": {
+      "auth_methods": [
+        "Account Manager OAuth client credentials/token for SCAPI Admin APIs",
+        "SLAS OAuth 2.1 public/private clients for Shopper APIs",
+        "configured B2C instance credentials for local MCP; MRT API key/WebDAV credentials for relevant tooling"
+      ],
+      "api_type": "REST (SCAPI); vendor B2C MCP",
+      "api_breadth": "B2C Shopper APIs cover browsing, cart and checkout; Admin APIs read/write product, order and inventory data. Official B2C MCP provides documentation search, live debugging/log investigation, deployment workflows and general SCAPI Admin API access under configured credentials.",
+      "mcp_status": "vendor_official",
+      "notes": "Independent review is explicitly B2C Commerce. General Salesforce CRM MCP does not establish Commerce Cloud support. The official B2C tooling MCP is more than documentation search, but is not evidence of unrestricted shopper or B2B Commerce access. Demo examples do not grant full tenant credentials.",
+      "evidence": [
+        {
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+          "title": "Get Started with the B2C Commerce API",
+          "source_type": "first_party",
+          "supports": [
+            "api_type",
+            "api_breadth",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "SCAPI is REST and included for B2C customers; Shopper and Admin surfaces use separate auth, and a demo sandbox is distinct from an owned instance.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+          "title": "Authorization for SCAPI Admin APIs",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "Administrators provision Account Manager API clients with instance roles and selected scopes; shopper scopes do not belong on Admin clients.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+          "title": "SLAS Overview",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "api_breadth"
+          ],
+          "excerpt": "Shopper APIs use SLAS public/private clients and OAuth2.1; SLAS administration requires an organization admin role.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html",
+          "title": "Agentic B2C Developer Toolkit",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Salesforce provides B2C MCP with general SCAPI Admin access, debugging, logs and deployments; actions depend on configured credentials and scopes.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "auth_methods": [
+        "OAuth access token from Account Manager for Admin APIs",
+        "SLAS OAuth 2.1 for Shopper APIs"
+      ],
+      "api_type": "RESTful B2C Commerce API (SCAPI); OCAPI-related surfaces",
+      "api_breadth": "Broad storefront browsing, baskets/orders, merchant product/order/inventory management and custom APIs.",
+      "mcp_status": "not_established",
+      "notes": "Scope is B2C Commerce SCAPI as evidenced; B2B Commerce on core Salesforce is a different product/auth surface. No free developer tenant was established. MCP remains unresolved."
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 53,
+    "kind": "architecture_constraint",
+    "field": "auth_methods, api_breadth, notes, blockers",
+    "reason": "Ahrefs documents MCP authentication and restricts repurposing its hosted MCP as a generic backend bridge. A new toolkit should use the documented REST API.",
+    "evidence_urls": [
+      "https://docs.ahrefs.com/en/api/docs/introduction",
+      "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+      "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+      "https://docs.ahrefs.com/en/mcp/docs/introduction"
+    ],
+    "changes": {
+      "auth_methods": [
+        "Bearer API key (REST)",
+        "OAuth consent creating MCP-scoped key or manually generated MCP key (MCP)"
+      ],
+      "api_breadth": "Broad SEO/data APIs cover Site Explorer, Keywords Explorer, SERP, Rank Tracker, Site Audit, Brand Radar and selected management operations. Hosted MCP exposes permitted Ahrefs data to supported AI tools; it is not a general-purpose API for scripts/bridges.",
+      "notes": "Free fixed test queries do not establish general free production API access. A Composio-style direct connector should use the public REST API rather than repurpose the hosted MCP endpoint as an unrestricted backend bridge. No API calls were made.",
+      "blockers": [
+        "API v3 and MCP need Lite or higher subscription according to September 2026 help.",
+        "Workspace owner/admin creates API keys.",
+        "Plan-level units and per-request row limits are shared across API, MCP and Ahrefs Connect.",
+        "Vendor hosted MCP is not a general-purpose bridge for custom backend scripts; use REST for a new programmatic connector."
+      ],
+      "evidence": [
+        {
+          "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+          "title": "About API v3",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "api_type"
+          ],
+          "excerpt": "Direct API, MCP and Ahrefs Connect share API limits and are available on Lite and higher subscriptions.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+          "title": "Ahrefs API key management",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access"
+          ],
+          "excerpt": "REST requests use bearer API keys; workspace owners/admins generate and manage those keys.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+          "title": "Ahrefs API v3 Introduction",
+          "source_type": "first_party",
+          "supports": [
+            "api_type",
+            "api_breadth",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "API v3 exposes SEO datasets and selected project/list management; eligible paid plans fund API units, while other plans have limited free test queries.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+          "title": "What is Ahrefs MCP",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Ahrefs hosts an OAuth/key MCP on Lite+ but explicitly prohibits using its external MCP via custom scripts, bridges or standalone HTTP/JSON-RPC clients, directing programmatic use to REST.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "auth_methods": [
+        "API key in Authorization: Bearer"
+      ],
+      "api_breadth": "SEO reports across Site/Keywords Explorer, SERPs, audits, rank tracking, Brand Radar and additional marketing surfaces.",
+      "notes": "A documented paid self-serve path exists; outdated Enterprise-only API claims should not be carried forward. Free test-query behavior was not independently reviewed.",
+      "blockers": [
+        "API v3 and MCP need Lite or higher subscription according to September 2026 help.",
+        "Workspace owner/admin creates API keys.",
+        "Plan-level units and per-request row limits are shared across API, MCP and Ahrefs Connect."
+      ]
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 54,
+    "kind": "resolved_mcp_gap",
+    "field": "auth_methods, api_type, api_breadth, mcp_status, verdict, notes",
+    "reason": "The directly opened vendor MCP guide documents a current seven-tool server and supported authentication. This resolves the unestablished MCP finding and supports a scoped prototype.",
+    "evidence_urls": [
+      "https://docs.mrscraper.com/docs/api/overview",
+      "https://docs.mrscraper.com/docs/api/authentication",
+      "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+      "https://mrscraper.com/pricing"
+    ],
+    "changes": {
+      "auth_methods": [
+        "x-api-token header (REST)",
+        "Bearer API token for Marketplace endpoints",
+        "OAuth 2.1 or Bearer API-key fallback (MCP)"
+      ],
+      "api_type": "REST; official hosted or self-managed MCP",
+      "api_breadth": "REST scraping, search, extraction and workflow resources. The directly read MCP v0.5.0 documents seven tools: status, scrapeHtml, scrapeMarkdown, getScreenshot, scrapeBrand, scrapeJson and webSearch; broader workflow management is not established through MCP.",
+      "mcp_status": "vendor_official",
+      "verdict": "build_now",
+      "notes": "Directly opened MCP docs list v0.5.0/seven tools; search snippets still described v0.3.0/three tools and were not used as the current tool inventory. API key fallback carries full account authority; OAuth scopes are narrower. No credential or endpoint was tested.",
+      "evidence": [
+        {
+          "url": "https://docs.mrscraper.com/docs/api/overview",
+          "title": "MrScraper API Overview",
+          "source_type": "first_party",
+          "supports": [
+            "api_type",
+            "api_breadth"
+          ],
+          "excerpt": "MrScraper describes a REST API using JSON requests/responses for scraping and structured data.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://docs.mrscraper.com/docs/api/authentication",
+          "title": "MrScraper Authentication",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access"
+          ],
+          "excerpt": "Users create dashboard API tokens; standard endpoints use x-api-token while Marketplace endpoints use Authorization Bearer.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://mrscraper.com/pricing",
+          "title": "MrScraper Pricing",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "verdict"
+          ],
+          "excerpt": "A no-card Free plan and self-service dashboard API tokens are documented, with paid plans for greater usage.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+          "title": "MrScraper MCP Server",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Official MCP v0.5.0 exposes seven retrieval/search/status tools, hosted OAuth2.1 or key fallback, and published self-managed transports.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "auth_methods": [
+        "API token in x-api-token",
+        "Bearer token for documented Marketplace endpoints"
+      ],
+      "api_type": "REST/JSON APIs",
+      "api_breadth": "Web search; HTML/Markdown/screenshots/JSON; workflow reruns and scraping results.",
+      "mcp_status": "not_established",
+      "verdict": "build_with_constraints",
+      "notes": "MCP status remains unestablished from reviewed technical pages; marketing mentions MCP but no verified vendor MCP specification was read. Avoid relying on older host/auth examples where current documentation differs."
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 92,
+    "kind": "resolved_rest_and_access_gap",
+    "field": "auth_methods, access, api_type, api_breadth, notes, blockers",
+    "reason": "Otter’s Enterprise Public API is documented separately from its OAuth MCP. A missing generic MCP key is not evidence that REST is unavailable; plan-specific access is now explicit.",
+    "evidence_urls": [
+      "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+      "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+      "https://otter.ai/pricing"
+    ],
+    "changes": {
+      "auth_methods": [
+        "OAuth (MCP)",
+        "Bearer API key (Enterprise Public API)"
+      ],
+      "access": [
+        "self_serve_free",
+        "paid_plan",
+        "partner_sales"
+      ],
+      "api_type": "REST retrieval API; MCP",
+      "api_breadth": "Official MCP supports meeting/transcript search, fetch and user information with user-authorized access. A separate Enterprise Public API retrieves channels, conversations, transcripts/audio, action items, insights, outlines and workspace details; documented webhooks support export integrations.",
+      "notes": "The MCP FAQ's lack of a public MCP key does not mean Otter lacks a REST API. Free MCP availability is explicitly priced, while direct Public API entitlement is Enterprise. No free personal bearer API was inferred or executed; no account was created.",
+      "blockers": [
+        "Direct Public API requires Enterprise entitlement; MCP and REST access are different products/scopes."
+      ],
+      "evidence": [
+        {
+          "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+          "title": "Otter MCP Server",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "mcp_status",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "Otter hosts an OAuth MCP for authorized meeting data; ChatGPT tools are search, fetch and get-user-info. Its MCP FAQ does not offer a generic public MCP API key.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+          "title": "Otter.ai Public API",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "api_type",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "The separate Public API is available to Enterprise workspaces, uses bearer API keys, and retrieves meeting/workspace data with rate limits and webhooks.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://otter.ai/pricing",
+          "title": "Otter Pricing",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "verdict"
+          ],
+          "excerpt": "Basic Free includes Otter MCP; API and Webhooks are listed under custom-priced Enterprise.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "auth_methods": [
+        "OAuth2"
+      ],
+      "access": [
+        "unresolved"
+      ],
+      "api_type": "MCP",
+      "api_breadth": "Meeting search and transcript retrieval through the vendor MCP; general public REST access not established.",
+      "notes": "An existing MCP integration is feasible; creating an independent REST connector is a different access question. No assertion that MCP is free on every Otter plan.",
+      "blockers": [
+        "Plan eligibility and custom API application access need confirmation"
+      ]
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 100,
+    "kind": "scope_and_entitlement_completeness",
+    "field": "auth_methods, api_type, api_breadth, notes",
+    "reason": "A dedicated Grain API article explicitly establishes free personal access, while workspace-wide REST and premium MCP features have separate gates.",
+    "evidence_urls": [
+      "https://developers.grain.com/authentication.html",
+      "https://support.grain.com/en/articles/15507288-grain-api",
+      "https://developers.grain.com/mcp/faq.html",
+      "https://developers.grain.com/mcp/tools-and-usage.html"
+    ],
+    "changes": {
+      "auth_methods": [
+        "personal bearer access token (REST and MCP)",
+        "workspace bearer access token (REST only)",
+        "OAuth 2.0 authorization code with PKCE"
+      ],
+      "api_type": "HTTP/REST public API v2; MCP",
+      "api_breadth": "Public API reads/manages meeting recordings, transcripts/notes, uploads, metadata/sharing and webhooks. MCP is personal-scope meeting/search/reporting and contact/company data; Deals and coaching tools require Business/Enterprise, and workspace-scope tokens are not accepted by MCP.",
+      "notes": "Free personal REST access is independently supported by a dedicated API article, not inferred from MCP documentation. Older generic Plans documentation/search snippets said Free excluded API access; the newer specific API help and current auth distinctions are more precise. No live credential issuance was tested. API docs use a newer version header than older help examples, so implement against the current developer version reference.",
+      "evidence": [
+        {
+          "url": "https://developers.grain.com/authentication.html",
+          "title": "Grain Authentication",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "api_type",
+            "mcp_status",
+            "verdict"
+          ],
+          "excerpt": "Grain documents personal, workspace and OAuth bearer tokens; workspace tokens require admins/eligible plans, and only personal-scope tokens authenticate MCP.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developers.grain.com/mcp/",
+          "title": "Official Grain MCP",
+          "source_type": "first_party",
+          "supports": [
+            "mcp_status",
+            "api_breadth"
+          ],
+          "excerpt": "Grain publishes a first-party MCP quickstart for meeting context and analytics.",
+          "retrieved_at": "2026-11-23T14:59:06+00:00"
+        },
+        {
+          "url": "https://support.grain.com/en/articles/15507288-grain-api",
+          "title": "Grain API",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "api_breadth",
+            "verdict"
+          ],
+          "excerpt": "The dedicated API help page explicitly permits Personal API on every plan including Free; Workspace API requires Business/Enterprise and admin access. It describes recording read/write and webhooks.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developers.grain.com/mcp/faq.html",
+          "title": "Grain MCP FAQ",
+          "source_type": "first_party",
+          "supports": [
+            "mcp_status",
+            "api_breadth",
+            "access"
+          ],
+          "excerpt": "Grain officially supports MCP on Free/Starter for most meeting tools; Deals and coaching are restricted to Business/Enterprise.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://developers.grain.com/mcp/tools-and-usage.html",
+          "title": "Grain MCP Tools",
+          "source_type": "first_party",
+          "supports": [
+            "api_breadth",
+            "access"
+          ],
+          "excerpt": "The MCP inventory identifies Free/Starter meeting search, transcript/notes fetching and participant/company lookup; premium reporting tools are separate.",
+          "retrieved_at": "2026-11-23"
+        }
+      ]
+    },
+    "before": {
+      "auth_methods": [
+        "personal access token",
+        "workspace access token",
+        "OAuth2"
+      ],
+      "api_type": "REST; MCP",
+      "api_breadth": "Personal/workspace meeting data and OAuth integrations; MCP uses personal scope.",
+      "notes": "This is grain.com meeting software, not the unrelated rungrain.com developer workspace. Personal-scope and organisation-wide connector readiness are different."
+    },
+    "adjudicated_by": "Supervising AI agent; not a human audit",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 33,
+    "kind": "source_mapping_refinement",
+    "field": "evidence mapping",
+    "reason": "The LinkedIn API type was correct but lacked an explicit field-to-source mapping. The current versioning guide demonstrates the HTTPS REST base path and headers.",
+    "evidence_urls": [
+      "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-11"
+    ],
+    "changes": {
+      "evidence": [
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview",
+          "title": "Advertising - Overview",
+          "source_type": "first_party",
+          "supports": [
+            "description",
+            "api_breadth",
+            "access",
+            "verdict"
+          ],
+          "excerpt": "Advertising API is a vetted product with Development and Standard tiers and requires authenticated, authorized requests.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-11",
+          "title": "LinkedIn Marketing API Program Access Tiers",
+          "source_type": "first_party",
+          "supports": [
+            "access",
+            "api_breadth",
+            "blockers",
+            "capabilities",
+            "verdict"
+          ],
+          "excerpt": "Development allows reading administered accounts and editing up to five; Standard expands creation/editing. LinkedIn reserves discretion over approvals.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/lms-faq?view=li-lms-2026-01",
+          "title": "Marketing API FAQ",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access",
+            "blockers"
+          ],
+          "excerpt": "All marketing permissions are three-legged; two-legged auth is unavailable. Standard is unnecessary unless building multi-account campaign management.",
+          "retrieved_at": "2026-11-23"
+        },
+        {
+          "url": "https://learn.microsoft.com/en-us/linkedin/marketing/versioning?view=li-lms-2026-11",
+          "title": "LinkedIn Marketing API Versioning",
+          "source_type": "first_party",
+          "supports": [
+            "api_type"
+          ],
+          "excerpt": "Vendor versioning docs show the HTTPS /rest API base path, HTTP version headers and a campaign-creation request.",
+          "retrieved_at": "2026-11-24T02:00:27+00:00"
+        }
+      ]
+    },
+    "before": {},
+    "adjudicated_by": "Supervising AI source-map audit; not human verification",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  },
+  {
+    "id": 96,
+    "kind": "unsupported_gate_removed",
+    "field": "access, blockers, notes",
+    "reason": "The original paid-plan/admin classification exceeded its cited evidence. Authentication and current pricing verify account/role distinctions but leave exact Free API entitlement unresolved, so remove the unsupported mandatory gates.",
+    "evidence_urls": [
+      "https://docs.devin.ai/api-reference/authentication",
+      "https://devin.ai/pricing"
+    ],
+    "changes": {
+      "access": [
+        "unresolved"
+      ],
+      "blockers": [
+        "Devin account credentials and appropriate organisation permissions are required.",
+        "Exact API/MCP entitlement on current Free versus paid plans was not established from the public comparison."
+      ],
+      "notes": "Devin MCP is authenticated; free DeepWiki is a separate service. Current pricing includes a Free product tier but the extracted comparison does not establish whether its API is included. Do not infer that every Devin account is paid or that Free grants API access.",
+      "evidence": [
+        {
+          "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+          "title": "Devin MCP",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "api_type",
+            "api_breadth",
+            "mcp_status",
+            "verdict"
+          ],
+          "excerpt": "Official MCP requires Devin credentials. Current service-user and personal tokens support organisation tools; legacy keys only support repository-documentation tools. Enterprise tokens require an organisation header.",
+          "retrieved_at": "2026-11-23T14:59:06+00:00"
+        },
+        {
+          "url": "https://docs.devin.ai/api-reference/authentication",
+          "title": "Devin API Authentication",
+          "source_type": "first_party",
+          "supports": [
+            "auth_methods",
+            "access"
+          ],
+          "excerpt": "Service-user keys and personal tokens inherit their principal’s roles and organisation membership; using a personal token is distinct from provisioning a service user.",
+          "retrieved_at": "2026-11-24T02:00:27+00:00"
+        },
+        {
+          "url": "https://devin.ai/pricing",
+          "title": "Devin Plans and Pricing",
+          "source_type": "first_party",
+          "supports": [
+            "access"
+          ],
+          "excerpt": "Current pricing lists Free and paid product plans. The extracted comparison does not unambiguously establish Free API entitlement.",
+          "retrieved_at": "2026-11-24T02:00:27+00:00"
+        }
+      ]
+    },
+    "before": {
+      "access": [
+        "paid_plan",
+        "admin_approval"
+      ],
+      "blockers": [
+        "Appropriate Devin account entitlement and organisation-scoped credentials required"
+      ],
+      "notes": "Devin MCP is authenticated; free public DeepWiki MCP is a separate service, not proof of free Devin platform access. Exact account plan eligibility should be checked before implementation."
+    },
+    "adjudicated_by": "Supervising AI source-map audit; not human verification",
+    "adjudicated_at": "2026-11-24T02:00:27+00:00"
+  }
+]

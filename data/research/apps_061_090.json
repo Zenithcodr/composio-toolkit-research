@@ -1,0 +1,2207 @@
+[
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Code hosting and developer collaboration platform.",
+    "auth_methods": [
+      "personal access token",
+      "GitHub App token",
+      "OAuth (official MCP)"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad repository, issue, pull request and workflow operations.",
+    "capabilities": [
+      "Read repository content",
+      "Create and update issues and pull requests",
+      "Inspect Actions workflows"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Token permissions must cover selected resources; organization policies can limit access."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "title": "Authenticating to the REST API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "blockers"
+        ],
+        "excerpt": "REST requests accept scoped personal or GitHub App tokens; insufficient permissions cause access errors.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://github.com/github/github-mcp-server",
+        "title": "GitHub's official MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "GitHub maintains the server, supports OAuth or PAT authentication, and exposes configurable repository, issue, pull request and Actions toolsets.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://github.com/pricing",
+        "title": "GitHub plans and pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "GitHub offers a Free tier and self-service signup.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Free-tier prototyping is feasible; a scoped integration must be evaluated against the target organization's policies.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Web deployment and application hosting platform.",
+    "auth_methods": [
+      "Bearer access token (REST)",
+      "OAuth (MCP)"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad projects, deployments, domains, environment variables and platform administration.",
+    "capabilities": [
+      "Manage projects and deployments",
+      "Read deployment logs",
+      "Manage domains and project configuration"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Official MCP accepts Vercel-approved AI clients; direct REST remains a documented integration route.",
+      "Hobby and paid plans have different usage and product entitlements."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://vercel.com/docs/rest-api",
+        "title": "Using the REST API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "REST uses account access tokens and covers deployments, domains, secrets, environment variables and projects.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "title": "Use Vercel's MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "The official remote MCP uses OAuth, is available on all plans, and permits reviewed clients.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://vercel.com/pricing",
+        "title": "Vercel Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Vercel lists a zero-cost Hobby plan with self-service signup alongside paid tiers.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Prototype with the account's allowed resources; confirm commercial and capacity needs before choosing a plan.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Website deployment, hosting and serverless platform.",
+    "auth_methods": [
+      "personal access token",
+      "OAuth 2.0"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad sites/projects, deploys, functions and platform configuration.",
+    "capabilities": [
+      "Create and manage sites",
+      "Trigger deployments",
+      "Manage environment variables"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Public multi-user integrations must use OAuth 2.0.",
+      "SSO teams require token authorization; API and deployment rate limits apply."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+        "title": "Get started with the Netlify API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Personal tokens are supported, public integrations must use OAuth2, SSO can restrict team access, and rate limits apply.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.netlify.com/build/build-with-ai/agent-setup-guides/agent-setup-overview/",
+        "title": "Agent setup overview",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "capabilities"
+        ],
+        "excerpt": "Netlify documents its remote MCP endpoint and an official local @netlify/mcp package for platform workflows.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.netlify.com/pricing/",
+        "title": "Pricing and Plans",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "A self-service Free plan supports building and deploying with included limits.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP endpoint and REST API both provide integration routes; hosting a custom MCP on Netlify is a separate use case.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Network, security, application hosting and developer services platform.",
+    "auth_methods": [
+      "scoped API token",
+      "legacy API key",
+      "OAuth (MCP)"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Very broad account, DNS, Workers, storage and security service APIs.",
+    "capabilities": [
+      "Manage DNS and Workers",
+      "Inspect account configuration",
+      "Read and change supported service resources"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Token permissions and resource scope constrain each request.",
+      "Specific services and higher usage can require paid entitlements."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/api/get-started/",
+        "title": "Cloudflare API Get started",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Cloudflare requires API authentication and recommends scoped API tokens over legacy keys.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.cloudflare.com/agents/model-context-protocol/cloudflare/servers-for-cloudflare/",
+        "title": "Cloudflare's own MCP servers",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "Cloudflare runs OAuth-based remote servers, including its API MCP spanning DNS, Workers, R2 and other products.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.cloudflare.com/fundamentals/account/create-account/",
+        "title": "Create account",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Users can create an initial account through signup and existing users can create additional Free accounts.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Free account availability does not imply every Cloudflare product is free.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Postgres-based backend with database APIs, auth, storage and project management.",
+    "auth_methods": [
+      "API key (data API)",
+      "scoped personal access token (management)",
+      "OAuth 2.0"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "REST; GraphQL module; MCP",
+    "api_breadth": "Database CRUD plus broad organization/project management APIs.",
+    "capabilities": [
+      "Read and modify database records",
+      "Manage projects and configuration",
+      "Inspect schema and execute permitted database operations"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Data permissions depend on API keys and row-level security.",
+      "Management access needs the selected organization/project scopes."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://supabase.com/docs/guides/api",
+        "title": "Data REST API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Supabase generates a PostgREST CRUD API from database schemas behind key authentication and row-level security.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://supabase.com/docs/reference/api/introduction",
+        "title": "Management API introduction",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Management APIs handle organizations and projects using scoped PATs or OAuth2 bearer tokens.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://supabase.com/docs/guides/ai-tools/mcp",
+        "title": "Supabase MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "blockers"
+        ],
+        "excerpt": "Supabase's hosted MCP uses dynamic OAuth registration by default, with PAT and manual OAuth options.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://supabase.com/pricing",
+        "title": "Supabase Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Supabase offers a Free plan with included project resources.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Database API keys and management tokens are distinct credentials and permission surfaces.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Graph database and Cypher query platform.",
+    "auth_methods": [
+      "HTTP Basic username/password",
+      "database credentials (local MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "local_open_source"
+    ],
+    "api_type": "HTTP Query API; Bolt drivers; MCP",
+    "api_breadth": "Graph schema discovery and transactional Cypher reads/writes.",
+    "capabilities": [
+      "Explore graph schema",
+      "Read nodes and relationships",
+      "Execute Cypher writes"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "A running database is required.",
+      "Official MCP requires APOC; database permissions determine available queries."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://neo4j.com/docs/query-api/current/",
+        "title": "Query API introduction",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "The HTTP Query API executes Cypher; local deployments and Aura free or paid cloud plans are supported.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://neo4j.com/docs/query-api/current/authentication-authorization/",
+        "title": "Authorize requests",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "blockers"
+        ],
+        "excerpt": "Query API requests support HTTP Basic authentication with a database username and password.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://neo4j.com/docs/mcp/current/",
+        "title": "Neo4j MCP introduction",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Neo4j documents its MCP server for schema exploration and Cypher reads/writes, requiring an instance and APOC.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://neo4j.com/docs/mcp/current/quickstart/",
+        "title": "Neo4j MCP quickstart",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods"
+        ],
+        "excerpt": "The local server configuration uses a database URI, username and password with an optional read-only setting.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "This is database access, not a generic SaaS account-management API.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Cloud data warehouse, analytics and AI data platform.",
+    "auth_methods": [
+      "OAuth",
+      "key-pair JWT",
+      "programmatic access token"
+    ],
+    "access": [
+      "self_serve_trial",
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "SQL REST API; MCP",
+    "api_breadth": "SQL execution and configured governed data/AI tools; MCP breadth depends on server configuration.",
+    "capabilities": [
+      "Submit SQL statements",
+      "Query governed data",
+      "Expose Cortex Agents, Search and Analyst tools"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Account roles and privileges must permit the selected data and MCP server.",
+      "Trial credits expire; continued use requires billing.",
+      "MCP requires server and OAuth configuration.",
+      "AI features are disabled on self-service trials until a credit card is added; Cortex-based tools can need this additional activation."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.snowflake.com/en/developer-guide/sql-api/authenticating",
+        "title": "Authenticating to the server",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "blockers"
+        ],
+        "excerpt": "SQL API accepts OAuth, key-pair JWT and programmatic-token authentication headers.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+        "title": "Snowflake-managed MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Snowflake hosts configurable MCP servers for SQL, Cortex and generic tools under RBAC, using Snowflake or External OAuth.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.snowflake.com/en/user-guide/admin-trial-account",
+        "title": "Trial accounts",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Self-service trials require only an email and expire after the credit/time allowance; AI features remain disabled until a credit card is added.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "No trial account was created. Product and region availability must be checked for the intended tool configuration.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Managed MongoDB databases and deployment administration.",
+    "auth_methods": [
+      "OAuth 2.0 service account token",
+      "HTTP Digest API key",
+      "database user credentials",
+      "OAuth (managed MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST administration API; database drivers; MCP",
+    "api_breadth": "Broad deployment administration; database reads/writes use separate database access.",
+    "capabilities": [
+      "Manage clusters, projects and users",
+      "Query and modify database documents",
+      "Explore schemas via MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Administration API does not expose stored database data; database credentials are separate.",
+      "Organization/Project Owner privileges are needed to provision programmatic access.",
+      "IP access lists and managed-MCP organization settings may restrict use."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://www.mongodb.com/docs/atlas/configure-api-access/",
+        "title": "Get Started with Atlas Administration API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "REST administration uses OAuth service accounts or Digest keys; owners configure access, and data requires database-user credentials.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.mongodb.com/docs/mcp-server/overview/",
+        "title": "MongoDB MCP Server Overview",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "MongoDB offers local and Atlas-hosted MCP; OAuth user delegation or admin-created service configurations control agent access.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.mongodb.com/company/newsroom/press-releases/mongodb-brings-live-operational-data-to-the-agentic-coding-stack?locale_fallback=ja-jp",
+        "title": "MongoDB Brings Live Operational Data to the Agentic Coding Stack",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "MongoDB's managed MCP announcement directs teams to start Atlas for free.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Atlas administration and database data planes should be modeled as separate authorization surfaces.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Observability, monitoring and security platform.",
+    "auth_methods": [
+      "API key plus application key",
+      "OAuth (MCP)"
+    ],
+    "access": [
+      "self_serve_trial",
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad metrics, logs, traces, monitors, dashboards and security APIs.",
+    "capabilities": [
+      "Query telemetry",
+      "Manage monitors and dashboards",
+      "Investigate incidents and performance"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Resource permissions and scoped application keys constrain API access.",
+      "MCP write access is disabled by default and requires organization administrator enablement.",
+      "MCP is not available in GovCloud sites."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.datadoghq.com/api/latest/",
+        "title": "Datadog API Reference",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "The API reference spans dashboards, monitors, logs, metrics and other observability resources.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.datadoghq.com/account_management/api-app-keys/",
+        "title": "API and Application Keys",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "blockers"
+        ],
+        "excerpt": "Datadog documents organization API keys and permission-bearing application keys for authenticated integration access.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.datadoghq.com/account_management/rbac/mcp_access/?lang_pref=en",
+        "title": "Access Control for MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "The official MCP acts as the user via OAuth and enforces organization settings, role scopes and underlying access; writes default off.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.datadoghq.com/free-datadog-trial/",
+        "title": "Free Datadog Trial",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Datadog advertises a self-service free trial.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Trial availability is an evaluation path; sustained observability ingestion and products are subject to plan billing.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "description": "Application error and performance monitoring platform.",
+    "auth_methods": [
+      "internal integration bearer token",
+      "personal bearer token",
+      "OAuth 2.0"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad error/issues, projects, organizations and performance operations.",
+    "capabilities": [
+      "Search and triage issues",
+      "Analyze application performance",
+      "Manage projects"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "API scopes and organization selection constrain access.",
+      "Free plan lists MCP access; broader API and third-party integrations are listed on paid Team."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.sentry.io/api/auth/",
+        "title": "API Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Sentry supports scoped internal or personal bearer tokens and OAuth2 for applications acting for users.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://mcp.sentry.dev/",
+        "title": "Sentry MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "Sentry's MCP searches errors, analyzes performance, triages issues and manages projects with OAuth connections.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://sentry.io/pricing/",
+        "title": "Sentry Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "The free Developer tier includes MCP access; Team lists API and third-party integrations.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "An MCP prototype has an explicit free-tier path; confirm the chosen REST feature's plan entitlement.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "description": "Collaborative workspace for pages, databases and project documentation.",
+    "auth_methods": [
+      "internal connection token",
+      "personal access token",
+      "OAuth 2.0"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad page, database, content and workspace-search operations.",
+    "capabilities": [
+      "Search workspace content",
+      "Create and edit pages",
+      "Manage databases"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Internal connections require a workspace owner and explicit page sharing.",
+      "Tokens and connections can only access authorized workspace content."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.notion.com/guides/authorization/overview",
+        "title": "Notion API authorization",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Notion documents internal tokens, personal tokens and OAuth; internal connections require owners and pages shared to the connection.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.notion.com/guides/mcp/overview",
+        "title": "Notion MCP overview",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "Notion's MCP lets assistants search a workspace, create/edit pages and manage databases.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.notion.com/pricing",
+        "title": "Notion Pricing Plans",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Notion provides a self-service Free plan, with limits for collaborative usage.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "A personal workspace supports prototyping; organization approval and content sharing depend on the chosen auth route.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "description": "Collaborative database and workflow platform.",
+    "auth_methods": [
+      "personal access token",
+      "OAuth access token"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Records, bases, tables, fields and supported interfaces/automations.",
+    "capabilities": [
+      "Query and update records",
+      "Create bases and table structures",
+      "Build supported interfaces and automations"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Tokens are scoped to actions and selected bases/workspaces.",
+      "Organization admins may block MCP; base and API rate limits apply."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://airtable.com/developers/web/api/authentication",
+        "title": "Airtable API Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "HTTPS API requests accept PATs or OAuth; user-facing integrations should use OAuth with scopes and resource grants.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.airtable.com/platform/mcp",
+        "title": "Airtable MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Airtable hosts an OAuth/PAT MCP on every plan including Free; it reads/writes records and structures while preserving user permissions and API limits.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Legacy API keys are deprecated; catalogue presence was not used to establish MCP ownership.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "description": "Issue tracking and project planning platform.",
+    "auth_methods": [
+      "personal API key",
+      "OAuth 2.0",
+      "OAuth 2.1 (MCP)"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "GraphQL; MCP",
+    "api_breadth": "Broad issue, project, comment and workflow queries/mutations.",
+    "capabilities": [
+      "Find and create issues",
+      "Update projects",
+      "Read and add comments"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "API keys and OAuth scopes determine available resources.",
+      "Free workspace capacity and API limits constrain scale."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://linear.app/developers/graphql",
+        "title": "Linear GraphQL Getting started",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Linear exposes its public GraphQL schema and supports personal keys or OAuth2 for integrations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://linear.app/docs/mcp",
+        "title": "Linear MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Linear hosts tools for issues, projects and comments using OAuth2.1 or bearer/API keys, with a separate read-only route.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://linear.app/pricing",
+        "title": "Linear Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Linear offers self-service Free workspaces with limited teams and issues.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Use OAuth for multi-user integrations; API-key prototyping is documented.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "description": "Atlassian issue and project management, scoped here to Jira Cloud.",
+    "auth_methods": [
+      "OAuth 2.0 authorization code (REST)",
+      "email plus API token Basic auth",
+      "OAuth 2.1 (Rovo MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST v3; MCP",
+    "api_breadth": "Broad issues, comments, projects, users, search and workflow operations.",
+    "capabilities": [
+      "Read and update issues",
+      "Search with JQL",
+      "Manage comments and project metadata"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "REST scopes and Jira permissions apply to every operation.",
+      "Non-interactive API-token authentication to Rovo MCP requires organization admin enablement.",
+      "Free-plan feature restrictions and organization policies still apply."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+        "title": "Jira Cloud REST API v3",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Jira Cloud's REST reference spans issue/project resources and supports OAuth 3LO or Basic authentication for personal scripts.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.atlassian.com/cloud/rovo-mcp/guides/authentication-and-authorization/",
+        "title": "Rovo MCP Authentication and authorization",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Atlassian's Rovo MCP primarily uses OAuth2.1; API-token connections require admin enablement and preserve existing permissions.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://support.atlassian.com/jira-cloud-administration/docs/explore-jira-cloud-plans/",
+        "title": "Explore Jira Cloud plans",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Jira Cloud has a Free plan for small teams, with permissions and other feature restrictions.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Jira Data Center has different deployment and authentication details; this finding does not substitute for Data Center research.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "description": "Work management and project coordination platform.",
+    "auth_methods": [
+      "personal access token",
+      "OAuth 2.0",
+      "service account token (Enterprise)"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad Work Graph tasks, projects, sections and reporting resources.",
+    "capabilities": [
+      "Create and assign tasks",
+      "Manage projects and sections",
+      "Read and summarize project status"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "PAT access mirrors the creating user; Enterprise service accounts require super admins.",
+      "Organization app management can block individual MCP clients."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.asana.com/docs/authentication",
+        "title": "Asana Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "PATs provide user-equivalent access; multi-user apps can use OAuth; service accounts are an Enterprise super-admin feature.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.asana.com/docs/using-asanas-mcp-server",
+        "title": "Using Asana's MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Asana hosts an OAuth-compatible v2 MCP for Work Graph tasks/projects; clients must be allowed by workspace app policies.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.asana.com/docs/overview",
+        "title": "Build an app with Asana",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_type",
+          "verdict"
+        ],
+        "excerpt": "Developers can test the REST API in an existing workspace, create a free account or request a premium-feature sandbox.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Use the current v2 Streamable HTTP MCP endpoint; old beta endpoints have a documented deprecation.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "description": "Work management platform based on boards, items and workflows.",
+    "auth_methods": [
+      "personal API token",
+      "OAuth 2.1 (Platform MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "GraphQL; MCP",
+    "api_breadth": "Broad boards, items, columns, users and application lifecycle operations.",
+    "capabilities": [
+      "Query boards and update items",
+      "Manage workflows and users",
+      "Scaffold and deploy monday apps"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Personal tokens mirror UI permissions.",
+      "External agents and AI features may need account-admin grants and AI credits.",
+      "Complexity and account rate limits apply."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.monday.com/api-reference/docs/authentication",
+        "title": "monday Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Users can create a free developer account, obtain a personal token and call APIs with permissions matching their UI access.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.monday.com/api-reference/docs/build-on-monday-with-ai",
+        "title": "Build on monday.com with AI",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "monday documents a GraphQL API, hosted OAuth Platform MCP and local Apps MCP; tools cover boards/items and app lifecycle, with account controls and usage limits.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Free developer access is a development route; production customer entitlements depend on the account.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "description": "Project, task, document and team workflow platform.",
+    "auth_methods": [
+      "personal API token (REST)",
+      "OAuth 2.0 (REST)",
+      "OAuth 2.1 with PKCE (MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad tasks, lists, folders, docs, time tracking and collaboration.",
+    "capabilities": [
+      "Create and update tasks",
+      "Search docs and comments",
+      "Track time and post updates"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Workspace owners/admins must create OAuth apps.",
+      "Official MCP supports OAuth only; direct API tokens cannot authenticate it.",
+      "Free MCP usage has a daily call cap; MCP does not expose deletion tools."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.clickup.com/docs/authentication",
+        "title": "ClickUp Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "REST supports personal tokens or OAuth2; OAuth app registration is restricted to Workspace owners or admins.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server",
+        "title": "ClickUp's MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "ClickUp's official MCP works on all plans, requires OAuth with PKCE, covers tasks/docs/time and has Free-plan call limits and no deletion tools.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "A REST connector and the official MCP need different authentication handling.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "description": "Collaborative documents with tables, formulas and workflow tools.",
+    "auth_methods": [
+      "OAuth 2.0 (MCP)",
+      "personal access token (MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "MCP; public API reference retrieval unresolved",
+    "api_breadth": "Verified MCP reads and writes Coda docs; complete REST endpoint coverage unresolved in this review.",
+    "capabilities": [
+      "Read doc content",
+      "Update or add doc content",
+      "Use role-permitted document tools"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Free Doc Makers and Editors receive only a limited MCP allowance; Editors are read-only.",
+      "Full MCP access requires a paid Doc Maker role.",
+      "Public API reference redirected to an inaccessible Superhuman URL during review."
+    ],
+    "confidence": "medium",
+    "evidence": [
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+        "title": "Connect to the Coda MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Coda documents beta MCP via OAuth or scoped PATs; paid Doc Makers have full access and free roles have a limited request allowance.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/44722756780173-Using-the-Coda-MCP",
+        "title": "Using the Coda MCP",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "Coda provides official guidance for using its document MCP connection.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.coda.io/hc/en-us/articles/39555834006797-Reduce-the-size-of-your-doc",
+        "title": "Reduce the size of your doc",
+        "source_type": "first_party",
+        "supports": [
+          "blockers"
+        ],
+        "excerpt": "Coda explains that docs at or above its API size threshold cannot be accessed through the Coda API.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP is established by Coda's own help center. The failed REST reference fetch is a research limitation, not evidence that a REST API is absent.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "description": "Spreadsheet-style work management and collaboration platform.",
+    "auth_methods": [
+      "Bearer API access token",
+      "OAuth"
+    ],
+    "access": [
+      "paid_plan"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Sheets, rows, workspaces, reports, dashboards and supported workflow operations.",
+    "capabilities": [
+      "Read and modify sheets and rows",
+      "Inspect reports and dashboards",
+      "Manage supported workflows"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "API token generation and MCP require Business, Enterprise or Advanced Work Management.",
+      "Regional production endpoints require corresponding credentials.",
+      "OAuth scopes and resource permissions limit tools."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+        "title": "Smartsheet Get Started",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "API access uses a generated bearer token and requires Business, Enterprise or Advanced Work Management; region tokens are not interchangeable.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+        "title": "Install Smartsheet MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Smartsheet provides production MCP servers by region, using API tokens or supported OAuth clients on eligible plans.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools",
+        "title": "Smartsheet MCP server tools",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Official tools expose public-API operations under per-tool OAuth scopes for work management data.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "An eligible paid workspace is the documented route; a free base product account is not sufficient evidence of API entitlement.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "description": "Time tracking, project budgets, expenses and invoicing platform.",
+    "auth_methods": [
+      "personal access token plus account ID",
+      "OAuth 2.0"
+    ],
+    "access": [
+      "self_serve_free",
+      "self_serve_trial",
+      "paid_plan"
+    ],
+    "api_type": "REST v2; MCP",
+    "api_breadth": "Time entries, timers, projects, clients, budgets, expenses and invoicing.",
+    "capabilities": [
+      "Start and stop timers",
+      "Log and report time",
+      "Manage projects and draft invoices"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Tokens require a Harvest account ID and inherit account permissions.",
+      "Official MCP creates invoices as drafts; review and sending occur in Harvest.",
+      "Free plan capacity is limited."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://help.getharvest.com/api-v2/authentication-api/authentication/authentication/",
+        "title": "Harvest API v2 Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "API v2 accepts personal tokens or OAuth2 and requires an account ID in requests.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://support.getharvest.com/hc/en-us/articles/46293697226381-Harvest-MCP",
+        "title": "Harvest MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Harvest documents its remote OAuth MCP for timers, time, projects and invoices, subject to user roles; invoices are drafts only.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.getharvest.com/pricing",
+        "title": "Harvest Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Harvest lists a limited Free plan, paid team plans and self-service trials.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The assigned harvestapp.com identity corresponds to Harvest/getharvest.com; the official MCP remains at api.harvestapp.com/mcp.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "description": "Payments, billing and financial infrastructure.",
+    "auth_methods": [
+      "secret or restricted API key",
+      "OAuth (MCP)",
+      "agent API key (MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Broad customers, payments, refunds, subscriptions and billing APIs.",
+    "capabilities": [
+      "Manage customers and payment objects",
+      "Inspect and create billing resources",
+      "Search Stripe documentation"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Sandbox objects and credentials are separate from live mode.",
+      "Live account setup requires business verification and may request additional information.",
+      "Team admins control MCP access and environment permissions."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.stripe.com/keys",
+        "title": "Stripe API keys",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "API keys authorize account resources; sandbox keys operate on simulated customer, payment, refund and subscription objects separate from live data.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.stripe.com/mcp",
+        "title": "Stripe Model Context Protocol",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Stripe's official MCP uses OAuth or agent API keys and exposes Stripe API and knowledge-base tools with environment-specific controls.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.stripe.com/get-started/account/set-up",
+        "title": "Set up your Stripe account",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Users can create an account, but live Stripe services require business verification in the Dashboard.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Build and validate in a sandbox first. Test access does not establish production approval. MCP key-acceptance rules have an announced January 2027 migration.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "description": "Bank connectivity, financial data and payment-related APIs.",
+    "auth_methods": [
+      "client_id plus secret",
+      "product access tokens",
+      "OAuth client credentials (Dashboard MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "self_serve_trial",
+      "admin_approval"
+    ],
+    "api_type": "HTTPS JSON APIs; MCP",
+    "api_breadth": "Broad bank data and payment products; MCP surfaces differ between development and production diagnostics.",
+    "capabilities": [
+      "Retrieve authorized financial data via APIs",
+      "Generate mock data and simulate webhooks in Sandbox MCP",
+      "Inspect Items, Link analytics and usage in Dashboard MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Free Sandbox uses test data; specific products may need enablement.",
+      "Live Trial availability has geography/account-date conditions and limits.",
+      "Dashboard MCP requires Production approval for at least one product and provides diagnostics rather than general banking operations."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://plaid.com/docs/api/",
+        "title": "Plaid API Overview",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Most HTTPS API endpoints require client_id and secret, obtained through the developer Dashboard.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://plaid.com/docs/sandbox/",
+        "title": "Plaid Sandbox overview",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "mcp_status",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Plaid offers a free test-data Sandbox and local Sandbox MCP; live Trial plans and full Production access have separate requirements.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://plaid.com/docs/resources/mcp/",
+        "title": "Plaid MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Plaid hosts a Production-only Dashboard MCP for diagnostics and analytics using scoped OAuth client credentials; team Production approval is required.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Sandbox, live Trial and full Production are separate access stages. No bank connection or API execution was performed.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "description": "Cryptocurrency exchange market data, trading and account APIs.",
+    "auth_methods": [
+      "public market data without authentication",
+      "API key plus HMAC/RSA/Ed25519 request signature",
+      "interactive account authorization (official MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "unresolved"
+    ],
+    "api_type": "REST; WebSocket; FIX/SBE on selected products; MCP",
+    "api_breadth": "Broad exchange market data, orders and account operations, varying by product.",
+    "capabilities": [
+      "Read market data",
+      "Inspect authorized balances and orders",
+      "Place permitted trades in eligible environments"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Spot Testnet access and live product authorization are separate.",
+      "Private endpoints require appropriate key permissions and signed requests.",
+      "Official trading MCP uses a dedicated Agentic sub-account with no withdrawal scope; live eligibility was not verified."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.binance.com/en/docs/introduction",
+        "title": "Binance Developer Documentation",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Binance documents REST, WebSocket and specialized interfaces plus product-specific testnet/demo environments and rate limits.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.binance.com/en/docs/products/spot/testnet/rest-api",
+        "title": "Binance Spot Testnet REST API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Spot Testnet keys can be created after GitHub login; signed private endpoints use scoped API keys and HMAC, RSA or Ed25519 signatures.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.binance.com/en/docs/agent-native/mcp-server/agentic",
+        "title": "Binance MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Binance hosts an account-authorized MCP for market data, balances, trading and internal transfers in an Agentic sub-account, without external withdrawals.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The free access finding covers public data and Testnet development. It does not establish live trading eligibility in any jurisdiction.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "description": "Assigned identity: an NMI-powered payment product; exact vendor/product identity remains unresolved.",
+    "auth_methods": [
+      "unresolved"
+    ],
+    "access": [
+      "unresolved"
+    ],
+    "api_type": "unresolved",
+    "api_breadth": "No API surface could be reliably attributed to this exact assigned identity.",
+    "capabilities": [],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "unresolved",
+    "blockers": [
+      "No authoritative link was found between the exact name Paygent Connect and NMI.",
+      "Japan's PAYGENT and similarly named AI-wallet services are different candidates and cannot supply this product's credentials or API contract."
+    ],
+    "confidence": "low",
+    "evidence": [
+      {
+        "url": "https://docs.nmi.com/",
+        "title": "NMI Developer Documentation",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth",
+          "access",
+          "verdict",
+          "blockers"
+        ],
+        "excerpt": "NMI publishes its own payment API and sandbox documentation; this page did not establish an NMI product named Paygent Connect.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.paygent.co.jp/",
+        "title": "PAYGENT Japan official website",
+        "source_type": "first_party",
+        "supports": [
+          "verdict",
+          "blockers"
+        ],
+        "excerpt": "The Japanese PAYGENT site describes Japanese payment services and ADAPTIS products, so it cannot be assumed to be the assigned NMI-powered identity.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Searched exact Paygent Connect; Paygent plus NMI; and exact name with prior toolkit/candidate domains excluded. Results did not identify an attributable official product. A similarly named paygent.tech agent-card service was also surfaced but not accepted as the target. Unresolved MCP is not proof of absence.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "description": "The assigned ipayx.ai domain identifies an FX transaction verification/audit service; current integration details remain unresolved.",
+    "auth_methods": [
+      "unresolved"
+    ],
+    "access": [
+      "unresolved"
+    ],
+    "api_type": "unresolved (indexed REST/MCP documentation could not be confirmed in live routes)",
+    "api_breadth": "Current direct pages establish the FX audit product but not a usable technical API contract.",
+    "capabilities": [
+      "FX transaction audit is described by the vendor; programmatic scope unresolved"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "unresolved",
+    "blockers": [
+      "Live /docs/api and /docs/mcp-server return the same generic product page instead of technical documentation.",
+      "Indexed official search results describe bearer-token REST and MCP interfaces, but conflict with the current direct page responses.",
+      "Current API access, pricing and MCP endpoint behavior require vendor confirmation."
+    ],
+    "confidence": "medium",
+    "evidence": [
+      {
+        "url": "https://www.ipayx.ai/docs/api",
+        "title": "iPayX Protocol at API documentation route",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Direct retrieval shows generic FX-verification product text and contact information, without API authentication or endpoint documentation.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.ipayx.ai/docs/mcp-server",
+        "title": "iPayX Protocol at MCP documentation route",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "The purported MCP documentation route directly returns the same generic product description, so a current operational vendor MCP was not established.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.ipayx.ai/pricing",
+        "title": "iPayX Protocol at pricing route",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "The live pricing route provides generic product text without a retrievable plan or developer access contract.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Searches used iPayX, ipayx.ai docs, API and MCP terms. Official indexed snippets showed detailed FX API/MCP claims; direct opens did not reproduce them. Do not conflate unrelated iPay payment brands. No endpoint calls or key issuance were attempted.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "description": "Intuit accounting platform, scoped here to QuickBooks Online.",
+    "auth_methods": [
+      "OAuth 2.0 authorization code",
+      "client ID and client secret for OAuth"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST accounting API; vendor Developer MCP for onboarding",
+    "api_breadth": "Broad accounting integration APIs; the verified official MCP is specifically developer setup/onboarding.",
+    "capabilities": [
+      "Read company and accounting data",
+      "Build accounting workflows",
+      "Configure developer apps, scopes and Sandbox onboarding through Developer MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Sandbox companies and development credentials are separate from live production.",
+      "Production credentials require approved App Assessment Questionnaire and production app details.",
+      "Developer MCP documentation does not establish a general production accounting-data MCP."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://static.developer.intuit.com/output_html/qbo/docs/get-started/start-developing-your-app.html",
+        "title": "Create and start developing your QuickBooks app",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "An Intuit developer account provides a sample Sandbox company and credentials for testing QuickBooks Online accounting integrations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://static.developer.intuit.com/output_html/qbo/docs/develop/authentication-and-authorization/oauth-2.0.html",
+        "title": "Set up OAuth 2.0",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "blockers"
+        ],
+        "excerpt": "QuickBooks Online uses OAuth authorization codes and access tokens tied to an authorized company's realm ID.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://static.developer.intuit.com/output_html/qbo/docs/go-live/publish-app.html",
+        "title": "Publish your app",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Production credentials are revealed after production details and compliance steps, including approval of the App Assessment Questionnaire.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://static.developer.intuit.com/output_html/qbo/docs/mcp-connector.html",
+        "title": "Build with Developer MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Intuit's official Developer MCP guides workspace/app setup, scopes, authentication and a first Sandbox API call.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "QuickBooks Desktop and Payments have separate integration paths. Official static documentation was used because app.developer pages returned a JavaScript/loading shell.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "description": "Cloud accounting platform with organization-scoped accounting APIs.",
+    "auth_methods": [
+      "OAuth 2.0",
+      "PKCE (recommended for remote MCP)"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "HTTP accounting APIs; MCP",
+    "api_breadth": "Accounting data reads and writes, controlled per authorized organization and tool scope.",
+    "capabilities": [
+      "Read accounting data",
+      "Write permitted accounting data",
+      "Operate against separately authorized organizations"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Starter can try remote MCP only with the demo organization; real customer MCP requires Core or above.",
+      "Each organization must grant OAuth consent.",
+      "Higher commercial app tiers require certification and some require security assessment."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.xero.com/faq/remote-mcp",
+        "title": "Xero Remote MCP FAQs",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Xero maintains a hosted MCP using OAuth2 with PKCE; Starter is demo-only, customer organizations need Core, and tools inherit API scopes and limits.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.xero.com/pricing",
+        "title": "Xero Developer Pricing and Policies",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Starter has no monthly tier charge and limited connections; paid tiers expand capacity and introduce certification/security prerequisites.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Developer platform tiers differ from a business's Xero accounting subscription. Demo testing does not grant unrestricted customer access.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "description": "Corporate spend, cards, expenses and banking platform.",
+    "auth_methods": [
+      "scoped user bearer token",
+      "partner OAuth 2.0",
+      "OAuth or API key (MCP)"
+    ],
+    "access": [
+      "admin_approval",
+      "partner_sales"
+    ],
+    "api_type": "HTTP APIs; MCP",
+    "api_breadth": "Broad expenses, team, cards, banking, transactions and bill data; MCP has a narrower capability-governed surface.",
+    "capabilities": [
+      "Read expenses and transactions",
+      "Look up users and card metadata",
+      "Inspect bills and banking data"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Customer API tokens require an account/card admin and acceptance of the Developer API agreement.",
+      "MCP beta must be enabled by the account; tools obey user capabilities.",
+      "Customer auth docs offer production only; partner staging is a separate route.",
+      "MCP does not expose raw card details or approvals/card-management actions."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.brex.com/guides/authentication",
+        "title": "Brex Developer authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Account/card admins accept the API agreement and generate scoped user bearer tokens; the customer guide identifies only a production API server.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.brex.com/guides/partner_authentication",
+        "title": "Brex Partner authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Partner OAuth and staging are documented separately for Brex developer partners, with no staging data guarantees.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.brex.com/docs/mcp",
+        "title": "Brex MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Brex's official beta MCP needs the API agreement and beta enablement; employees authorize through OAuth and retain their Brex capabilities.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Existing eligible customers can build under admin controls. A public partner integration or staging environment requires the partner route; a universally open self-service sandbox was not established.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "description": "Corporate spend, cards, expense and bill-payment platform.",
+    "auth_methods": [
+      "OAuth 2.0 client credentials",
+      "OAuth 2.0 authorization code",
+      "OAuth user authorization (MCP)"
+    ],
+    "access": [
+      "admin_approval",
+      "partner_sales"
+    ],
+    "api_type": "HTTP Developer API; MCP",
+    "api_breadth": "Broad transactions, users, cards, vendors, procurement and other permission-scoped spend resources.",
+    "capabilities": [
+      "Retrieve transaction and expense data",
+      "Manage supported spend resources",
+      "Connect AI tools under user permissions"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Customer app creation requires admin access; whole-business OAuth approval requires Admin/Business Owner.",
+      "Sandbox access is requested separately; sandbox tokens do not work in production.",
+      "Partner integrations apply for production access through the technology partner program.",
+      "Custom MCP client redirect URIs may need allowlisting."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.ramp.com/llms-guides/getting-started.txt",
+        "title": "Ramp API Quickstart",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Ramp customers with admin access can create apps and use client-credentials tokens; sandbox access and hosts are separate.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.ramp.com/llms-guides/authorization.txt",
+        "title": "Ramp Authorization",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Ramp uses OAuth client credentials or authorization code flows with resource scopes; business-wide approvals and MCP user roles constrain access.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.ramp.com/llms-guides/ramp-mcp.txt",
+        "title": "Ramp MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Ramp hosts its MCP with Full or Read-only user authorization, role-controlled AI access and client redirect allowlisting.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.ramp.com/llms-guides.txt",
+        "title": "Ramp Developer API Guides export",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "The official partner build journey separates Sandbox development from an application for production access.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Customer-internal integrations and partner-distributed apps have different access gates. Official text exports were read because the regular docs pages require JavaScript.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "description": "Private capital markets company, deal, investor and fund intelligence.",
+    "auth_methods": [
+      "API key or authentication token arranged with Direct Data team"
+    ],
+    "access": [
+      "partner_sales",
+      "paid_plan"
+    ],
+    "api_type": "REST; vendor-announced Data MCP",
+    "api_breadth": "Read-oriented private market data and relational endpoints; purchased coverage determines available fields.",
+    "capabilities": [
+      "Retrieve company and financing information",
+      "Enrich internal CRM records",
+      "Access selected company, deal, investor and fund data through Data MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "outreach_required",
+    "blockers": [
+      "API is a separate offering requiring a standalone contract.",
+      "Direct Data team must arrange API access and credentials.",
+      "Public MCP marketing establishes vendor ownership, but setup, auth and purchased access require vendor confirmation."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://pitchbook.com/help/PitchBook-api",
+        "title": "PitchBook API help",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "PitchBook's REST API requires a standalone agreement and a Direct Data request; the team arranges an API key or token and endpoint coverage.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://pitchbook.com/products/pitchbooks-ai-capabilities",
+        "title": "PitchBook AI capabilities and Data MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "PitchBook describes its Data MCP as native access to selected company, deal, investor and fund data in internal or commercial AI tools.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "A general Platform trial does not imply API entitlement. Data MCP is vendor-advertised; its operational endpoint and authentication were not publicly established in this review.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated web search and direct official documentation review; dates in IST. No account creation, credential generation, or API calls executed."
+  }
+]

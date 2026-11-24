@@ -1,0 +1,1003 @@
+[
+  {
+    "id": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "evidence_urls": [
+      "https://developers.hubspot.com/developer-platform-basics",
+      "https://developers.hubspot.com/changelog/service-keys",
+      "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
+      "https://developers.hubspot.com/docs/api-reference/latest/overview"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/docs",
+      "https://api.docs.dealcloud.com/docs/apikeys",
+      "https://api.docs.dealcloud.com/docs/token",
+      "https://www.intapp.com/mcp-documentation/"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "evidence_urls": [
+      "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "https://support.zendesk.com/hc/en-us/articles/4408831452954-How-can-I-authenticate-API-requests",
+      "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+      "https://www.zendesk.com/pricing/"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "evidence_urls": [
+      "https://developer.gladly.com/rest/",
+      "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
+      "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "evidence_urls": [
+      "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+      "https://pumble.com/pricing"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "evidence_urls": [
+      "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+      "https://open.larksuite.com/document/mcp_open_tools/mcp-user-guide",
+      "https://github.com/larksuite/lark-openapi-mcp",
+      "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
+      "https://open.larksuite.com/document/home/introduction-to-custom-app-development/self-built-application-development-process"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "evidence_urls": [
+      "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+      "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+      "https://marketplace.gohighlevel.com/docs/other/mcp/index.html"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "evidence_urls": [
+      "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+      "https://systeme.io/pricing"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "evidence_urls": [
+      "https://www.fanbasis.com/auth/setup/signup",
+      "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
+      "https://demo.embedded.fanbasis.io/docs/how-it-works"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "evidence_urls": [
+      "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+      "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+      "https://docs.ahrefs.com/en/api/docs/introduction"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "evidence_urls": [
+      "https://docs.mrscraper.com/docs/api/overview",
+      "https://docs.mrscraper.com/docs/api/authentication",
+      "https://mrscraper.com/pricing"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api",
+      "https://vercel.com/docs/agent-resources/vercel-mcp",
+      "https://vercel.com/pricing"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "evidence_urls": [
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "https://github.com/github/github-mcp-server",
+      "https://github.com/pricing"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "evidence_urls": [
+      "https://developers.smartsheet.com/api/smartsheet/guides/getting-started",
+      "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
+      "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "evidence_urls": [
+      "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP",
+      "https://help.coda.io/hc/en-us/articles/44722756780173-Using-the-Coda-MCP",
+      "https://help.coda.io/hc/en-us/articles/39555834006797-Reduce-the-size-of-your-doc"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "evidence_urls": [
+      "https://plaid.com/docs/api/",
+      "https://plaid.com/docs/sandbox/",
+      "https://plaid.com/docs/resources/mcp/"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "evidence_urls": [
+      "https://docs.nmi.com/",
+      "https://www.paygent.co.jp/"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "evidence_urls": [
+      "https://developers.grain.com/authentication.html",
+      "https://developers.grain.com/mcp/"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "evidence_urls": [
+      "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server"
+    ],
+    "reviewer": "",
+    "reviewed_at": null,
+    "checks": {
+      "auth_methods": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "access": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_type": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "api_breadth": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "mcp_status": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      },
+      "verdict": {
+        "reference": null,
+        "first_pass_grade": "pending",
+        "final_grade": "pending",
+        "note": ""
+      }
+    }
+  }
+]

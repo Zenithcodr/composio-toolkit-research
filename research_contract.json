@@ -1,0 +1,9 @@
+{
+  "record_fields": ["id", "name", "category", "description", "auth_methods", "access", "api_type", "api_breadth", "capabilities", "mcp_status", "composio_status", "verdict", "blockers", "confidence", "evidence", "notes", "researched_at", "research_method"],
+  "access_values": ["self_serve_free", "self_serve_trial", "paid_plan", "admin_approval", "partner_sales", "local_open_source", "unresolved"],
+  "mcp_values": ["vendor_official", "third_party", "not_established", "not_applicable"],
+  "verdict_values": ["build_now", "build_with_constraints", "outreach_required", "blocked", "unresolved"],
+  "confidence_values": ["high", "medium", "low"],
+  "evidence_shape": {"url": "exact source URL actually read", "title": "source title", "source_type": "first_party or secondary", "supports": ["auth_methods", "access", "api_type", "api_breadth", "mcp_status", "verdict"], "excerpt": "short supporting paraphrase, not a long quotation", "retrieved_at": "ISO date"},
+  "rules": ["Use actual public evidence, not model memory or previous candidate submissions", "Each populated decision field must map to evidence or be explicitly unresolved", "Access may have multiple gates", "Do not claim account/API execution when only documentation was reviewed", "Composio catalogue presence does not imply an official vendor MCP", "Unresolved MCP is not proof of nonexistence", "Use original assigned app identity and disambiguate consumer versus enterprise variants", "Browser-assisted agent checks are automated, never human"]
+}

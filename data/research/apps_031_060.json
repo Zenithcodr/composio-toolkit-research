@@ -1,0 +1,2175 @@
+[
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Google's advertising campaign management and reporting platform.",
+    "auth_methods": [
+      "OAuth 2.0 user authorization or service-account workflow"
+    ],
+    "access": [
+      "self_serve_free",
+      "admin_approval"
+    ],
+    "api_type": "REST/HTTPS API and official MCP",
+    "api_breadth": "Broad campaign, account, asset, conversion and reporting APIs, with access-level restrictions.",
+    "capabilities": [
+      "Query campaign performance",
+      "Manage campaigns, ad groups, ads and keywords",
+      "Upload conversions and manage assets"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Production requests require an approved Cloud-project access level; Test access is limited to test accounts.",
+      "Explorer has lower production quotas and excludes planning, billing, account linking and user-management services; Standard requires manual review.",
+      "The authorizing identity must have access to the relevant Ads accounts."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/api-policy/access-levels",
+        "title": "Access levels and permissible use",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_breadth",
+          "capabilities",
+          "verdict",
+          "blockers"
+        ],
+        "excerpt": "Current main text says developer tokens sunset September 9, 2026; access is managed per Cloud project. Test is test-only, Explorer enables limited production use, and higher levels add capabilities and quotas.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/oauth/overview",
+        "title": "Use OAuth 2.0 to access Google Ads API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "OAuth authorizes access to a user's Ads account; credentials must belong to the Cloud project with API enablement and the required access level.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/docs/developer-toolkit/mcp-server",
+        "title": "Google Ads MCP server: Developer integration guide",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_type",
+          "capabilities"
+        ],
+        "excerpt": "Google documents its Python MCP server with stdio or Streamable HTTP transport, reporting and partial asset/label mutations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.google.com/google-ads/api/rest/auth",
+        "title": "Authorization and HTTP Headers",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "auth_methods"
+        ],
+        "excerpt": "REST requests use OAuth credentials; manager-account calls also identify the login customer. Current migration/access guide takes precedence over stale developer-token wording.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Read current main text over stale generated page summaries that still mention required developer tokens. No Composio-catalogue check performed.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Meta Marketing API for advertising on Meta properties.",
+    "auth_methods": [
+      "OAuth 2.0 user access token",
+      "System-user access token for business server workflows"
+    ],
+    "access": [
+      "admin_approval"
+    ],
+    "api_type": "Graph API over HTTPS (Marketing API)",
+    "api_breadth": "Broad ad-object management and reporting, subject to permission access levels and Marketing API tier.",
+    "capabilities": [
+      "Read advertising performance",
+      "Create and manage ad campaigns",
+      "Manage authorized business ad objects"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "An active ad account and appropriate ads_read/ads_management permissions are required.",
+      "Default Limited tier is documented for development; Full tier and broader business access require App Review.",
+      "Business asset authorization remains separate from app approval."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started",
+        "title": "Get started with the Marketing API",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Requires an active ad account, Meta developer account and app; links campaign creation, campaign management and optimization workflows.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authorization",
+        "title": "Authorization",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_breadth",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Distinguishes platform permission access from Marketing API Limited/Full tiers; Limited is default for development, while Full follows App Review.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started/authentication",
+        "title": "Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "capabilities"
+        ],
+        "excerpt": "Every Marketing API call needs an access token; documents user authorization-code exchange and business system-user tokens.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP ownership/availability remains unresolved in this bounded documentation review; this is not a claim that no MCP exists. Own-business development access does not establish approval for a public advertiser integration.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "LinkedIn Advertising API for campaign management and advertising analytics.",
+    "auth_methods": [
+      "Three-legged OAuth 2.0"
+    ],
+    "access": [
+      "admin_approval"
+    ],
+    "api_type": "Versioned HTTPS Advertising API",
+    "api_breadth": "Campaign management and analytics for authorized ad accounts; Development and Standard access differ.",
+    "capabilities": [
+      "Read ad reporting",
+      "Manage authorized campaigns and ad accounts",
+      "Build multi-account advertising workflows after approval"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Apply for Advertising API access; LinkedIn may review and select partners at its discretion.",
+      "Development can edit up to five administered ad accounts; Standard is needed for unlimited campaign-management access.",
+      "Marketing permissions do not support two-legged OAuth; use current supported API versions."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads/ads-overview",
+        "title": "Advertising - Overview",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "api_breadth",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Advertising API is a vetted product with Development and Standard tiers and requires authenticated, authorized requests.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/integrations/marketing-tiers?view=li-lms-2026-11",
+        "title": "LinkedIn Marketing API Program Access Tiers",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_breadth",
+          "blockers",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Development allows reading administered accounts and editing up to five; Standard expands creation/editing. LinkedIn reserves discretion over approvals.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://learn.microsoft.com/en-us/linkedin/marketing/lms-faq?view=li-lms-2026-01",
+        "title": "Marketing API FAQ",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "All marketing permissions are three-legged; two-legged auth is unavailable. Standard is unnecessary unless building multi-account campaign management.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Some Microsoft Learn pages display an authorization banner but their public article text was readable. MCP remains unresolved; no Composio check.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "HighLevel agency CRM and marketing automation platform.",
+    "auth_methods": [
+      "Scoped Private Integration bearer token",
+      "OAuth 2.0 authorization code and refresh tokens",
+      "HighLevel sign-in authorization for hosted MCP"
+    ],
+    "access": [
+      "admin_approval",
+      "unresolved"
+    ],
+    "api_type": "HTTPS APIs and official remote MCP",
+    "api_breadth": "Broad CRM, calendars, conversations, opportunities, payments, social and workflow operations.",
+    "capabilities": [
+      "Manage contacts and opportunities",
+      "Book appointments and send supported messages",
+      "Manage invoices, campaigns and workflows"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Requires an authorized HighLevel agency/sub-account and relevant scopes.",
+      "Plan eligibility and exact API entitlements were not conclusively established from the pages reviewed.",
+      "Sending and posting depend on existing phone, sender or connected-social configuration."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+        "title": "Private Integrations",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "verdict"
+        ],
+        "excerpt": "Agencies and sub-accounts can generate scoped static Private Integration tokens in account settings; legacy API keys are tied to the end-of-life v1 API.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+        "title": "OAuth 2.0",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type"
+        ],
+        "excerpt": "Documents OAuth authorization and token exchange for marketplace integrations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+        "title": "HighLevel MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Vendor MCP offers hundreds of actions across CRM, booking, messaging, payments and marketing; uses HighLevel sign-in, selected sub-accounts and approved permissions.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Use current HighLevel/LeadConnector API documentation rather than the older Stoplight hint. Access includes unresolved specifically for subscription entitlement, not API existence.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Mailchimp audience-based marketing and campaign platform.",
+    "auth_methods": [
+      "Own-account API key via HTTP Basic or Bearer",
+      "OAuth 2 for third-party account integrations"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "HTTPS Marketing API v3; documentation-search MCP",
+    "api_breadth": "Broad audiences, contacts, campaigns, automations and analytics; features follow account plan.",
+    "capabilities": [
+      "Manage audiences and contacts",
+      "Create and send campaigns",
+      "Read campaign analytics and synchronize email activity"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "API capabilities depend on plan and authorizing user's role.",
+      "Third-party installed integrations need OAuth 2; key ownership/revocation follows the creating user.",
+      "The official MCP found searches documentation and cannot act on an account."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://mailchimp.com/developer/marketing/api-concepts/authentication/",
+        "title": "Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "API keys are for one's own account and OAuth 2 for third-party integrations; tokens use Basic or Bearer auth and are constrained by user role.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/build/get-started/create-an-account",
+        "title": "Create an account",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "A Mailchimp account and API key enable development; audience, campaign and email-activity functionality depends on plan.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://mailchimp.com/pricing/marketing/",
+        "title": "Mailchimp Pricing Plans",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Offers a basic Free plan as well as paid plans and a time-limited Standard trial.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://mailchimp.com/developer/marketing/build/ai-tools/mcp-server",
+        "title": "MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_type",
+          "blockers"
+        ],
+        "excerpt": "Mailchimp's official documentation-site MCP works without credentials and searches published docs; account actions require the API or agent skills.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "vendor_official means a documentation MCP was verified, not an account-operation MCP. Marketing API is distinct from Mailchimp Transactional.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Klaviyo customer data, email and mobile marketing platform.",
+    "auth_methods": [
+      "Scoped private API key for server APIs",
+      "OAuth for third-party integrations and hosted MCP",
+      "Public company/site ID for limited client endpoints"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "REST/JSON:API and official MCP",
+    "api_breadth": "Broad profiles, events, lists, campaigns, flows and marketing reporting.",
+    "capabilities": [
+      "Manage profiles, lists and events",
+      "Create email campaigns",
+      "Read campaign and flow performance"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Private scopes are required to read sensitive account data; public IDs only authorize limited client-side creation.",
+      "Free-plan limits and paid feature/volume entitlements apply.",
+      "Third-party apps should use OAuth and request only required scopes."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.klaviyo.com/en/reference/api_overview",
+        "title": "API overview",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Documents scoped private-key server authentication, OAuth for technology partners and limited public company-ID client endpoints; publishes OpenAPI.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.klaviyo.com/en/docs/klaviyo_mcp_server",
+        "title": "Klaviyo MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "capabilities",
+          "api_breadth"
+        ],
+        "excerpt": "Vendor MCP integrates with Klaviyo APIs for campaign creation and campaign/flow performance reporting.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.klaviyo.com/pricing",
+        "title": "Klaviyo pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "A self-serve free plan exists for limited active profiles and monthly emails; higher volume uses paid plans.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Build-now is a documentation-based judgment for a scoped prototype; no account or API execution was performed.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Sales funnels, email marketing, automation and digital-product platform.",
+    "auth_methods": [
+      "Public API key generated in account settings",
+      "Separate MCP key"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "Public API and official MCP; exact REST specification fetch unresolved",
+    "api_breadth": "Contacts, tags, email campaigns, funnels, offers/products, automation and booking operations are documented.",
+    "capabilities": [
+      "Manage contacts and tags",
+      "Manage newsletters and campaign steps",
+      "Manage funnel-related offers, products and bookings"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Requires an account and separately generated API/MCP keys.",
+      "The linked developer specification could not be fetched in this run; endpoint-level schemas/header mechanics need verification before implementation.",
+      "Feature limits depend on the selected plan."
+    ],
+    "confidence": "medium",
+    "evidence": [
+      {
+        "url": "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+        "title": "How to use the systeme.io public API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Account settings generate Public API keys; official help lists contact/tag operations and expanded product, offer and calendar features.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+        "title": "How to use the systeme.io MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Systeme.io documents its own MCP server, separate MCP keys and tools including contacts, tags, newsletters and campaign steps.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://systeme.io/pricing",
+        "title": "Systeme.io Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "Offers a free starting plan and multiple paid plans; the rendered comparison contained missing numeric values.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Public API key is the vendor's terminology and does not imply that the credential is safe to publish. Developer specification access remained unresolved.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Pinterest content, catalog, analytics and advertising developer platform.",
+    "auth_methods": [
+      "OAuth 2.0 authorization code and refresh token",
+      "Product-limited or sandbox test token after approval"
+    ],
+    "access": [
+      "admin_approval"
+    ],
+    "api_type": "HTTPS API v5",
+    "api_breadth": "Pins, boards, analytics, ads, audiences and catalogs across Trial and Standard tiers.",
+    "capabilities": [
+      "Read and create Pins/boards",
+      "Read analytics and ads",
+      "Manage authorized catalogs and advertising resources"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "A Pinterest business account and approval for initial Trial access are required.",
+      "Trial-created Pins and boards are only visible to the creator as sandbox entities.",
+      "Standard upgrade needs an approved Trial app, privacy/use-case details and a live integration video including OAuth."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.pinterest.com/docs/getting-started/connect-app/",
+        "title": "Connect app",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "verdict",
+          "blockers"
+        ],
+        "excerpt": "Requires a business account, email verification and reviewed app registration; documents OAuth code/token flow and limited test tokens.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.pinterest.com/docs/key-concepts/access-tiers/",
+        "title": "Understanding our access tiers",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "capabilities",
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Trial and Standard cover pins, boards, ads, audiences, analytics and catalogs, but Trial visibility/rate limits and Standard review differ.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP status was not established by the reviewed official pages. Initial Trial approval and public-production approval are separate gates.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Meta Threads publishing, replies, profile and insights API.",
+    "auth_methods": [
+      "OAuth 2.0 Threads user access token"
+    ],
+    "access": [
+      "admin_approval"
+    ],
+    "api_type": "HTTPS Threads API",
+    "api_breadth": "Authenticated profile/media reads, publishing, reply management and insights, gated by scopes.",
+    "capabilities": [
+      "Publish Threads posts",
+      "Read and manage replies",
+      "Read profile/media and insights"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Create an app with the Threads use case and use its Threads-specific app ID/secret.",
+      "Users outside app roles need permission approval through App Review and a published app.",
+      "Publishing media must be publicly reachable; tokens and permission grants have expiration/renewal rules."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.facebook.com/documentation/threads/get-started",
+        "title": "Get started with the Threads API",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Documents Threads-use-case apps, tester authorization, per-feature permissions, OAuth tokens, public media hosting, and App Review before users outside app roles can authorize.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Single comprehensive primary guide was readable; separate token-guide fetch was rate-limited. Tester-role development and approval for users outside app roles are distinct. No fee entitlement was inferred. MCP remains unresolved.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "description": "Twilio SendGrid email delivery and marketing API service.",
+    "auth_methods": [
+      "API key in Authorization: Bearer"
+    ],
+    "access": [
+      "self_serve_trial",
+      "paid_plan"
+    ],
+    "api_type": "REST Web API v3 and SMTP",
+    "api_breadth": "Email sending plus sender identity, templates, activity/event and related account APIs.",
+    "capabilities": [
+      "Send transactional email",
+      "Manage verified sender identities",
+      "Consume delivery events and email activity"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Complete sender/account verification and configure appropriate sending-domain authentication.",
+      "New-account trial is time-limited; ongoing sending needs a paid Email API plan.",
+      "Separate Email API and Marketing Campaigns quotas/entitlements apply."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/for-developers/sending-email/api-getting-started",
+        "title": "Getting started with the SendGrid API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Create an account and API key, then call JSON Web API v3 with a Bearer authorization header; Basic auth is no longer accepted.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.twilio.com/articles/47846436523419",
+        "title": "Twilio SendGrid - Trial Account Plan",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_type",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Official indexed help text says new accounts receive a 60-day trial with limited API/SMTP sending, which stops after the trial unless upgraded.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://www.twilio.com/docs/sendgrid/api-reference/sender-verification",
+        "title": "Sender Verification",
+        "source_type": "first_party",
+        "supports": [
+          "capabilities",
+          "blockers",
+          "api_breadth"
+        ],
+        "excerpt": "Sender Verification offers REST endpoints to create, inspect, update, delete and verify authorized sender identities.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The trial help article's indexed official text was readable in search; its direct open rendered only a JavaScript shell. MCP status not established.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "description": "Commerce platform with merchant Admin APIs and buyer-facing commerce protocols.",
+    "auth_methods": [
+      "Merchant-approved OAuth/access tokens for GraphQL Admin API",
+      "Client-credentials flow for eligible installed stores",
+      "Buyer sign-in for protected Shop MCP operations"
+    ],
+    "access": [
+      "admin_approval",
+      "unresolved"
+    ],
+    "api_type": "GraphQL Admin API; Storefront/customer APIs and official Shop MCP/UCP",
+    "api_breadth": "Broad merchant store administration; official commerce MCP is buyer-facing and is not equivalent to Admin API.",
+    "capabilities": [
+      "Read and write authorized store data",
+      "Manage product, inventory, order and fulfillment workflows",
+      "Search products and build carts/checkouts through Shop MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Merchant installation and approved scopes are required; some scopes and public-app protected customer data require Shopify approval.",
+      "Development stores need appropriate Partner/merchant organization permissions; current fee entitlement was not explicitly verified.",
+      "Legacy Storefront MCP catalog/cart tools were removed; use current Shop MCP or UCP migration guidance."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://shopify.dev/docs/apps/build/authentication-authorization",
+        "title": "About app authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Installed apps call GraphQL Admin with merchant-approved scopes and access tokens; additional approval can apply to scopes and public-app protected customer data.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://shopify.dev/docs/apps/build/stores/development-stores",
+        "title": "Dev stores",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Owned development stores provide realistic app testing and require a Partner account or merchant developer permissions plus organization store-creation rights.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://shopify.dev/docs/apps/build/storefront-mcp",
+        "title": "Migrate from Storefront MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_type",
+          "blockers"
+        ],
+        "excerpt": "Legacy catalog/cart tools at /api/mcp were removed; official documentation directs developers to Shop MCP or UCP.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://shopify.dev/docs/agents/shop-mcp",
+        "title": "About Shop MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "Shop MCP supports product search, locations, carts and checkouts without sign-in; buyer account/payment and tracked-order operations require sign-in.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Admin integration, store-specific custom development, public app distribution and buyer MCP are distinct access surfaces. MCP availability does not grant merchant Admin access.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "description": "Open-source ecommerce platform running on WordPress.",
+    "auth_methods": [
+      "Consumer key/secret REST API keys bound to a WordPress user",
+      "HTTP Basic over HTTPS or supported WordPress authentication method"
+    ],
+    "access": [
+      "local_open_source",
+      "admin_approval"
+    ],
+    "api_type": "WordPress-based REST API; Store API",
+    "api_breadth": "Store administration via scoped REST resources and public/storefront-specific APIs.",
+    "capabilities": [
+      "Connect external systems to store data",
+      "Read/write store resources with user-bound permissions",
+      "Receive configured order and other event webhooks"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Requires a functioning WooCommerce/WordPress store with access to generate keys.",
+      "Keys inherit the WordPress user's capabilities and selected read/write permissions.",
+      "Human-readable WordPress permalinks are required; hosting and optional extensions are separate costs."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://woocommerce.com/document/woocommerce-rest-api/",
+        "title": "WooCommerce REST API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Merchants generate consumer keys/secrets for a selected WordPress user and read/write permission level; non-Plain permalinks are required.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+        "title": "Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_breadth",
+          "access"
+        ],
+        "excerpt": "REST keys may be generated through admin or the authorization endpoint; access follows user roles/capabilities and supported HTTPS authentication.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://github.com/woocommerce/woocommerce",
+        "title": "WooCommerce official repository",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Vendor-maintained public repository identifies WooCommerce as an open-source WordPress ecommerce platform under GPL-2.0.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://woocommerce.com/document/configuring-woocommerce-settings/advanced/",
+        "title": "Advanced Settings: REST API keys and Webhooks",
+        "source_type": "first_party",
+        "supports": [
+          "capabilities"
+        ],
+        "excerpt": "Merchants can create scoped REST keys and configure webhook topics such as order creation for external delivery.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "No central vendor partnership is established as necessary for an own-store integration. MCP status remains unresolved in this bounded review.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "description": "Hosted ecommerce platform with store, app and account APIs.",
+    "auth_methods": [
+      "Scoped OAuth-based store/account access token in X-Auth-Token",
+      "OAuth authorization flow for installed single-click apps"
+    ],
+    "access": [
+      "self_serve_trial",
+      "admin_approval",
+      "paid_plan"
+    ],
+    "api_type": "REST Admin APIs; GraphQL storefront/account APIs",
+    "api_breadth": "Broad products, orders, customers, store settings and headless storefront surfaces.",
+    "capabilities": [
+      "Manage products, orders and customers",
+      "Build custom or single-click app integrations",
+      "Read/write store or account data permitted by token scopes"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Store owner/authorized user must issue credentials or install the OAuth app.",
+      "Trial testing does not establish marketplace approval or production subscription eligibility.",
+      "Choose store-level, app-level or account-level credentials and scopes appropriate to the target surface."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/quick-start",
+        "title": "BigCommerce Developers quick start",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Offers a free trial store for API testing and directs developers to generate scoped API credentials; documents REST/GraphQL store management.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+        "title": "API Accounts",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_breadth",
+          "blockers"
+        ],
+        "excerpt": "Distinguishes scoped store-, app- and account-level OAuth API credentials and X-Auth-Token authentication.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.bigcommerce.com/developer/docs/integrations/apps/guide/auth",
+        "title": "Single-Click App OAuth Flow",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "Single-click apps exchange merchant authorization for a store access token; credentials are generally created by store owners or authorized users.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP was not established from these sources. A private own-store token route is separate from marketplace app distribution.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "description": "Salesforce B2C Commerce platform and SCAPI storefront/merchant APIs.",
+    "auth_methods": [
+      "OAuth access token from Account Manager for Admin APIs",
+      "SLAS OAuth 2.1 for Shopper APIs"
+    ],
+    "access": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "RESTful B2C Commerce API (SCAPI); OCAPI-related surfaces",
+    "api_breadth": "Broad storefront browsing, baskets/orders, merchant product/order/inventory management and custom APIs.",
+    "capabilities": [
+      "Build storefront browsing, cart and checkout flows",
+      "Manage merchant product, order and inventory data",
+      "Create or extend custom API endpoints"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Requires access to a B2C Commerce customer instance and configured clients.",
+      "An administrator must assign organizations, instance filters, API roles and allowed scopes.",
+      "Admin and Shopper clients use different security services; do not mix shopper and admin scopes."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+        "title": "Get Started with the B2C Commerce API",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "SCAPI is a REST API set for storefronts, merchant tools and integrations, included for B2C Commerce customers; separates shopper and admin functionality.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+        "title": "Authorization for SCAPI Admin APIs",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "An admin creates an Account Manager client with organizations, instance roles, scopes and a secret to obtain Admin API access tokens.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+        "title": "Shopper Login and API Access Service Overview",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_breadth"
+        ],
+        "excerpt": "SLAS secures Shopper APIs, and its configuration requires relevant organization-administrator roles and B2C instance filters.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Scope is B2C Commerce SCAPI as evidenced; B2B Commerce on core Salesforce is a different product/auth surface. No free developer tenant was established. MCP remains unresolved.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "description": "Magento Open Source and Adobe Commerce ecommerce web API framework.",
+    "auth_methods": [
+      "OAuth 1.0a for platform integrations",
+      "Admin/customer bearer-token or session authentication as applicable"
+    ],
+    "access": [
+      "local_open_source",
+      "admin_approval"
+    ],
+    "api_type": "REST, GraphQL and SOAP",
+    "api_breadth": "Broad commerce CRUD/search and integration services, controlled by configured resource ACLs.",
+    "capabilities": [
+      "Read/search and manage catalog resources",
+      "Integrate commerce with CRM/ERP backends",
+      "Build customer or employee shopping applications"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Requires an installed Magento/Adobe Commerce environment and merchant/admin integration authorization.",
+      "Assign only required resource permissions; unexposed services are unavailable to the API.",
+      "Adobe Commerce SaaS/Cloud Services uses a different authentication model from the evidenced Magento/PaaS OAuth flow."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/get-started/",
+        "title": "Getting started with Adobe Commerce web APIs",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Magento Open Source/Adobe Commerce supports REST, GraphQL and SOAP, with OAuth/token/session authentication, resource authorization and CRUD/search integrations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer.adobe.com/commerce/webapi/get-started/authentication/gs-authentication-oauth",
+        "title": "OAuth-based authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Merchant-created integrations use OAuth 1.0a and scoped resources; this guide explicitly applies to PaaS, with separate REST authentication for Cloud Services.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://github.com/magento/magento2",
+        "title": "Magento official repository",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "description"
+        ],
+        "excerpt": "Adobe-maintained Magento source is publicly available with OSL-3.0 and additional licenses.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The original combined identity includes a locally deployable open-source route and licensed Adobe variants. Do not infer SaaS onboarding or a vendor MCP from Magento's API. MCP remains unresolved.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "description": "Squarespace websites and commerce integration APIs.",
+    "auth_methods": [
+      "Merchant API key as Bearer token",
+      "OAuth 2.0 access token for registered commercial integrations",
+      "User sign-in connection for official MCP"
+    ],
+    "access": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST Commerce APIs and official MCP",
+    "api_breadth": "Products, inventory, orders, contacts, discounts, transactions, analytics and webhooks; MCP exposes a narrower subset.",
+    "capabilities": [
+      "Manage products, inventory, contacts and discounts",
+      "Read/manage supported orders and transactions",
+      "Read orders or create/update supported products through MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Custom-app API keys require Commerce Advanced according to current developer authentication documentation.",
+      "Commercial OAuth clients must be registered, reviewed and approved; extension listing is a separate process.",
+      "Webhook subscriptions are OAuth-only; official Commerce MCP does not refund, fulfill/cancel orders, delete records or take payments."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+        "title": "Authentication and permissions",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_breadth",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "API keys and OAuth tokens are website-scoped; Commerce Advanced enables custom keys, commercial OAuth requires review, and webhooks require OAuth.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.squarespace.com/commerce-apis/overview",
+        "title": "Overview of Commerce APIs",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "api_type",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "HTTPS REST APIs cover contacts, discounts, inventory, orders, products, transactions, analytics and webhook subscriptions.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developers.squarespace.com/mcp/tools/commerce",
+        "title": "Commerce MCP tools",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Official Commerce tools use the signed-in user's website permissions; support contact/product reads and writes plus order reads, with specified action exclusions.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The plan label is quoted from the current developer guide; verify current billing mapping in the merchant account before purchase. MCP Commerce tools are currently documented for Claude/ChatGPT only.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "description": "Ecwid store customization and commerce integration APIs.",
+    "auth_methods": [
+      "Own-store secret bearer access token from custom app",
+      "OAuth 2.0 for public apps",
+      "Public token for limited public store data"
+    ],
+    "access": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST API",
+    "api_breadth": "Products, categories, orders and store profile access through custom-app scopes; broader app features depend on permissions.",
+    "capabilities": [
+      "Create/update/delete products and categories",
+      "Read and update placed/unfinished orders",
+      "Read store profile and authorized public store data"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Only paid-plan stores have API access.",
+      "A free paid-plan test-store upgrade can be requested by email for qualifying development; not automatic free access.",
+      "Custom apps work only in their own store; public integrations need OAuth, and there is no API test mode."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid",
+        "title": "Set up your dev environment in Ecwid",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "API requires a paid store and custom application; qualifying test-store upgrades are provided by email. Default custom scopes cover products/categories/orders/profile.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.ecwid.com/get-started/make-your-first-api-request",
+        "title": "Make your first API request",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Own-store apps obtain secret/public tokens without an OAuth round trip; public apps use OAuth 2.0. Secret bearer tokens authorize scoped REST requests; no test mode exists.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP was not established. Separate test-store setup is needed to isolate development from live orders.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "description": "Creator storefront, digital product and membership commerce service.",
+    "auth_methods": [
+      "Own-account generated access token",
+      "OAuth authorization for other sellers",
+      "Gumroad sign-in for official MCP"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "HTTP API v2 and official MCP",
+    "api_breadth": "Seller-account products and store data, with a vendor MCP for scoped reads and selected product changes.",
+    "capabilities": [
+      "Read owned products and sales-related product information",
+      "Create unpublished product drafts",
+      "Update owned product content/pricing and covers through supported tools"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "API and MCP access are seller/account scoped, not unrestricted marketplace access.",
+      "General applications need a redirect handler and per-user OAuth authorization.",
+      "MCP has a deliberately narrower action surface than the full seller dashboard; sales incur platform fees."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://gumroad.com/help/article/280-create-application-api",
+        "title": "Create an application for the API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "verdict"
+        ],
+        "excerpt": "Sellers can manually generate tokens for their own account; applications for others use OAuth/redirect handling. Tokens remain valid until revoked.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://gumroad.com/help/article/355-connect-ai-assistants-to-gumroad",
+        "title": "Connecting AI assistants to your Gumroad store",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Gumroad runs the MCP connector; sign-in authorizes account reads, product information, unpublished drafts and supported edits to owned products.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://gumroad.com/pricing",
+        "title": "Gumroad pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Gumroad advertises no monthly charges, with fees deducted per sale.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The main API reference opened as an unreadable shell, so breadth is constrained to readable official help/MCP documentation. The Claude directory calls it a community connector, but the vendor states it operates it.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "description": "Amazon SP-API for sellers and vendors automating their Amazon business.",
+    "auth_methods": [
+      "Login with Amazon OAuth 2.0 access/refresh tokens",
+      "Private application self-authorization for own organization"
+    ],
+    "access": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST SP-API",
+    "api_breadth": "Broad listings, catalog, pricing, orders, inventory, fulfillment, reports, shipments and payment workflows.",
+    "capabilities": [
+      "Manage listings, prices and inventory",
+      "Process orders and fulfillment",
+      "Read authorized reports and payment/shipment data"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Private seller integrations require a Professional Selling Account and primary-user registration.",
+      "Developer profile security controls and requested data roles must qualify for access.",
+      "Public applications require separate publishing approval and seller authorization; own-business self-authorization does not satisfy that gate."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developer.amazonservices.com/start/getting-started-for-private-developers",
+        "title": "Getting started for private developers",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Private apps are own-organization and self-authorized; registration requires a Professional seller account, primary-user status, security profile and qualified API roles.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://developer-docs.amazon/sp-api/lang-en_EN/docs/onboarding-overview",
+        "title": "Onboarding as a Developer",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "blockers"
+        ],
+        "excerpt": "Official indexed guide describes REST APIs, Login with Amazon OAuth 2.0, developer registration, sandbox/production stages and separate public-app approval.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Onboarding guide text was readable via official search indexing but direct opens returned the vendor's 404 page. Main private-developer guide was fully readable. A Selling Partner plugin link appeared; MCP protocol/ownership was not conclusively established from the reviewed pages.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "description": "FanBasis seller commerce and embedded checkout platform; complete public integration access remains unresolved.",
+    "auth_methods": [
+      "API key via x-api-key described in a FanBasis-branded demo",
+      "Checkout session secret for JavaScript SDK initialization"
+    ],
+    "access": [
+      "unresolved"
+    ],
+    "api_type": "Documented HTTP checkout-session endpoint and JavaScript SDK; full public API contract unresolved",
+    "api_breadth": "Narrow embedded-checkout integration is described; broad seller/admin CRUD and credential eligibility not verified.",
+    "capabilities": [
+      "Create an embedded checkout session (documented, not executed)",
+      "Initialize hosted/JavaScript/React checkout SDK",
+      "Listen for documented payment/UI events"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "unresolved",
+    "blockers": [
+      "Main vendor homepage returned 403; demo documentation direct opens rendered empty shells.",
+      "Indexed FanBasis-branded demo text mentions a seller-dashboard API key, but vendor ownership/linkage and key availability/plan eligibility were not conclusively verified.",
+      "No complete production API specification, public-app approval policy or MCP was established."
+    ],
+    "confidence": "low",
+    "evidence": [
+      {
+        "url": "https://www.fanbasis.com/auth/setup/signup",
+        "title": "FanBasis account setup",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access"
+        ],
+        "excerpt": "Official signup distinguishes seller and user accounts and includes website/identity verification; signup does not establish developer API eligibility.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
+        "title": "FanBasis-branded demo: Checkout Session Secret",
+        "source_type": "secondary",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "capabilities",
+          "api_breadth"
+        ],
+        "excerpt": "Indexed demo text documents a POST checkout-session endpoint under fanbasis.com using x-api-key from a seller dashboard, plus SDK session-secret initialization.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://demo.embedded.fanbasis.io/docs/how-it-works",
+        "title": "FanBasis-branded demo: How it works",
+        "source_type": "secondary",
+        "supports": [
+          "capabilities",
+          "api_breadth"
+        ],
+        "excerpt": "Indexed branded demo describes product setup, session-secret creation, hosted/core/React SDK options and payment success/failure events.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Demo subdomain is treated as unverified supporting material, not conclusive first-party access policy. Implementation readiness remains unresolved pending a vendor-linked specification or authenticated merchant documentation; no account/API execution.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "description": "Pay-as-you-go SEO, search, keyword, backlink and web-data APIs.",
+    "auth_methods": [
+      "HTTP Basic with dedicated API login/password"
+    ],
+    "access": [
+      "self_serve_trial",
+      "paid_plan"
+    ],
+    "api_type": "REST/JSON APIs and official MCP",
+    "api_breadth": "Broad SERP, keyword, backlink, on-page, business and domain data APIs with asynchronous and live modes.",
+    "capabilities": [
+      "Fetch search/keyword and backlink data",
+      "Run on-page and competitor/domain analysis",
+      "Call documented SEO endpoints through official MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Live data calls consume balance; trial credit is finite even though it has no time expiration.",
+      "Use dedicated API credentials, not the dashboard password.",
+      "Sandbox responses are for integration testing and do not demonstrate live-data success."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.dataforseo.com/v3/auth/",
+        "title": "Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Create an account and retrieve dedicated API login/password from API Access; all REST requests use Basic credentials in the Authorization header.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://dataforseo.com/help-center/how-does-your-free-unlimited-trial-work",
+        "title": "How does your free unlimited trial work?",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Registration provides a finite trial balance without an expiry; a separate sandbox is available for integration testing.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://dataforseo.com/seo-mcp-server",
+        "title": "SEO MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_type",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "DataForSEO provides an official MCP/hosted endpoint for its SEO API families, with the normal pay-as-you-go API charges.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "A scoped prototype is self-serve; production economics and quotas vary by endpoint. No credentials or live requests were used.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "description": "SEO data and project-management API platform.",
+    "auth_methods": [
+      "API key using Authorization: Token",
+      "OAuth or Data API key for official MCP"
+    ],
+    "access": [
+      "self_serve_trial",
+      "paid_plan"
+    ],
+    "api_type": "HTTPS Data/Project APIs and official MCP",
+    "api_breadth": "Keywords, domains/competitors, backlinks, audits, AI Search and project/rank-management endpoints.",
+    "capabilities": [
+      "Retrieve keyword/backlink/domain data",
+      "Read and manage SEO projects and audits",
+      "Use SEO data through official MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "API credits/add-on or standalone entitlement must be active; legacy plans differ.",
+      "The trial is time/credit limited, and insufficient credits can disable calls.",
+      "Rate limits apply; requesting higher limits or overage may require contacting the API team."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://help.seranking.com/hc/en-us/articles/22447958135068-Getting-Started-with-SE-Ranking-s-API",
+        "title": "Getting Started with SE Ranking's API",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "access",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Standalone API access offers a 14-day trial; a unified key covers Data and Project endpoints, while legacy plans and API add-ons differ.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://seranking.com/api/data/getting-started/",
+        "title": "Getting started",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "access"
+        ],
+        "excerpt": "Generate an API key in the dashboard and authenticate requests at api.seranking.com using the recommended Authorization: Token header.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://help.seranking.com/hc/en-us/articles/29433510970140-Setup",
+        "title": "MCP setup",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "api_type"
+        ],
+        "excerpt": "Official SE Ranking MCP is at api.seranking.com/mcp and supports OAuth or the Data API key.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Current official docs describe a unified key and standalone API option; do not assume older Business-only availability.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "description": "Ahrefs SEO and marketing intelligence APIs.",
+    "auth_methods": [
+      "API key in Authorization: Bearer"
+    ],
+    "access": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST API v3 and official MCP",
+    "api_breadth": "SEO reports across Site/Keywords Explorer, SERPs, audits, rank tracking, Brand Radar and additional marketing surfaces.",
+    "capabilities": [
+      "Read backlink, traffic and keyword reports",
+      "Read audits, rank tracking and brand/AI visibility data",
+      "Manage supported rank projects and keyword lists"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "API v3 and MCP need Lite or higher subscription according to September 2026 help.",
+      "Workspace owner/admin creates API keys.",
+      "Plan-level units and per-request row limits are shared across API, MCP and Ahrefs Connect."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+        "title": "About API v3",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "mcp_status",
+          "api_breadth",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "September 2026 guidance says Direct API v3, MCP and Ahrefs Connect are available on Lite and higher, sharing units and plan-specific row limits.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+        "title": "API keys creation and management",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "blockers"
+        ],
+        "excerpt": "API v3 uses a Bearer API key; workspace owners/admins create and manage keys, expirations and usage limits.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.ahrefs.com/en/api/docs/introduction",
+        "title": "Introduction",
+        "source_type": "first_party",
+        "supports": [
+          "api_breadth",
+          "capabilities",
+          "api_type"
+        ],
+        "excerpt": "API v3 exposes SEO report families plus Brand Radar and management endpoints for Rank Tracker projects and Keywords Explorer lists.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "A documented paid self-serve path exists; outdated Enterprise-only API claims should not be carried forward. Free test-query behavior was not independently reviewed.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "description": "Web search, scraping and structured extraction service.",
+    "auth_methods": [
+      "API token in x-api-token",
+      "Bearer token for documented Marketplace endpoints"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "REST/JSON APIs",
+    "api_breadth": "Web search; HTML/Markdown/screenshots/JSON; workflow reruns and scraping results.",
+    "capabilities": [
+      "Search the web",
+      "Scrape pages into HTML, Markdown, screenshots or structured JSON",
+      "Manage/rerun scraping workflows and retrieve results"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Requires an account-generated token and available plan resources.",
+      "Tokens have expiration and endpoints/hosts may use different documented authentication conventions.",
+      "Public pricing and billing text contain inconsistent plan/token figures; verify current entitlements in-account before costing production."
+    ],
+    "confidence": "medium",
+    "evidence": [
+      {
+        "url": "https://docs.mrscraper.com/docs/api/overview",
+        "title": "API Overview",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "REST-style JSON endpoints cover web search, page HTML/Markdown/screenshots/JSON and platform workflow operations.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.mrscraper.com/docs/api/authentication",
+        "title": "Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "blockers"
+        ],
+        "excerpt": "Dashboard API tokens use x-api-token on standard endpoints and Bearer authentication on Marketplace endpoints; plan resources constrain access.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://mrscraper.com/pricing",
+        "title": "MrScraper Pricing",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Current pricing page advertises a no-card free scraping plan plus paid subscriptions, though its headline/table and FAQ pricing details differ.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP status remains unestablished from reviewed technical pages; marketing mentions MCP but no verified vendor MCP specification was read. Avoid relying on older host/auth examples where current documentation differs.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "description": "Cloud automation platform for running Actors, scraping and managing datasets.",
+    "auth_methods": [
+      "API bearer token",
+      "OAuth sign-in for hosted MCP",
+      "Unauthenticated discovery-only MCP tools"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "REST API v2 and official MCP",
+    "api_breadth": "Actors, builds/runs/tasks, datasets, key-value stores, request queues, schedules and webhooks.",
+    "capabilities": [
+      "Discover and run Actors",
+      "Read/write scraping datasets and storage",
+      "Manage Actor runs/tasks and related automation"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Executing Actors requires account authentication and consumes credits.",
+      "Individual Actors can have separate pricing/input requirements and resource limits.",
+      "Unauthenticated MCP discovery can search/fetch Actor/docs metadata but cannot execute Actors."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.apify.com/agents/quickstart",
+        "title": "Agent quickstart",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "access",
+          "mcp_status",
+          "api_type",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Free accounts include monthly credits without a card; tokens come from Console, remote MCP uses OAuth, and unauthenticated tools are limited to discovery/documentation.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.apify.com/api/v2",
+        "title": "Apify API",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth",
+          "capabilities"
+        ],
+        "excerpt": "REST API reference covers Actor management, builds/runs/tasks, dataset/storage operations and automation resources.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Actor-specific commercial/target-site constraints were not exhaustively reviewed; the platform integration is documented and self-serve.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 56,
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "description": "Web context API for search, scraping, crawling and structured extraction.",
+    "auth_methods": [
+      "Keyless limited endpoints",
+      "API key as Bearer token",
+      "Account sign-in for full MCP access"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "HTTPS API, CLI and official MCP; local/self-host option",
+    "api_breadth": "Search, scrape, parse, map, crawl, browser interaction and related agent web-data features.",
+    "capabilities": [
+      "Search and scrape web pages into clean data",
+      "Map/crawl sites and parse content",
+      "Use supported browser/agent interactions through authenticated plans"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Keyless access has daily/rate limits and a reduced tool surface.",
+      "Authenticated calls remain constrained by team-plan credits and features.",
+      "Local/self-host feature parity and infrastructure requirements need separate review."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.firecrawl.dev/introduction",
+        "title": "Introduction",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Current introduction documents a keyless scrape request and Bearer key for higher limits, with search/scrape/interact APIs and linked crawl/map/parse capabilities.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.firecrawl.dev/mcp-server",
+        "title": "Firecrawl MCP: Get Started",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Official MCP offers limited keyless Search/Scrape/Parse or account sign-in/API-key authentication for the full plan tool surface.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Current pages advertise keyless access; no keyless call was executed. Local option is linked from official docs, but licensing/deployment completeness is unresolved and should be verified before selecting self-hosting.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "description": "Public web data collection, search, scraping, browser and proxy infrastructure.",
+    "auth_methods": [
+      "API key as Bearer token",
+      "MCP connection backed by Bright Data account credentials"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "HTTPS REST APIs and official remote/local MCP",
+    "api_breadth": "Scraper/dataset job management, web/search extraction, browser/proxy-related services and account operations.",
+    "capabilities": [
+      "Search and scrape public web data",
+      "Start and monitor asynchronous collection jobs",
+      "Retrieve snapshot results and supported scraping metadata"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Free MCP/account credits are shared across the account/team; broader usage is paid.",
+      "Product-specific quotas, configured resources and account permissions still apply.",
+      "Async jobs require progress polling and result retrieval; a queued job is not a completed extraction."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.brightdata.com/products/mcp-server/overview",
+        "title": "MCP server overview",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "mcp_status",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "verdict"
+        ],
+        "excerpt": "Vendor MCP has hosted and local options, public web search/scraping and a free monthly account-level request pool.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.brightdata.com/api-reference/scrapers/management-apis/monitor-progress",
+        "title": "Monitor progress",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "REST requests use a Bearer API key from account settings; async collection returns a snapshot ID which is polled until results are ready.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "The verified free pool is not evidence that every Bright Data product or tool is free. Exact production pricing was not audited.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "description": "Open-source CLI for checking username presence across social networks.",
+    "auth_methods": [
+      "No vendor API credential for the documented local CLI"
+    ],
+    "access": [
+      "local_open_source"
+    ],
+    "api_type": "Local Python CLI/subprocess; outbound website requests",
+    "api_breadth": "Focused username checks with site selection, proxy/timeout controls and text/CSV/XLSX output.",
+    "capabilities": [
+      "Check one or multiple usernames across supported sites",
+      "Restrict checks to selected sites",
+      "Export found-account results"
+    ],
+    "mcp_status": "not_applicable",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "This is a local process integration, not a documented hosted vendor REST API.",
+      "Requires installation/runtime, network access and process/output handling.",
+      "Site changes and detection behavior can create unreliable matches; handle timeouts and distinguish found profiles from identity proof."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://github.com/sherlock-project/sherlock",
+        "title": "Sherlock official repository and README",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "MIT-licensed project installs via pipx/pip/Docker and runs sherlock USERNAME locally; README lists multiple usernames, site filtering and text/CSV/XLSX exports.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://github.com/sherlock-project/sherlockproject.xyz/blob/master/installation.mdx",
+        "title": "Sherlock Project installation documentation",
+        "source_type": "first_party",
+        "supports": [
+          "access",
+          "api_type",
+          "blockers"
+        ],
+        "excerpt": "Official project docs describe supported Python package/Docker installation and explain which distribution packages are community maintained.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "MCP marked not_applicable for the evidenced local-CLI implementation choice, not proof that no community wrapper exists. No searches of real usernames or software installation were performed.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "description": "B2B contact/company enrichment and prospecting data APIs.",
+    "auth_methods": [
+      "API key in x-api-key"
+    ],
+    "access": [
+      "partner_sales"
+    ],
+    "api_type": "HTTPS API with synchronous and asynchronous endpoints; OpenAPI",
+    "api_breadth": "Prospecting, contact/company search and enrichment, phones, job-change checks, email verification and usage/key management.",
+    "capabilities": [
+      "Find prospect profiles and enrich contact/company data",
+      "Find phone numbers and verify email addresses",
+      "Check job changes and monitor API usage"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "outreach_required",
+    "blockers": [
+      "Homepage signup is a reviewed request/book-a-call flow; no self-serve free/trial key grant was established.",
+      "An issued API key with endpoint permissions and sufficient balance is required.",
+      "Some endpoints are preview/key-gated; asynchronous enrichment requires polling or webhook handling."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://www.waterfall.io/",
+        "title": "Waterfall.io homepage",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "access",
+          "verdict"
+        ],
+        "excerpt": "Vendor markets a unified B2B enrichment API and presents a request form with review confirmation plus a book-a-call route.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/introduction",
+        "title": "Waterfall API introduction",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Official API base uses x-api-key and documents search, enrichment, job change, email verification, account reporting and key management; labels sync/async and preview endpoints.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://docs.waterfall.io/v1/authentication",
+        "title": "Authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "Vendor authentication guide documents API-key authorization for requests.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Access verdict is an inference from the vendor's visible onboarding flow; it is not a categorical claim that a self-serve option cannot exist. MCP status remains unresolved.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  },
+  {
+    "id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "description": "GTM data, enrichment, workflow and prospecting platform.",
+    "auth_methods": [
+      "Clay API key",
+      "Browser/device workspace authorization for CLI",
+      "User sign-in authorization for official Clay MCP"
+    ],
+    "access": [
+      "self_serve_free",
+      "self_serve_trial",
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "Public API, CLI, webhooks and official MCP",
+    "api_breadth": "Search, audiences, enrichment functions, workflows and table reads; table-building/write operations are restricted.",
+    "capabilities": [
+      "Search people/companies and run enrichment functions",
+      "Build/run documented GTM workflows",
+      "Read known tables and manage supported campaign logic"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Editor/Admin workspace access is required to authorize CLI/MCP connections.",
+      "Public API Tables is read-only; structured queries and paging past basic limits need Enterprise API table sync.",
+      "Free/trial plans have smaller search and credit/action limits; campaigns' launch/pause/resume remain in the Clay app."
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://university.clay.com/docs/clay-api-cli",
+        "title": "Installing Clay Plugin (API & CLI)",
+        "source_type": "first_party",
+        "supports": [
+          "description",
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "capabilities",
+          "blockers",
+          "verdict"
+        ],
+        "excerpt": "Current developer platform is available on all plans including free/trial; documents device sign-in, searches/functions/workflows, read-only Tables and Enterprise-only structured table sync.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://university.clay.com/docs/clay-mcp-in-chatgpt",
+        "title": "Clay MCP in ChatGPT",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "auth_methods",
+          "access",
+          "api_breadth"
+        ],
+        "excerpt": "Vendor MCP connects to a selected workspace with Clay sign-in and Editor/Admin access; distinct Clay and Clay for Reps apps expose different toolsets.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://university.clay.com/docs/workspace-administration-documentation",
+        "title": "Account and workspace settings",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access"
+        ],
+        "excerpt": "Official account documentation places the Clay API key under profile settings and supports copying/regenerating it.",
+        "retrieved_at": "2026-11-23"
+      },
+      {
+        "url": "https://university.clay.com/docs/webhook-integration-guide",
+        "title": "Webhooks in Clay",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "capabilities",
+          "blockers"
+        ],
+        "excerpt": "Inbound JSON webhooks accept an optional x-clay-webhook-auth token and have submission limits, with Enterprise auto-delete options.",
+        "retrieved_at": "2026-11-23"
+      }
+    ],
+    "notes": "Native Clay API is distinct from Clay's HTTP API action that calls other vendors. CLI/plugin installation does not itself install the separately connected MCP. No API token was read or used.",
+    "researched_at": "2026-11-23",
+    "research_method": "Automated public-web searches and official documentation/page opens. Documentation review only; no account creation, credentials, or API execution."
+  }
+]

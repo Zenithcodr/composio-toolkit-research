@@ -1,0 +1,290 @@
+{
+  "status": "completed",
+  "method": "Independent AI-agent re-research of a stratified 20-app sample; each verifier saved findings before viewing the first pass. Supervising AI reviewed disagreements. This is not human verification.",
+  "checked_at": "2026-11-24T02:00:27+00:00",
+  "sample_size": 20,
+  "sample_ids": [
+    2,
+    10,
+    11,
+    20,
+    24,
+    25,
+    34,
+    37,
+    44,
+    50,
+    53,
+    54,
+    61,
+    62,
+    78,
+    79,
+    82,
+    84,
+    92,
+    100
+  ],
+  "sample_apps_refined": 11,
+  "additional_supervising_audit_refinements": 2,
+  "accuracy_percentage": null,
+  "accuracy_note": "No semantic accuracy percentage is inferred from wording differences or agent agreement; human reference decisions are pending.",
+  "checks": [
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "outcome": "substantially_corroborated",
+      "notes": "Independent findings were frozen before reading first_pass.json. Verdict covers a reusable integration: a free scoped prototype is feasible, while premium resources and some MCP operations have additional gates. The remote CRM MCP is distinct from the developer MCP. Current guide says Sensitive Data blocks conversation data; an older April announcement described a broader Activity block, so do not treat that announcement as the complete current scope.",
+      "evidence_urls": [
+        "https://developers.hubspot.com/developer-platform-basics",
+        "https://developers.hubspot.com/changelog/service-keys",
+        "https://developers.hubspot.com/docs/api-reference/latest/overview",
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "DealCloud",
+      "outcome": "access_entitlement_and_surface_refinement",
+      "notes": "REST feasibility is conditional on an existing licensed site and group/API permissions. No universal free sandbox or trial was established. MCP has a specific Celeste license and separate enablement gate; an API key alone does not establish MCP access. Independent findings frozen before comparison.",
+      "evidence_urls": [
+        "https://api.docs.dealcloud.com/docs",
+        "https://api.docs.dealcloud.com/docs/apikeys",
+        "https://api.docs.dealcloud.com/docs/token",
+        "https://api.docs.dealcloud.com/mcp/getting-started",
+        "https://api.docs.dealcloud.com/mcp/authentication",
+        "https://api.docs.dealcloud.com/mcp/tools"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "outcome": "substantially_corroborated",
+      "notes": "API tokens remain described as a deprecated legacy route, so new integration design should use OAuth. Internal and distributed multi-customer integrations have different OAuth requirements. MCP EAP availability must not be generalized to every account. Independent findings frozen before comparison; no login/API calls.",
+      "evidence_urls": [
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://developer.zendesk.com/documentation/authentication/api-tokens-to-oauth/",
+        "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
+        "https://www.zendesk.com/pricing/"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Gladly",
+      "outcome": "substantially_corroborated",
+      "notes": "Product naming changed: former Hero platform is Gladly Team, while Sidekick is Gladly AI. REST and inbound MCP target related but different surfaces. Closed-beta MCP requires vendor enablement; an existing tenant can still implement the documented REST route once an admin grants API User. No general free developer account was established. Independent findings frozen before comparison.",
+      "evidence_urls": [
+        "https://developer.gladly.com/rest/",
+        "https://help.gladly.com/implementation/docs/get-your-api-tokens",
+        "https://help.gladly.com/product-docs/docs/what-is-the-gladly-mcp-for-claude",
+        "https://help.gladly.com/product-docs/docs/review-security-and-data-for-the-gladly-mcp-for-claude",
+        "https://help.gladly.com/implementation/docs/invoice-and-billing-overview"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Lark (Larksuite)",
+      "outcome": "substantially_corroborated",
+      "notes": "Direct Lark doc opens rendered shells; cited indexed official text and the readable vendor-owned repository were independently reviewed. Remote-MCP setup documentation is marked Deprecated and described internal testing, so it is not used to promise generally available hosted access. Local official MCP exists; vendor_official does not imply every hosted variant is current. Feishu China and international Lark domains/app identities are distinct. Independent findings frozen before comparison.",
+      "evidence_urls": [
+        "https://github.com/larksuite/lark-openapi-mcp",
+        "https://open.larksuite.com/document/server-docs/getting-started/terminology",
+        "https://open.larksuite.com/document/home/introduction-to-custom-app-development/self-built-application-development-process",
+        "https://open.larksuite.com/document/ukTMukTMukTM/uQjN3QjL0YzN04CN2cDN"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Pumble",
+      "outcome": "substantially_corroborated",
+      "notes": "API addon and custom-app MCP credentials are distinct. Build-now refers to a scoped own-workspace API prototype after installation/permission grant. Private-channel message listing needs the addon bot in that channel. Exact current custom-app entitlement should be checked against workspace settings; no credentials or API calls were used. Independent findings frozen before comparison.",
+      "evidence_urls": [
+        "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+        "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
+        "https://pumble.com/pricing"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "GoHighLevel",
+      "outcome": "resolved_access_and_scope_gap",
+      "notes": "Independently read current first-party pages before viewing baseline. REST bearer-token setup must not be carried over to the current v2 operational MCP. Precise API entitlement can depend on plan and account role; no account or tool execution was tested.",
+      "evidence_urls": [
+        "https://marketplace.gohighlevel.com/docs/Authorization/PrivateIntegrationsToken/",
+        "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
+        "https://marketplace.gohighlevel.com/docs/other/mcp/index.html",
+        "https://www.gohighlevel.com/pricing"
+      ]
+    },
+    {
+      "id": 37,
+      "name": "systeme.io",
+      "outcome": "scope_narrowing_and_auth_refinement",
+      "notes": "First-party docs disagree about MCP breadth: developer guide updated six months ago says contacts/newsletters only, while help updated November 10 lists campaigns, products, courses and other actions. Keep the common verified subset and validate the current tool catalogue before promising broader MCP coverage. Free product signup is documented; no free-account key issuance was executed.",
+      "evidence_urls": [
+        "https://developer.systeme.io/reference/api",
+        "https://developer.systeme.io/docs/mcp-server",
+        "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
+        "https://systeme.io/pricing"
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Salesforce Commerce Cloud",
+      "outcome": "resolved_mcp_gap",
+      "notes": "Independent review is explicitly B2C Commerce. General Salesforce CRM MCP does not establish Commerce Cloud support. The official B2C tooling MCP is more than documentation search, but is not evidence of unrestricted shopper or B2B Commerce access. Demo examples do not grant full tenant credentials.",
+      "evidence_urls": [
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/scapi-get-started.html",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html",
+        "https://developer.salesforce.com/docs/commerce/commerce-api/guide/b2c-developer-tooling.html"
+      ]
+    },
+    {
+      "id": 50,
+      "name": "fanbasis",
+      "outcome": "publisher_identity_still_unresolved",
+      "notes": "Official documentation was read through automated Chrome UI because HTTP extraction returned empty JavaScript shells. No signup or payment was submitted, no key was generated and no endpoint was executed. Merchant eligibility, API-key enablement, pricing and production approval remain unverified; merchant signup alone would not prove free API access. Searches on official domains did not establish a vendor MCP; this is not proof of absence.",
+      "evidence_urls": [
+        "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
+        "https://demo.embedded.fanbasis.io/docs/getting-started",
+        "https://demo.embedded.fanbasis.io/docs/api-reference"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "Ahrefs",
+      "outcome": "architecture_constraint",
+      "notes": "Free fixed test queries do not establish general free production API access. A Composio-style direct connector should use the public REST API rather than repurpose the hosted MCP endpoint as an unrestricted backend bridge. No API calls were made.",
+      "evidence_urls": [
+        "https://docs.ahrefs.com/en/api/docs/introduction",
+        "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
+        "https://help.ahrefs.com/en/articles/6559232-about-api-v3",
+        "https://docs.ahrefs.com/en/mcp/docs/introduction"
+      ]
+    },
+    {
+      "id": 54,
+      "name": "MrScraper",
+      "outcome": "resolved_mcp_gap",
+      "notes": "Directly opened MCP docs list v0.5.0/seven tools; search snippets still described v0.3.0/three tools and were not used as the current tool inventory. API key fallback carries full account authority; OAuth scopes are narrower. No credential or endpoint was tested.",
+      "evidence_urls": [
+        "https://docs.mrscraper.com/docs/api/overview",
+        "https://docs.mrscraper.com/docs/api/authentication",
+        "https://docs.mrscraper.com/docs/getting-started/mcp-server",
+        "https://mrscraper.com/pricing"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "outcome": "surface_completeness",
+      "notes": "Independently researched from seeds without reading first_pass or worker research. Build_now refers to ordinary authorized core API/local-MCP development; organization policy, SSO, endpoint scope and premium features remain conditional. Remote MCP requires a suitable host and policies, and custom OAuth hosts need an app; PAT is also documented. No account or API execution.",
+      "evidence_urls": [
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+        "https://docs.github.com/en/graphql/guides/forming-calls-with-graphql",
+        "https://github.com/github/github-mcp-server",
+        "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens",
+        "https://github.com/pricing"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "Vercel",
+      "outcome": "stale_restriction",
+      "notes": "Independently recorded before first_pass comparison. The opened current MCP page adds CIMD support, so the older search excerpt saying all clients need vendor review was rejected. I did not label MCP beta because that wording was absent from the current opened page. Team/user permissions and plan/usage limits still apply; a generic build does not require a universal partner or client-review gate. No authenticated execution.",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api",
+        "https://vercel.com/docs/integrations/create-integration/vercel-api-integrations",
+        "https://vercel.com/docs/agent-resources/vercel-mcp",
+        "https://vercel.com/pricing"
+      ]
+    },
+    {
+      "id": 78,
+      "name": "Coda",
+      "outcome": "resolved_evidence_gap",
+      "notes": "Independently recorded before comparison. The Coda developer URL redirected to inaccessible docs.superhuman.com, so exact core-API details used official indexed content and the opened vendor Postman introduction, while MCP auth/role/plan rules came from the fully opened Coda help article. Coda MCP is explicitly beta. Free Doc Makers are not restricted to read-only MCP; Editors are. Admin API entitlement was not generalized from the ordinary document API. No credentials created.",
+      "evidence_urls": [
+        "https://coda.io/developers/apis/v1",
+        "https://www.postman.com/codaio/coda-workspace/collection/0vy7uxn/coda-api",
+        "https://help.coda.io/hc/en-us/articles/44722661982989-Connect-to-the-Coda-MCP"
+      ]
+    },
+    {
+      "id": 79,
+      "name": "Smartsheet",
+      "outcome": "substantially_corroborated",
+      "notes": "Independently recorded before comparison. An older Smartsheet blog mentions a sandbox developer registration route, but its actual current registration link explicitly requires a licensed Business-or-higher user. The ordinary free trial's Business label does not establish self-issuable API credentials. OAuth does not eliminate the documented plan eligibility. No signup or API execution.",
+      "evidence_urls": [
+        "https://developers.smartsheet.com/api/smartsheet/introduction",
+        "https://developers.smartsheet.com/api/smartsheet/guides/basics/authentication",
+        "https://developers.smartsheet.com/register",
+        "https://help.smartsheet.com/articles/529590-smartsheet-free-trial-faqs",
+        "https://help.smartsheet.com/articles/2483670-smartsheet-mcp-server",
+        "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "outcome": "substantially_corroborated",
+      "notes": "Independently recorded before comparison. partner_sales represents the vendor production-access approval gate, not a claim that all Sandbox development needs outreach. Limited Production is deprecated for new teams in favor of US/Canada Trial plans. Dashboard MCP and sandbox/documentation tooling have different scope and eligibility. Production access and regional/product restrictions remain necessary. No account or live financial API was accessed.",
+      "evidence_urls": [
+        "https://plaid.com/docs/api/",
+        "https://plaid.com/docs/sandbox/",
+        "https://plaid.com/docs/resources/mcp/"
+      ]
+    },
+    {
+      "id": 84,
+      "name": "Paygent Connect",
+      "outcome": "substantially_corroborated",
+      "notes": "Independently recorded before first_pass comparison. Searches also surfaced unrelated Japanese Paygent, crypto-card Paygent at paygent.tech, and invoice/Stripe Paygent products; their APIs/MCP were excluded from this identity. Exact-name/NMI searches did not establish first-party technical proof. Missing evidence is unresolved rather than a factual blocked/no-API verdict. Search-engine snippets from other candidates' audit sites were ignored and those sites were not opened or used as evidence. No merchant onboarding, funding or credential execution.",
+      "evidence_urls": [
+        "https://www.gopaygent.com/",
+        "https://docs.nmi.com/",
+        "https://docs.nmi.com/reference/getting-started"
+      ]
+    },
+    {
+      "id": 92,
+      "name": "Otter AI",
+      "outcome": "resolved_rest_and_access_gap",
+      "notes": "The MCP FAQ's lack of a public MCP key does not mean Otter lacks a REST API. Free MCP availability is explicitly priced, while direct Public API entitlement is Enterprise. No free personal bearer API was inferred or executed; no account was created.",
+      "evidence_urls": [
+        "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+        "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+        "https://otter.ai/pricing"
+      ]
+    },
+    {
+      "id": 100,
+      "name": "Grain",
+      "outcome": "scope_and_entitlement_completeness",
+      "notes": "Free personal REST access is independently supported by a dedicated API article, not inferred from MCP documentation. Older generic Plans documentation/search snippets said Free excluded API access; the newer specific API help and current auth distinctions are more precise. No live credential issuance was tested. API docs use a newer version header than older help examples, so implement against the current developer version reference.",
+      "evidence_urls": [
+        "https://developers.grain.com/authentication.html",
+        "https://support.grain.com/en/articles/15507288-grain-api",
+        "https://developers.grain.com/mcp/faq.html",
+        "https://developers.grain.com/mcp/tools-and-usage.html"
+      ]
+    }
+  ],
+  "judgment_differences_excluded": [
+    {
+      "id": 25,
+      "note": "Pumble narrow-prototype versus constrained verdict is a scope judgment, not a factual error."
+    },
+    {
+      "id": 62,
+      "note": "Vercel verdict was kept constrained; only the outdated approved-client restriction was corrected."
+    }
+  ],
+  "unaccepted_refinements": [
+    {
+      "id": 50,
+      "reason": "Rendered FanBasis-branded demo docs clarify a narrow checkout interface, but first-party linkage and merchant API eligibility remain unverified. Keep unresolved and do not upgrade the demo to conclusive first-party authority."
+    }
+  ]
+}

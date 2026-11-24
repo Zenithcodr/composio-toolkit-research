@@ -1,0 +1,529 @@
+[
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "description": "Enterprise notebook research and source-grounded summaries.",
+    "auth_methods": [
+      "OAuth2 user access token"
+    ],
+    "access": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST",
+    "api_breadth": "Notebook lifecycle and sharing; API preview scoped to licensed enterprise users.",
+    "capabilities": [
+      "Create and retrieve notebooks",
+      "List notebooks",
+      "Share notebooks"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Enterprise license, Cloud project setup and NotebookLM IAM role required"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+        "title": "Create and manage notebooks API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Notebook management uses authenticated licensed users and the discoveryengine notebook API; setup requires the NotebookLM user role.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "Assigned NotebookLM hint refers to the enterprise product. Do not imply that a free consumer NotebookLM account exposes this API. Official MCP support was not established in reviewed sources.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "description": "Meeting transcription and searchable meeting knowledge.",
+    "auth_methods": [
+      "OAuth2"
+    ],
+    "access": [
+      "unresolved"
+    ],
+    "api_type": "MCP",
+    "api_breadth": "Meeting search and transcript retrieval through the vendor MCP; general public REST access not established.",
+    "capabilities": [
+      "Search meetings",
+      "Retrieve meeting transcripts",
+      "Access authorised shared conversations"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Plan eligibility and custom API application access need confirmation"
+    ],
+    "confidence": "medium",
+    "evidence": [
+      {
+        "url": "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server",
+        "title": "Otter MCP Server",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "Official OAuth-authenticated MCP endpoint supports meeting search and transcripts; the FAQ says a public API key is not available and directs custom application questions to support.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "An existing MCP integration is feasible; creating an independent REST connector is a different access question. No assertion that MCP is free on every Otter plan.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "description": "Meeting recording, transcription, summaries and follow-up automation.",
+    "auth_methods": [
+      "API key",
+      "OAuth2"
+    ],
+    "access": [
+      "self_serve_free"
+    ],
+    "api_type": "REST; webhooks",
+    "api_breadth": "Meetings, transcripts, summaries, action items and recording downloads; signed meeting-ready webhooks.",
+    "capabilities": [
+      "Retrieve recordings and transcripts",
+      "Read summaries and action items",
+      "Receive signed webhooks"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Per-user visibility; no organisation-wide API key"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://www.fathom.ai/features/api",
+        "title": "Fathom API",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "Self-generated user API keys, OAuth apps, webhooks and SDKs are included on all plans including Free; the page distinguishes the vendor MCP from the API.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      },
+      {
+        "url": "https://developers.fathom.ai/",
+        "title": "Fathom developer introduction",
+        "source_type": "first_party",
+        "supports": [
+          "api_type",
+          "api_breadth"
+        ],
+        "excerpt": "Developer documentation covers quickstart, API endpoints, webhooks, SDKs and public OAuth apps.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "Buildable for the authorising user’s visible meetings; do not promise access to other users’ unshared recordings. Documentation evidence only, not a tested connection.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "description": "Evidence-based scientific literature search for research workflows.",
+    "auth_methods": [
+      "OAuth2",
+      "API key (Bearer)"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "MCP; API",
+    "api_breadth": "Scientific search and structured paper findings; plan-dependent monthly pools.",
+    "capabilities": [
+      "Search scientific papers",
+      "Retrieve structured research findings"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Owner plan limits and monthly API/MCP usage pool apply"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.consensus.app/consensus-mcp",
+        "title": "Consensus MCP setup",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "Official MCP supports OAuth or profile-created bearer keys. Free accounts can connect; keys inherit their owner’s plan limits and shared monthly API usage pool.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "OAuth was an assignment hint, not the only supported method. Public documentation now also explains API-key authentication. This research does not establish unlimited free searches.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "description": "Document parsing, extraction, classification and editing for AI pipelines.",
+    "auth_methods": [
+      "API key",
+      "OAuth device flow (local tooling)"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan"
+    ],
+    "api_type": "REST; SDK; MCP",
+    "api_breadth": "Parse, extract, split, classify, edit and upload documents; hosted and local agent interfaces.",
+    "capabilities": [
+      "Parse documents",
+      "Extract structured fields",
+      "Split and classify",
+      "Upload files"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Metered document-processing allowance; hosted MCP cannot read local files directly"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://docs.reducto.ai/quickstart",
+        "title": "Reducto API quickstart",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth"
+        ],
+        "excerpt": "Quickstart offers free account creation and API-key setup for document parsing. Free registration does not establish unlimited processing.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      },
+      {
+        "url": "https://docs.reducto.ai/mcp-server",
+        "title": "Reducto MCP server",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "Vendor hosts a bearer-key MCP and provides local tooling with browser device login. Hosted upload accepts public URLs; local-file access requires the local server.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "Separate credential self-service from processing cost. API and local-tool credential flows differ.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "description": "Autonomous software engineering sessions and repository knowledge.",
+    "auth_methods": [
+      "API key",
+      "personal access token",
+      "service user key"
+    ],
+    "access": [
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Repository documentation plus sessions, playbooks, knowledge, schedules and integrations.",
+    "capabilities": [
+      "Query repository documentation",
+      "Manage engineering sessions",
+      "Manage playbooks and knowledge"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Appropriate Devin account entitlement and organisation-scoped credentials required"
+    ],
+    "confidence": "medium",
+    "evidence": [
+      {
+        "url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+        "title": "Devin MCP",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "Official MCP requires Devin credentials. Current service-user and personal tokens support organisation tools; legacy keys only support repository-documentation tools. Enterprise tokens require an organisation header.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "Devin MCP is authenticated; free public DeepWiki MCP is a separate service, not proof of free Devin platform access. Exact account plan eligibility should be checked before implementation.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "description": "AI image and video generation through account tools and a separate developer API.",
+    "auth_methods": [
+      "browser sign-in (CLI/MCP)",
+      "API key (developer API)"
+    ],
+    "access": [
+      "paid_plan"
+    ],
+    "api_type": "REST; CLI; MCP",
+    "api_breadth": "Media generation, status polling, cancellation, uploads and agent tooling.",
+    "capabilities": [
+      "Generate images and video",
+      "Poll and cancel generation",
+      "Upload reference files"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "CLI/MCP plan credits differ from a separately funded API balance"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://higgsfield.ai/blog/higgsfield-cli",
+        "title": "Higgsfield CLI integration routes",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "CLI and MCP use browser sign-in and plan credits; the developer REST API uses an API key and a separate prepaid balance.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      },
+      {
+        "url": "https://open.higgsfield.ai/quick-start",
+        "title": "Higgsfield API quickstart",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "api_type",
+          "api_breadth"
+        ],
+        "excerpt": "REST generation uses the full copied API key, returns asynchronous request identifiers, and exposes polling, cancellation and uploads.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "Do not reuse the user’s unrelated Aerolink allowance for media generation or assume free UI generations apply to API/CLI calls.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "description": "Local rendering of Mermaid definitions into diagrams.",
+    "auth_methods": [
+      "none (local process)"
+    ],
+    "access": [
+      "local_open_source"
+    ],
+    "api_type": "Local CLI; JavaScript module",
+    "api_breadth": "Diagram rendering to SVG, PNG and PDF from local source.",
+    "capabilities": [
+      "Render diagram files",
+      "Convert Mermaid-containing Markdown",
+      "Use a local JavaScript rendering interface"
+    ],
+    "mcp_status": "not_established",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Install the supported Node/browser runtime; isolate untrusted diagram execution"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://github.com/mermaid-js/mermaid-cli",
+        "title": "Mermaid CLI repository",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Maintainer repository documents local CLI rendering and programmatic use. It is open-source local software rather than an authenticated hosted REST service.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      },
+      {
+        "url": "https://github.com/mermaid-js/mermaid-cli/blob/master/LICENSE",
+        "title": "Mermaid CLI license",
+        "source_type": "first_party",
+        "supports": [
+          "access"
+        ],
+        "excerpt": "The official repository publishes an MIT license.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "A local agent tool can wrap the CLI. No official MCP was established in this review; absence of a REST API is not a blocker for local agent-callable skills.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "description": "TranscriptAPI retrieval of YouTube transcripts, search and channel metadata.",
+    "auth_methods": [
+      "API key (Bearer)"
+    ],
+    "access": [
+      "self_serve_trial",
+      "paid_plan"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Transcripts, language metadata, video search, channel feeds and playlist videos.",
+    "capabilities": [
+      "Retrieve transcripts",
+      "Search videos",
+      "List channel and playlist videos"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_now",
+    "blockers": [
+      "Starter credits are finite; ongoing usage is metered"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://transcriptapi.com/",
+        "title": "TranscriptAPI API and MCP documentation",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "mcp_status",
+          "verdict"
+        ],
+        "excerpt": "Vendor documents bearer-key REST calls, its own MCP endpoint, supported YouTube data tools and 100 initial credits without a card.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "Assigned hint is transcriptapi.com, a third-party provider. Its official MCP is official to TranscriptAPI, not an official Google/YouTube MCP or unrestricted access to every video.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "description": "Meeting recordings, transcripts, notes and workspace insights.",
+    "auth_methods": [
+      "personal access token",
+      "workspace access token",
+      "OAuth2"
+    ],
+    "access": [
+      "self_serve_free",
+      "paid_plan",
+      "admin_approval"
+    ],
+    "api_type": "REST; MCP",
+    "api_breadth": "Personal/workspace meeting data and OAuth integrations; MCP uses personal scope.",
+    "capabilities": [
+      "Read meeting records",
+      "Access transcripts",
+      "Build OAuth integrations",
+      "Query meeting data through MCP"
+    ],
+    "mcp_status": "vendor_official",
+    "composio_status": "not_checked",
+    "verdict": "build_with_constraints",
+    "blockers": [
+      "Workspace tokens require admin authority and plan entitlement; MCP does not accept workspace-scope tokens"
+    ],
+    "confidence": "high",
+    "evidence": [
+      {
+        "url": "https://developers.grain.com/authentication.html",
+        "title": "Grain authentication",
+        "source_type": "first_party",
+        "supports": [
+          "auth_methods",
+          "access",
+          "api_type",
+          "api_breadth",
+          "verdict"
+        ],
+        "excerpt": "Personal and workspace tokens plus OAuth are documented. Workspace scope is plan-restricted and admin-only; personal tokens also authenticate the MCP server.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      },
+      {
+        "url": "https://developers.grain.com/mcp/",
+        "title": "Official Grain MCP",
+        "source_type": "first_party",
+        "supports": [
+          "mcp_status",
+          "api_breadth"
+        ],
+        "excerpt": "Grain publishes a first-party MCP quickstart for meeting context and analytics.",
+        "retrieved_at": "2026-11-23T14:59:06+00:00"
+      }
+    ],
+    "notes": "This is grain.com meeting software, not the unrelated rungrain.com developer workspace. Personal-scope and organisation-wide connector readiness are different.",
+    "researched_at": "2026-11-23T14:59:06+00:00",
+    "research_method": "Codex agent web search and first-party document opens; no vendor-account/API execution"
+  }
+]
