@@ -2,6 +2,8 @@
 
 An evidence-first research agent and single-page case study covering the exact 100 assigned apps across ten categories. Author: Harshit Aman. Research snapshot: 23 November 2026.
 
+[Live case study](https://composio-toolkit-research-harshit.prouddune16.chatgpt.site) · [Source repository](https://github.com/Zenithcodr/composio-toolkit-research)
+
 ## What ran, and what did not
 
 The submission dataset was researched by Codex agents using live web search and first-party page opens. Work was partitioned into non-overlapping app ID ranges. Each researcher produced structured claims with actual source URLs and access caveats. The supervising agent consolidates these files, validates identities and evidence structure, challenges ambiguous findings, and builds the HTML report.
@@ -83,4 +85,4 @@ Documentation is a dated snapshot. Plan eligibility, pricing, endpoints and MCP 
 
 ## Publication
 
-The report is a static site. Public publication and GitHub ownership are checked separately. No API keys are deployed to the browser. The repository includes only this project; unrelated résumés, account files and private preparation notes are excluded.
+The report is a public static site, with its source published under Harshit Aman's `Zenithcodr` GitHub account. Both links appear above and in the case study. No API keys are deployed to the browser. The repository includes only this project; unrelated résumés, account files and private preparation notes are excluded. Publication does not mark the pending human audit complete.
