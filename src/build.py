@@ -14,13 +14,14 @@ def build():
     catalogue['exact_label_matches']=sum(x['status']=='label_match' for x in catalogue['observations'])
     source_audit=read(DATA/'source_audit.json') if (DATA/'source_audit.json').exists() else {'status':'pending'}
     publication=read(ROOT/'publication.json') if (ROOT/'publication.json').exists() else {}
-    payload={'records':records,'summary':summary,'audit':audit,'accuracy':{'first':accuracy(audit,'first_pass_grade'),'final':accuracy(audit,'final_grade')},'corrections':corrections,'automated':automated,'catalogue':catalogue,'source_audit':source_audit,'publication':publication,'built_at':now()}
+    human_review=read(DATA/'human_review_attestation.json') if (DATA/'human_review_attestation.json').exists() else {}
+    payload={'records':records,'summary':summary,'audit':audit,'accuracy':{'first':accuracy(audit,'first_pass_grade'),'final':accuracy(audit,'final_grade')},'corrections':corrections,'automated':automated,'catalogue':catalogue,'source_audit':source_audit,'publication':publication,'human_review':human_review,'built_at':now()}
     encoded=json.dumps(payload,ensure_ascii=False).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
     template=(ROOT/'src'/'report.html').read_text(encoding='utf-8')
     output=template.replace('__RESEARCH_DATA__',encoded)
     dist=ROOT/'dist';dist.mkdir(exist_ok=True)
     (dist/'index.html').write_text(output,encoding='utf-8')
-    write(dist/'results.json',records);write(dist/'verification.json',{'human_audit':audit,'automated_audit':automated,'source_audit':source_audit,'corrections':corrections,'accuracy':payload['accuracy']})
+    write(dist/'results.json',records);write(dist/'verification.json',{'human_audit':audit,'human_review':human_review,'automated_audit':automated,'source_audit':source_audit,'corrections':corrections,'accuracy':payload['accuracy']})
     write(dist/'catalogue-observations.json',{'checked_at':catalogue.get('checked_at'),'returned_toolkits':catalogue.get('returned_toolkits'),'catalogue_partial':True,'observations':catalogue['observations']})
     catalogue_by_id={x['id']:x for x in catalogue['observations']}
     columns=['id','name','category','auth_methods','access','api_type','mcp_status','verdict','blockers','confidence','evidence_urls','composio_catalogue_observation']

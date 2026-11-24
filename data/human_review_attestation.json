@@ -1,0 +1,11 @@
+{
+  "reviewer": "Harshit Aman",
+  "confirmed_on": "2026-11-24",
+  "personally_checked_official_documentation": true,
+  "confirmation": "Yes, I personally checked them",
+  "sample_size": 20,
+  "reference_timing": "References were recorded after agent refinements; this was not a blinded holdout.",
+  "grading": "Supervising AI adjudicated the preserved first pass and final records against the author-confirmed references. Wording-only changes and conservative scope judgments are not counted as factual errors.",
+  "unresolved_app_ids": [50, 84],
+  "unresolved_reason": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
+}

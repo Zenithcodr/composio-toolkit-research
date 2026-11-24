@@ -12,7 +12,7 @@ This is agent-assisted documentary research, not human collection of 100 rows an
 
 The Python CLI additionally implements a separately runnable Aerolink-backed retrieval/extraction pipeline. The initial dataset is **not represented as the output of an Aerolink run** while account-side free-only billing remains unverified. Composio SDK execution is recorded in `data/composio_check.json`: a genuine read-only call returned 1,000 toolkit labels. The build compares exact display labels against the assigned apps, with all nonmatches explicitly unknown because the returned catalogue window is partial. A label match does not establish vendor identity, endpoint coverage or official MCP support.
 
-The 20-app human audit is pending until the author records real observations. No human-accuracy percentage is invented. Agent checks and schema validation are not substitutes for that audit.
+The author confirmed personally checking official documentation for the 20 sampled apps on 24 November 2026. The recorded references were collected after the agent refinements, so this is not a blinded holdout. AI adjudication compares the preserved first pass and final dataset against those references. Two unresolved app identities (fanbasis and Paygent Connect; 12 checks) are excluded from scored agreement. Field-level grades and reasons are retained; the result does not estimate accuracy across all 100 apps.
 
 ## Quick start — no API key needed
 
@@ -86,3 +86,7 @@ Documentation is a dated snapshot. Plan eligibility, pricing, endpoints and MCP 
 ## Publication
 
 The report is a public static site, with its source published under Harshit Aman's `Zenithcodr` GitHub account. Both links appear above and in the case study. No API keys are deployed to the browser. The repository includes only this project; unrelated résumés, account files and private preparation notes are excluded. Publication does not mark the pending human audit complete.
+
+## Reproduce the author-confirmed sample scoring
+
+Run `python src/score_human_audit.py`, followed by `python src/research.py build`. The scorer consumes existing author-confirmed references; it does not conduct a human review or create answers. Material omissions receive partial credit, wording-only refinements and conservative scope judgments are explicitly identified, and unresolved identities are excluded. The checksum accepts LF/CRLF-equivalent bytes so Git line-ending conversion does not change the baseline content. See `data/human_review_attestation.json` for provenance and limitations.

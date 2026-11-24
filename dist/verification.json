@@ -10,44 +10,44 @@
         "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/integrate-with-the-remote-hubspot-mcp-server",
         "https://developers.hubspot.com/docs/api-reference/latest/overview"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['OAuth 2.0 for distributed apps and MCP auth apps', 'Scoped Service Keys (public beta) for internal system integrations', 'Legacy private app access tokens']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free', 'admin_approval', 'paid_plan']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST', 'Webhooks', 'MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Broad CRM and marketing APIs with account-, scope-, and product-dependent availability.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -61,44 +61,44 @@
         "https://api.docs.dealcloud.com/docs/token",
         "https://www.intapp.com/mcp-documentation/"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST: OAuth 2 client credentials using client ID and API key, exchanged for a short-lived Bearer token', 'MCP: per-user OAuth sign-in']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['paid_plan', 'admin_approval']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST', 'MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST includes schema, data read/create/update/upsert/delete, user management, backups, publications/events and relationship-intelligence imports. MCP can explore schema, query/read data and optionally create/update records, with write tools enabled separately.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -112,44 +112,44 @@
         "https://support.zendesk.com/hc/en-us/articles/11400026079130-Connecting-external-AI-agents-to-the-Zendesk-MCP-server-or-Zendesk-AI-agents-EAP",
         "https://www.zendesk.com/pricing/"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['OAuth 2.0 access tokens (recommended implementation target)', 'Legacy API token plus email via Basic authentication (retiring)']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_trial', 'paid_plan', 'admin_approval']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST', 'MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Broad support-data API; governed MCP tools are documented through Zendesk Bridge EAP.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -162,44 +162,44 @@
         "https://help.gladly.com/docs/generate-api-tokens-and-create-webhooks/",
         "https://help.gladly.com/docs/set-up-the-gladly-mcp-for-claude"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['Token-based HTTP Basic authentication: agent email plus API token', 'Browser-based Gladly sign-in/consent for vendor MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['admin_approval', 'unresolved', 'partner_sales']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST', 'Webhooks', 'MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Customer profiles, timeline/conversation data, organization resources, public answers, and event webhooks. A separate new Gladly AI MCP supports sessions, Guides, and Workflows.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -212,44 +212,44 @@
         "https://pumble.com/help/integrations/automation-workflow-integrations/how-to-use-the-pumble-mcp-server/",
         "https://pumble.com/pricing"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['Per-user API key from the API addon', 'App key plus user/bot token for official MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free', 'paid_plan']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['HTTP API', 'MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Useful messaging and channel operations; MCP tool list is dynamic according to selected user/bot scopes.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -264,44 +264,44 @@
         "https://github.com/larksuite/lark-openapi-mcp/blob/main/docs/usage/configuration/configuration.md",
         "https://open.larksuite.com/document/home/introduction-to-custom-app-development/self-built-application-development-process"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['App ID/secret exchanged for tenant/app access token', 'OAuth user_access_token for user identity', 'Official local MCP supports app identity or OAuth user identity']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['admin_approval', 'local_open_source', 'unresolved']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['HTTP OpenAPI', 'MCP']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Wide suite API surface with message, group, calendar, document, and Base tools; access depends on selected app scopes.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -314,44 +314,44 @@
         "https://marketplace.gohighlevel.com/docs/Authorization/OAuth2.0/index.html",
         "https://marketplace.gohighlevel.com/docs/other/mcp/index.html"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['scoped Private Integration bearer token (REST)', 'OAuth 2.0 authorization-code access/refresh tokens (REST)', 'interactive HighLevel sign-in and consent (current hosted MCP; no PIT/API key required)']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The same private-integration bearer token, OAuth and interactive hosted-MCP sign-in routes were already identified; the reference clarifies their scopes."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_trial', 'paid_plan', 'admin_approval']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST; vendor-hosted operational MCP; separate Marketplace Developer MCP",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Broad agency/sub-account CRM and marketing resources. Current operational MCP supports contacts, conversations, calendars, invoices, promotions and workflows across approved sub-accounts; actions depend on permissions and enabled products.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -364,44 +364,44 @@
         "https://help.systeme.io/article/9489-how-to-use-systeme-ios-mcp",
         "https://systeme.io/pricing"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['X-API-Key header (public REST API)', 'X-MCP-Key header or mcpKey URL parameter (MCP)']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "Both distinct API and MCP keys were identified. Header names add implementation detail without changing the authentication families."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST; MCP",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST supports contacts, tags and broader documented marketing/commerce resources. MCP has confirmed common coverage for contacts, tags, contact fields and newsletters; newer help lists additional capabilities while older developer docs explicitly limit scope, so extended MCP coverage remains uncertain.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -414,44 +414,44 @@
         "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization-for-admin-apis.html",
         "https://developer.salesforce.com/docs/commerce/commerce-api/guide/slas.html"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['Account Manager OAuth client credentials/token for SCAPI Admin APIs', 'SLAS OAuth 2.1 public/private clients for Shopper APIs', 'configured B2C instance credentials for local MCP; MRT API key/WebDAV credentials for relevant tooling']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['paid_plan', 'admin_approval']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST (SCAPI); vendor B2C MCP",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "B2C Shopper APIs cover browsing, cart and checkout; Admin APIs read/write product, order and inventory data. Official B2C MCP provides documentation search, live debugging/log investigation, deployment workflows and general SCAPI Admin API access under configured credentials.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -464,44 +464,44 @@
         "https://demo.embedded.fanbasis.io/docs/checkout-session-secret",
         "https://demo.embedded.fanbasis.io/docs/how-it-works"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['API key via x-api-key described in a FanBasis-branded demo', 'Checkout session secret for JavaScript SDK initialization']",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['unresolved']",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Documented HTTP checkout-session endpoint and JavaScript SDK; full public API contract unresolved",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Narrow embedded-checkout integration is described; broad seller/admin CRUD and credential eligibility not verified.",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "not_established",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "unresolved",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         }
       }
     },
@@ -514,44 +514,44 @@
         "https://docs.ahrefs.com/en/api/docs/api-keys-creation-and-management",
         "https://docs.ahrefs.com/en/api/docs/introduction"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['Bearer API key (REST)', 'OAuth consent creating MCP-scoped key or manually generated MCP key (MCP)']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['paid_plan', 'admin_approval']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST API v3 and official MCP",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Broad SEO/data APIs cover Site Explorer, Keywords Explorer, SERP, Rank Tracker, Site Audit, Brand Radar and selected management operations. Hosted MCP exposes permitted Ahrefs data to supported AI tools; it is not a general-purpose API for scripts/bridges.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -564,44 +564,44 @@
         "https://docs.mrscraper.com/docs/api/authentication",
         "https://mrscraper.com/pricing"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['x-api-token header (REST)', 'Bearer API token for Marketplace endpoints', 'OAuth 2.1 or Bearer API-key fallback (MCP)']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free', 'paid_plan']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST; official hosted or self-managed MCP",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST scraping, search, extraction and workflow resources. The directly read MCP v0.5.0 documents seven tools: status, scrapeHtml, scrapeMarkdown, getScreenshot, scrapeBrand, scrapeJson and webSearch; broader workflow management is not established through MCP.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_now",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "Both verdicts permit a toolkit. A constrained overall integration versus a narrow build-now prototype is a conservative scope judgment, not a factual error."
         }
       }
     },
@@ -614,44 +614,44 @@
         "https://vercel.com/docs/agent-resources/vercel-mcp",
         "https://vercel.com/pricing"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['Bearer access token (REST)', 'OAuth (MCP)']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST; MCP",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Broad projects, deployments, domains, environment variables and platform administration.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -664,44 +664,44 @@
         "https://github.com/github/github-mcp-server",
         "https://github.com/pricing"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['personal access token', 'GitHub App token', 'OAuth (official MCP)']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST', 'GraphQL', 'MCP']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Broad repository, issue, pull request and workflow operations.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_now",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -714,44 +714,44 @@
         "https://developers.smartsheet.com/ai-mcp/smartsheet/install-the-smartsheet-mcp-server",
         "https://developers.smartsheet.com/ai-mcp/smartsheet/mcp-server-tools"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['Bearer API access token', 'OAuth']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['paid_plan']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST; MCP",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Sheets, rows, workspaces, reports, dashboards and supported workflow operations.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -764,44 +764,44 @@
         "https://help.coda.io/hc/en-us/articles/44722756780173-Using-the-Coda-MCP",
         "https://help.coda.io/hc/en-us/articles/39555834006797-Reduce-the-size-of-your-doc"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST bearer API token', 'Official MCP OAuth 2 for supported clients', 'Official MCP personal access token with MCP restriction and read/write scope']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free', 'paid_plan']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['REST', 'MCP']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST supports documents, pages, tables, rows, formulas/controls and sharing. Official MCP can read and write Coda docs, with role- and plan-dependent access; it is operational rather than documentation-only.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -814,44 +814,44 @@
         "https://plaid.com/docs/sandbox/",
         "https://plaid.com/docs/resources/mcp/"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['client_id plus secret', 'product access tokens', 'OAuth client credentials (Dashboard MCP)']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free', 'self_serve_trial', 'admin_approval']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "HTTPS JSON APIs; MCP",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Broad bank data and payment products; MCP surfaces differ between development and production diagnostics.",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -863,44 +863,44 @@
         "https://docs.nmi.com/",
         "https://www.paygent.co.jp/"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['unresolved']",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['unresolved']",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "unresolved",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "No API surface could be reliably attributed to this exact assigned identity.",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "not_established",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "unresolved",
+          "first_pass_grade": "unresolved",
+          "final_grade": "unresolved",
+          "note": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
         }
       }
     },
@@ -912,44 +912,44 @@
         "https://developers.grain.com/authentication.html",
         "https://developers.grain.com/mcp/"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['personal bearer access token (REST and MCP)', 'workspace bearer access token (REST only)', 'OAuth 2.0 authorization code with PKCE']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "Personal tokens, workspace tokens and OAuth were already identified. The reference adds bearer, PKCE and token-scope details."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free', 'paid_plan', 'admin_approval']",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "HTTP/REST public API v2; MCP",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "REST plus MCP and HTTP/REST API v2 plus MCP describe the same interface families."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Public API reads/manages meeting recordings, transcripts/notes, uploads, metadata/sharing and webhooks. MCP is personal-scope meeting/search/reporting and contact/company data; Deals and coaching tools require Business/Enterprise, and workspace-scope tokens are not accepted by MCP.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     },
@@ -960,48 +960,62 @@
       "evidence_urls": [
         "https://help.otter.ai/hc/en-us/articles/35287607569687-Otter-MCP-Server"
       ],
-      "reviewer": "",
-      "reviewed_at": null,
+      "reviewer": "Harshit Aman",
+      "reviewed_at": "2026-11-24T06:13:52+00:00",
       "checks": {
         "auth_methods": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['OAuth (MCP)', 'Bearer API key (Enterprise Public API)']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "access": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "['self_serve_free', 'paid_plan', 'partner_sales']",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_type": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "REST retrieval API; MCP",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "api_breadth": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "Official MCP supports meeting/transcript search, fetch and user information with user-authorized access. A separate Enterprise Public API retrieves channels, conversations, transcripts/audio, action items, insights, outlines and workspace details; documented webhooks support export integrations.",
+          "first_pass_grade": "partial",
+          "final_grade": "correct",
+          "note": "The first pass omitted or insufficiently scoped a material authentication route, access condition, interface or capability established in the reference. The documented final correction resolves that omission; this is not merely a wording comparison."
         },
         "mcp_status": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "vendor_official",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         },
         "verdict": {
-          "reference": null,
-          "first_pass_grade": "pending",
-          "final_grade": "pending",
-          "note": ""
+          "reference": "build_with_constraints",
+          "first_pass_grade": "correct",
+          "final_grade": "correct",
+          "note": "The preserved first-pass claim and final claim agree with the author-confirmed reference."
         }
       }
     }
   ],
+  "human_review": {
+    "reviewer": "Harshit Aman",
+    "confirmed_on": "2026-11-24",
+    "personally_checked_official_documentation": true,
+    "confirmation": "Yes, I personally checked them",
+    "sample_size": 20,
+    "reference_timing": "References were recorded after agent refinements; this was not a blinded holdout.",
+    "grading": "Supervising AI adjudicated the preserved first pass and final records against the author-confirmed references. Wording-only changes and conservative scope judgments are not counted as factual errors.",
+    "unresolved_app_ids": [
+      50,
+      84
+    ],
+    "unresolved_reason": "The exact assigned publisher identity or credential eligibility is not established for fanbasis and Paygent Connect. Their 12 checks remain unresolved and are excluded from scored agreement."
+  },
   "automated_audit": {
     "status": "completed",
     "method": "Independent AI-agent re-research of a stratified 20-app sample; each verifier saved findings before viewing the first pass. Supervising AI reviewed disagreements. This is not human verification.",
@@ -5273,22 +5287,22 @@
   ],
   "accuracy": {
     "first": {
-      "correct": 0,
-      "partial": 0,
+      "correct": 80,
+      "partial": 28,
       "incorrect": 0,
-      "unresolved": 0,
-      "pending": 120,
-      "adjudicated": 0,
-      "fully_correct_fraction": null
+      "unresolved": 12,
+      "pending": 0,
+      "adjudicated": 108,
+      "fully_correct_fraction": 0.7407407407407407
     },
     "final": {
-      "correct": 0,
+      "correct": 108,
       "partial": 0,
       "incorrect": 0,
-      "unresolved": 0,
-      "pending": 120,
-      "adjudicated": 0,
-      "fully_correct_fraction": null
+      "unresolved": 12,
+      "pending": 0,
+      "adjudicated": 108,
+      "fully_correct_fraction": 1.0
     }
   }
 }
