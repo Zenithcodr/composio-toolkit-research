@@ -2,7 +2,7 @@
 
 An evidence-first research agent and single-page case study covering the exact 100 assigned apps across ten categories. Author: Harshit Aman. Research snapshot: 23 November 2026.
 
-[Source repository](https://github.com/Zenithcodr/composio-toolkit-research) · [Static site entry point](dist/index.html)
+[Live case study](https://composio-toolkit-research-alpha.vercel.app/) · [Source repository](https://github.com/Zenithcodr/composio-toolkit-research) · [Static site entry point](dist/index.html)
 
 The complete deployable site is committed under `dist/`. Import this repository into Vercel using the configuration below; no research API key is required to host the report.
 
