@@ -7,5 +7,5 @@ __pycache__/
 *.pyc
 private/
 artifacts/
-.openai/*
-!.openai/hosting.json
+.openai/
+.vercel/

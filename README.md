@@ -2,17 +2,19 @@
 
 An evidence-first research agent and single-page case study covering the exact 100 assigned apps across ten categories. Author: Harshit Aman. Research snapshot: 23 November 2026.
 
-[Live case study](https://composio-toolkit-research-harshit.prouddune16.chatgpt.site) · [Source repository](https://github.com/Zenithcodr/composio-toolkit-research)
+[Source repository](https://github.com/Zenithcodr/composio-toolkit-research) · [Static site entry point](dist/index.html)
+
+The complete deployable site is committed under `dist/`. Import this repository into Vercel using the configuration below; no research API key is required to host the report.
 
 ## What ran, and what did not
 
-The submission dataset was researched by Codex agents using live web search and first-party page opens. Work was partitioned into non-overlapping app ID ranges. Each researcher produced structured claims with actual source URLs and access caveats. The supervising agent consolidates these files, validates identities and evidence structure, challenges ambiguous findings, and builds the HTML report.
+The submission dataset was researched by documentation-research agents using live web search and first-party page opens. Work was partitioned into non-overlapping app ID ranges. Each researcher produced structured claims with actual source URLs and access caveats. The supervising agent consolidates these files, validates identities and evidence structure, challenges ambiguous findings, and builds the HTML report.
 
 This is agent-assisted documentary research, not human collection of 100 rows and not proof of authenticated vendor execution. No paid app account is needed to establish a documented access gate. Public candidate submissions were not reused as data.
 
-The Python CLI additionally implements a separately runnable Aerolink-backed retrieval/extraction pipeline. The initial dataset is **not represented as the output of an Aerolink run** while account-side free-only billing remains unverified. Composio SDK execution is recorded in `data/composio_check.json`: a genuine read-only call returned 1,000 toolkit labels. The build compares exact display labels against the assigned apps, with all nonmatches explicitly unknown because the returned catalogue window is partial. A label match does not establish vendor identity, endpoint coverage or official MCP support.
+The Python CLI additionally implements a separately runnable model-backed retrieval/extraction pipeline. The initial dataset came from agent-assisted documentation browsing, not from this optional API client, whose execution remains gated while account-side free-only billing is unverified. Composio SDK execution is recorded in `data/composio_check.json`: a genuine read-only call returned 1,000 toolkit labels. The build compares exact display labels against the assigned apps, with all nonmatches explicitly unknown because the returned catalogue window is partial. A label match does not establish vendor identity, endpoint coverage or official MCP support.
 
-The author confirmed personally checking official documentation for the 20 sampled apps on 24 November 2026. The recorded references were collected after the agent refinements, so this is not a blinded holdout. AI adjudication compares the preserved first pass and final dataset against those references. Two unresolved app identities (fanbasis and Paygent Connect; 12 checks) are excluded from scored agreement. Field-level grades and reasons are retained; the result does not estimate accuracy across all 100 apps.
+The author confirmed personally checking official documentation for the 20 sampled apps on 24 November 2026. The recorded references were collected after the agent refinements, so this is not a blinded holdout. Rubric-based adjudication compares the preserved first pass and final dataset against those references. Two unresolved app identities (fanbasis and Paygent Connect; 12 checks) are excluded from scored agreement. Field-level grades and reasons are retained; the result does not estimate accuracy across all 100 apps.
 
 ## Quick start — no API key needed
 
@@ -30,7 +32,7 @@ Open `http://localhost:8086`. The generated `dist/index.html` embeds all researc
 
 ## Fresh research run
 
-Use your own Aerolink account. Confirm its current base URL, Responses protocol, model identifier, free quota and billing behavior in the provider dashboard. Set values in the current process; never commit keys. `.env.example` contains names only and is not automatically loaded.
+Use your own compatible Responses API provider account. Confirm its current base URL, Responses protocol, model identifier, free quota and billing behavior in the provider dashboard. Set values in the current process; never commit keys. `.env.example` contains names only and is not automatically loaded.
 
 ```powershell
 $env:AEROLINK_BASE_URL = 'https://cgapi.aerolink.lat/v1'
@@ -85,8 +87,26 @@ Documentation is a dated snapshot. Plan eligibility, pricing, endpoints and MCP 
 
 ## Publication
 
-The report is a public static site, with its source published under Harshit Aman's `Zenithcodr` GitHub account. Both links appear above and in the case study. No API keys are deployed to the browser. The repository includes only this project; unrelated résumés, account files and private preparation notes are excluded. Publication does not mark the pending human audit complete.
+The report is a static site, with its complete source and generated output published under Harshit Aman's `Zenithcodr` GitHub account. Vercel can serve the committed `dist/` directory directly. No API keys are deployed to the browser. The repository includes only this project; unrelated résumés, account files and private preparation notes are excluded. The documented 20-app human review is included in the generated report.
 
 ## Reproduce the author-confirmed sample scoring
 
 Run `python src/score_human_audit.py`, followed by `python src/research.py build`. The scorer consumes existing author-confirmed references; it does not conduct a human review or create answers. Material omissions receive partial credit, wording-only refinements and conservative scope judgments are explicitly identified, and unresolved identities are excluded. The checksum accepts LF/CRLF-equivalent bytes so Git line-ending conversion does not change the baseline content. See `data/human_review_attestation.json` for provenance and limitations.
+
+## Deploy directly from GitHub to Vercel
+
+Import `Zenithcodr/composio-toolkit-research` into Vercel. The root `vercel.json` selects the Other framework preset, skips installation/build commands, and publishes the committed static output.
+
+| Setting | Value |
+| --- | --- |
+| Production branch | `main` |
+| Root Directory | Repository root (`./`) |
+| Framework Preset | Other |
+| Build Command | Empty / skipped |
+| Install Command | Empty / skipped |
+| Output Directory | `dist` |
+| Environment variables | None for hosting this report |
+
+Do not select a Python framework or run the live research pipeline as a Vercel build step. Research generation is an offline preparation step; the hosted report is plain HTML/CSS/JavaScript plus static downloads. Its app data is embedded in `dist/index.html`. Typography loads from Google Fonts with local font fallbacks.
+
+After editing research or the HTML template, run `python src/research.py build` locally and commit the updated `dist/` files. New pushes to the linked Git repository can then deploy the updated static snapshot. Use the actual Vercel production URL in the submission link sheet after deployment.
